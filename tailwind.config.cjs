@@ -1,0 +1,44 @@
+const { tailwindExtractor } = require("tailwindcss/lib/lib/purgeUnusedStyles");
+
+module.exports = {
+	mode: "aot",
+	purge: {
+		content: [
+			"./src/**/*.{html,js,svelte,ts}",
+		],
+		options: {
+			defaultExtractor: (content) => [
+				// If this stops working, please open an issue at https://github.com/svelte-add/tailwindcss/issues rather than bothering Tailwind Labs about it
+				...tailwindExtractor(content),
+				// Match Svelte class: directives (https://github.com/tailwindlabs/tailwindcss/discussions/1731)
+				...[...content.matchAll(/(?:class:)*([\w\d-/:%.]+)/gm)].map(([_match, group, ..._rest]) => group),
+			],
+			keyframes: true,
+		},
+	},
+	theme: {
+		extend: {
+      fontFamily: {
+        'mono': ['PT Mono'],
+        'space': ['Space Grotesk']
+      },
+      fontSize: {
+        '1.5xl': ['18px', '34.47px'],
+        '3xl': ['21px', '33.6px'],
+        '4xl': ['32px', '36.32px'],
+        '5xl': ['48px', '54.48px'],
+        '8xl': ['76px', '82.5px']
+      },
+      textColor: {
+        'black': '#252A36',
+        'darkgray': '#51555E',
+        'gray': '#7C7F86',
+        'lightgray': '#C6CAD3'
+      }
+    },
+	},
+	variants: {
+		extend: {},
+	},
+	plugins: [],
+};
