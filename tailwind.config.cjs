@@ -29,26 +29,7 @@ module.exports = {
         '5xl': ['48px', '54.48px'],
         '8xl': ['76px', '82.5px']
       },
-      textColor: {
-        'black': '#252A36',
-        'darkgray': '#51555E',
-        'gray': '#7C7F86',
-        'lightgray': '#C6CAD3',
-        'whitesmoke': '#F6F7F7',
-        'yellow': '#FABC06',
-        'lightyellow': '#FCD76A',
-        'orange': '#FE76721',
-        'lightorange': '#FFB78A',
-        'red': '#FC4059',
-        'lightred': '#FFA4B0',
-        'purple': '#BA46DF',
-        'lightpurple': '#F4BFF',
-        'blue': '#1286F6',
-        'lightblue': '#CDF2FF',
-        'green': '#2AB52E',
-        'lightgreen': '#C3FFC5'
-      },
-      backgroundColor: {
+      colors: {
         'black': '#252A36',
         'darkgray': '#51555E',
         'gray': '#7C7F86',
@@ -61,12 +42,12 @@ module.exports = {
         'red': '#FC4059',
         'lightred': '#FFA4B0',
         'purple': '#BA46DF',
-        'lightpurple': '#F4BFFF',
+        'lightpurple': '#F4BFF',
         'blue': '#1286F6',
         'lightblue': '#CDF2FF',
         'green': '#2AB52E',
         'lightgreen': '#C3FFC5'
-      }
+      },
     },
 	},
 	variants: {
