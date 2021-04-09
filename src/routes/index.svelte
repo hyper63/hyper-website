@@ -17,14 +17,14 @@
   <p class="text-yellow bg-lightyellow hover:bg-yellow">Colors</p>
   <p class="text-orange bg-lightorange hover:bg-orange">Colors</p>
   <p class="text-red bg-lightred hover:bg-red">Colors</p>
-  <p class="text-blue bg-lightblue">Colors</p>
-  <p class="text-purple bg-lightpurple">Colors</p>
-  <p class="text-green bg-lightgreen">Colors</p>
+  <p class="text-blue bg-lightblue hover:bg-blue">Colors</p>
+  <p class="text-purple bg-lightpurple hover:bg-purple">Colors</p>
+  <p class="text-green bg-lightgreen hover:bg-green">Colors</p>
 
   <p class="text-lightyellow bg-yellow hover:bg-lightyellow">Colors</p>
   <p class="text-lightorange bg-orange hover:bg-lightorange">Colors</p>
   <p class="text-lightred bg-red hover:bg-lightred">Colors</p>
   <p class="text-lightblue bg-blue hover:bg-lightblue">Colors</p>
-  <p class="text-lightpurple bg-purple">Colors</p>
-  <p class="text-lightgreen bg-green">Colors</p>
+  <p class="text-lightpurple bg-purple hover:bg-lightpurple">Colors</p>
+  <p class="text-lightgreen bg-green hover:bg-lightgreen">Colors</p>
 </footer>
