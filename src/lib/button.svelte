@@ -4,7 +4,7 @@ export let bgColor = 'blue'
 export let txtColor = 'white'
   
 </script>
-<button type={type} class="text-{txtColor} bg-{bgColor} hover:bg-light{bgColor} focus:ring-{bgColor}">
+<button on:click type={type} class="text-{txtColor} bg-{bgColor} hover:bg-light{bgColor} focus:ring-{bgColor}">
     <slot></slot>
     <span class="ml-2">
     <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,6 +1,7 @@
 <script>
 import Color from '$lib/color.svelte'
 import Button from '$lib/button.svelte'
+import Play from '$lib/play-button.svelte'
 </script>
 <main class="container mx-auto mt-5">
   <section class="p-20">
@@ -74,6 +75,22 @@ import Button from '$lib/button.svelte'
 {'<Button txtColor="white" bgColor="black">Get Started</Button>'}
         </code>
       </pre>
+    </div>
+    <div class="mt-8 flex justify-between">
+      <Play>Watch</Play>
+      <Play bgColor="lightblue" iconColor="blue">
+        Watch
+      </Play>
+
+      <Play bgColor="lightorange" iconColor="orange">
+        Watch
+      </Play>
+      <Play bgColor="lightred" iconColor="red">
+        Watch
+      </Play>
+      <Play bgColor="lightpurple" iconColor="purple">
+        Watch
+      </Play>
     </div>
   </section>
   
