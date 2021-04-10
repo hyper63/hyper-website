@@ -2,6 +2,8 @@
 import Color from '$lib/color.svelte'
 import Button from '$lib/button.svelte'
 import Play from '$lib/play-button.svelte'
+import NavButton from '$lib/nav-button.svelte'
+
 </script>
 <main class="container mx-auto mt-5">
   <section class="p-20">
@@ -56,14 +58,29 @@ import Play from '$lib/play-button.svelte'
       <Color color="whitesmoke" />
     </div>
     <h2 class="mt-8">Buttons</h2>
-    <div class="flex justify-between">
+    <div class="mt-3 flex justify-between">
       <Button>Get Started</Button>
       <Button bgColor="yellow">Get Started</Button>
       <Button bgColor="orange">Get Started</Button>
       <Button bgColor="red">Get Started</Button>
-      <Button bgColor="blue">Get Started</Button>
       <Button bgColor="purple">Get Started</Button>
       <Button bgColor="green">Get Started</Button>
+    </div>
+    <div class="mt-3 flex justify-between">
+      <Button bgColor="gradient-blue">Get Started</Button>
+      <Button bgColor="gradient-yellow">Get Started</Button>
+      <Button bgColor="gradient-orange">Get Started</Button>
+      <Button bgColor="gradient-red">Get Started</Button>
+      <Button bgColor="gradient-purple">Get Started</Button>
+      <Button bgColor="gradient-green">Get Started</Button>
+    </div>
+    <div class="mt-3 flex justify-between">
+      <Button bgColor="active-blue">Get Started</Button>
+      <Button bgColor="active-yellow">Get Started</Button>
+      <Button bgColor="active-orange">Get Started</Button>
+      <Button bgColor="active-red">Get Started</Button>
+      <Button bgColor="active-purple">Get Started</Button>
+      <Button bgColor="active-green">Get Started</Button>
     </div>
     <div class="mt-8 flex justify-between">
       <Button txtColor="blue" bgColor="lightblue">Learn more about us</Button>
@@ -76,7 +93,8 @@ import Play from '$lib/play-button.svelte'
         </code>
       </pre>
     </div>
-    <div class="mt-8 flex justify-between">
+    <h4 class="mt-8">Play Buttons</h4>
+    <div class="mt-3 flex justify-between">
       <Play>Watch</Play>
       <Play bgColor="lightblue" iconColor="blue">
         Watch
@@ -92,10 +110,67 @@ import Play from '$lib/play-button.svelte'
         Watch
       </Play>
     </div>
+    <div class="mt-3">
+      <h4>Code</h4>
+      <pre>
+        <code>
+{'<Play bgColor="lightblue" iconColor="blue">Get Started</Play>'}
+        </code>
+      </pre>
+    </div>
+    <h4 class="mt-8">Nav Buttons</h4>
+    <div class="mt-3 flex justify-between">
+      <NavButton>API DOCS</NavButton>
+      <NavButton txtColor='yellow' bgColor='lightyellow'>API DOCS</NavButton>
+      <NavButton txtColor='orange' bgColor='lightorange'>API DOCS</NavButton>
+      <NavButton txtColor='red' bgColor='lightred'>API DOCS</NavButton>
+      <NavButton txtColor='purple' bgColor='lightpurple'>API DOCS</NavButton>
+      <NavButton txtColor='green' bgColor='lightgreen'>API DOCS</NavButton>
+
+    </div>
+    <div class="mt-3">
+      <h4>Code</h4>
+      <pre>
+        <code>
+{'<NavButton bgColor="lightgreen">API DOCS</NavButton>'}
+        </code>
+      </pre>
+    </div>
+    <h4 class="mt-8">Colors</h4>
+    <div class="mt-3 flex">
+      <div class="bg-red box"></div>
+      <div class="bg-blue box"></div>
+      <div class="bg-yellow box"></div>
+      <div class="bg-orange box"></div>
+      <div class="bg-purple box"></div>
+      <div class="bg-green box"></div>
+    </div>
+    <div class="mt-1 flex">
+      <div class="bg-gradient-red box"></div>
+      <div class="bg-gradient-blue box"></div>
+      <div class="bg-gradient-yellow box"></div>
+      <div class="bg-gradient-orange box"></div>
+      <div class="bg-gradient-purple box"></div>
+      <div class="bg-gradient-green box"></div>
+    </div>
+    <div class="mt-1 flex">
+      <div class="bg-lightred box"></div>
+      <div class="bg-lightblue box"></div>
+      <div class="bg-lightyellow box"></div>
+      <div class="bg-lightorange box"></div>
+      <div class="bg-lightpurple box"></div>
+      <div class="bg-lightgreen box"></div>
+    </div>
   </section>
   
 </main>
-<style>
+<style lang="postcss">
+  .box {
+    @apply rounded;
+    height: 38px;
+    width: 38px;
+    margin: 4px;
+  }
   .colors {
     margin-top: 24px;
   }
