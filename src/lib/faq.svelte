@@ -4,7 +4,9 @@
 </script>
 <div class="faq-container {styles}">
   <div class="flex">
+    <span class="w-full">
     <slot name="question"></slot>
+    </span>
     <div class="toggle">
     {#if toggle}
       <button on:click={() => toggle = !toggle}>
