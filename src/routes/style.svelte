@@ -7,6 +7,7 @@ import LinkBtn from '$lib/link-button.svelte'
 import Link from '$lib/link.svelte'
 import Pagination from '$lib/pagination.svelte'
 import FAQ from '$lib/faq.svelte'
+import Input from '$lib/input.svelte'
 
 </script>
 <main class="container mx-auto mt-5">
@@ -208,7 +209,19 @@ import FAQ from '$lib/faq.svelte'
       <span slot="question">How can I know if the services hyper provides is right for me?</span>
       <span slot="answer">All things are benefited greatly by hyper!</span>
     </FAQ>
-
+    <h5>Code</h5>
+    <pre>
+      <code>
+{`
+<FAQ>
+  <span slot="question">Some Question</span>
+  <span slot="answer">Answert</span>
+</FAQ>
+`}
+      </code>
+    </pre>
+    <h4 class="mt-8">Search</h4>
+    <Input />
   </section>
   
 </main>
