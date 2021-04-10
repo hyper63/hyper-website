@@ -34,5 +34,6 @@
   <p class="text-active-blue bg-active-blue hover:bg-lightblue">Colors</p>
   <p class="text-active-purple bg-active-purple hover:bg-lightpurple">Colors</p>
   <p class="text-active-green bg-active-green hover:bg-lightgreen">Colors</p>
+  <p class="text-white bg-white hover:bg-white">All White</p>
   {/if}
 </footer>
