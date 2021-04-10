@@ -5,6 +5,7 @@ import Play from '$lib/play-button.svelte'
 import NavButton from '$lib/nav-button.svelte'
 import LinkBtn from '$lib/link-button.svelte'
 import Link from '$lib/link.svelte'
+import Pagination from '$lib/pagination.svelte'
 
 </script>
 <main class="container mx-auto mt-5">
@@ -187,6 +188,20 @@ import Link from '$lib/link.svelte'
       <div class="bg-lightpurple box"></div>
       <div class="bg-lightgreen box"></div>
     </div>
+    <h4 class="mt-8">Pagination</h4>
+    <Pagination pages=5 /> 
+    <Pagination pages=5 color="blue" /> 
+    <Pagination pages=5 color="yellow" /> 
+    <Pagination pages=5 color="orange" /> 
+    <Pagination pages=5 color="purple" /> 
+    <Pagination pages=5 color="green" /> 
+    <h5>code</h5>
+    <pre>
+      <code>
+{'<Pagination bgColor="lightgreen">API DOCS</Pagination>'}
+      </code>
+    </pre>
+
   </section>
   
 </main>
