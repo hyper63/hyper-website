@@ -1,13 +1,14 @@
 <script>
   import { goto } from '$app/navigation'
   import Button from '$lib/button.svelte'
-
+  let show = false
 </script>
 <main class="container m-20 flex flex-col items-center justify-center">
   <h1 class="mb-20">HyperIO Site Dev</h1>
   <Button on:click={() => goto('/style')}>Style Guide</Button>
 </main>
 <footer>
+  {#if show}
   <p>adding colors here so they do not get purged</p>
   <p class="text-black bg-white">Colors</p>
   <p class="text-darkgray bg-lightgray">Colors</p>
@@ -27,4 +28,5 @@
   <p class="text-lightblue bg-blue hover:bg-lightblue">Colors</p>
   <p class="text-lightpurple bg-purple hover:bg-lightpurple">Colors</p>
   <p class="text-lightgreen bg-green hover:bg-lightgreen">Colors</p>
+  {/if}
 </footer>
