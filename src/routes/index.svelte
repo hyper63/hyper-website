@@ -27,5 +27,12 @@
   <p class="text-lightblue bg-blue hover:bg-lightblue">Colors</p>
   <p class="text-lightpurple bg-purple hover:bg-lightpurple">Colors</p>
   <p class="text-lightgreen bg-green hover:bg-lightgreen">Colors</p>
+  
+  <p class="text-active-yellow bg-active-yellow hover:bg-lightyellow">Colors</p>
+  <p class="text-active-orange bg-active-orange hover:bg-lightorange">Colors</p>
+  <p class="text-active-red bg-active-red hover:bg-lightred">Colors</p>
+  <p class="text-active-blue bg-active-blue hover:bg-lightblue">Colors</p>
+  <p class="text-active-purple bg-active-purple hover:bg-lightpurple">Colors</p>
+  <p class="text-active-green bg-active-green hover:bg-lightgreen">Colors</p>
   {/if}
 </footer>

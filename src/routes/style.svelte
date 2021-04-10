@@ -4,6 +4,7 @@ import Button from '$lib/button.svelte'
 import Play from '$lib/play-button.svelte'
 import NavButton from '$lib/nav-button.svelte'
 import LinkBtn from '$lib/link-button.svelte'
+import Link from '$lib/link.svelte'
 
 </script>
 <main class="container mx-auto mt-5">
@@ -151,6 +152,15 @@ import LinkBtn from '$lib/link-button.svelte'
 {'<NavButton bgColor="lightgreen">API DOCS</NavButton>'}
         </code>
       </pre>
+    </div>
+    <h4 class="mt-8">Links</h4>
+    <div class="mt-3 flex">
+      <Link href="/" txtColor="blue">Button/Text Link</Link>
+      <Link styles="ml-3" href="/" txtColor="yellow">Button/Text Link</Link>
+      <Link styles="ml-3" href="/" txtColor="orange">Button/Text Link</Link>
+      <Link styles="ml-3" href="/" txtColor="red">Button/Text Link</Link>
+      <Link styles="ml-3" href="/" txtColor="purple">Button/Text Link</Link>
+      <Link styles="ml-3" href="/" txtColor="green">Button/Text Link</Link>
     </div>
     <h4 class="mt-8">Button Colors</h4>
     <div class="mt-3 flex">
