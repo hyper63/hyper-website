@@ -1,11 +1,10 @@
 <script>
-  import { goto } from '$app/navigation'
-  import Button from '$lib/button.svelte'
+  import LinkBtn from '$lib/link-button.svelte'
   let show = false
 </script>
 <main class="container m-20 flex flex-col items-center justify-center">
   <h1 class="mb-20">HyperIO Site Dev</h1>
-  <Button on:click={() => goto('/style')}>Style Guide</Button>
+  <LinkBtn href="/style">Style Guide</LinkBtn>
 </main>
 <footer>
   {#if show}

@@ -3,6 +3,7 @@ import Color from '$lib/color.svelte'
 import Button from '$lib/button.svelte'
 import Play from '$lib/play-button.svelte'
 import NavButton from '$lib/nav-button.svelte'
+import LinkBtn from '$lib/link-button.svelte'
 
 </script>
 <main class="container mx-auto mt-5">
@@ -82,14 +83,29 @@ import NavButton from '$lib/nav-button.svelte'
       <Button bgColor="active-purple">Get Started</Button>
       <Button bgColor="active-green">Get Started</Button>
     </div>
-    <div class="mt-8 flex justify-between">
-      <Button txtColor="blue" bgColor="lightblue">Learn more about us</Button>
-    </div>
     <div class="mt-3">
-      <h4>Code</h4>
+      <h5>code</h5>
       <pre>
         <code>
 {'<Button txtColor="white" bgColor="black">Get Started</Button>'}
+        </code>
+      </pre>
+    </div>
+    
+    <h4 class="mt-8">Link Buttons</h4>
+    <div class="mt-8 flex">
+      <LinkBtn href="/">Learn More About Us</LinkBtn>
+      <LinkBtn href="/" styles="ml-3" bgColor="active-yellow">Learn More About Us</LinkBtn>
+      <LinkBtn href="/" styles="ml-3" bgColor="active-orange">Learn More About Us</LinkBtn>
+      <LinkBtn href="/" styles="ml-3" bgColor="active-red">Learn More About Us</LinkBtn>
+      <LinkBtn href="/" styles="ml-3" bgColor="active-purple">Learn More About Us</LinkBtn>
+      <LinkBtn href="/" styles="ml-3" bgColor="active-green">Learn More About Us</LinkBtn>
+    </div>
+    <div class="mt-3">
+      <h5>code</h5>
+      <pre>
+        <code>
+{'<LinkBtn href="/" bgColor="active-blue">Learn More About Us</LinkBtn>'}
         </code>
       </pre>
     </div>
@@ -111,7 +127,7 @@ import NavButton from '$lib/nav-button.svelte'
       </Play>
     </div>
     <div class="mt-3">
-      <h4>Code</h4>
+      <h5>code</h5>
       <pre>
         <code>
 {'<Play bgColor="lightblue" iconColor="blue">Get Started</Play>'}
@@ -129,14 +145,14 @@ import NavButton from '$lib/nav-button.svelte'
 
     </div>
     <div class="mt-3">
-      <h4>Code</h4>
+      <h5>code</h5>
       <pre>
         <code>
 {'<NavButton bgColor="lightgreen">API DOCS</NavButton>'}
         </code>
       </pre>
     </div>
-    <h4 class="mt-8">Colors</h4>
+    <h4 class="mt-8">Button Colors</h4>
     <div class="mt-3 flex">
       <div class="bg-red box"></div>
       <div class="bg-blue box"></div>
