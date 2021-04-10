@@ -6,6 +6,7 @@ import NavButton from '$lib/nav-button.svelte'
 import LinkBtn from '$lib/link-button.svelte'
 import Link from '$lib/link.svelte'
 import Pagination from '$lib/pagination.svelte'
+import FAQ from '$lib/faq.svelte'
 
 </script>
 <main class="container mx-auto mt-5">
@@ -201,6 +202,12 @@ import Pagination from '$lib/pagination.svelte'
 {'<Pagination bgColor="lightgreen">API DOCS</Pagination>'}
       </code>
     </pre>
+    <h3 class="mt-8">Elements</h3>
+    <h4 class="mt-8">FAQ Toggle</h4>
+    <FAQ class="mt-8">
+      <span slot="question">How can I know if the services hyper provides is right for me?</span>
+      <span slot="answer">All things are benefited greatly by hyper!</span>
+    </FAQ>
 
   </section>
   
