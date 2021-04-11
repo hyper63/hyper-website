@@ -2,7 +2,7 @@
   export let styles = ''
   let toggle = false;
 </script>
-<div class="faq-container {styles}">
+<div class="faq-container rounded-large {styles}">
   <div class="flex">
     <span class="w-full">
     <slot name="question"></slot>
@@ -37,7 +37,7 @@
     padding: 0;
   }
   .faq-container {
-    @apply border rounded p-5 border-lightgray font-space;
+    @apply border p-5 border-lightgray font-space;
   }
   .toggle {
     @apply flex p-3 items-center justify-center;

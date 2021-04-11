@@ -18,6 +18,9 @@ module.exports = {
 	},
 	theme: {
 		extend: {
+      borderRadius: {
+        'large': '12px'
+      },
       fontFamily: {
         'mono': ['PT Mono'],
         'space': ['Space Grotesk']

@@ -8,6 +8,23 @@ import Link from '$lib/link.svelte'
 import Pagination from '$lib/pagination.svelte'
 import FAQ from '$lib/faq.svelte'
 import Input from '$lib/input.svelte'
+import Search from '$lib/search.svelte'
+import Select from 'svelte-select'
+
+  let items = [
+    {value: 'chocolate', label: 'Chocolate'},
+    {value: 'pizza', label: 'Pizza'},
+    {value: 'cake', label: 'Cake'},
+    {value: 'chips', label: 'Chips'},
+    {value: 'ice-cream', label: 'Ice Cream'},
+  ];
+
+  let selectedValue = {value: 'cake', label: 'Cake'};
+
+  function handleSelect(event) {
+    console.log('selected item', event.detail);
+    // .. do something here 🙂
+  }
 
 </script>
 <main class="container mx-auto mt-5">
@@ -221,7 +238,15 @@ import Input from '$lib/input.svelte'
       </code>
     </pre>
     <h4 class="mt-8">Search</h4>
+    <Search />
+    <h4 class="mt-8 mb-3">Input</h4>
     <Input />
+    <h4 class="mt-8 mb-3">Select</h4>
+    <!--
+    Does not work in svelte kit because it is an installed component
+    I could try to copy to the src/lib dir and see if it works
+    <Select {items} {selectedValue} on:select={handleSelect}></Select>
+    -->
   </section>
   
 </main>
