@@ -1,10 +1,22 @@
 <script>
+  import Header from '$lib/header.svelte'  
   import LinkBtn from '$lib/link-button.svelte'
+  import Button from '$lib/button.svelte'
+  import Play from '$lib/play-button.svelte'
   let show = false
 </script>
-<main class="container m-20 flex flex-col items-center justify-center">
-  <h1 class="mb-20">HyperIO Site Dev</h1>
-  <LinkBtn href="/style">Style Guide</LinkBtn>
+<Header />
+<main class="ml-44 w-full bg-no-repeat">
+  <div class="mt-20 w-1/2">
+    <h1 class="width-full height-full">Build Your Web Applications at <b>hyper</b> Speed</h1>
+    <p class="mt-12 w-3/4">Let your development team focus on creating applications that solve the problems of the business, 
+    let hyper solve the problems of the cloud.</p>
+    <div class="mt-16 flex space-x-20">
+      <Button bgColor="blue" txtColor="white">Get Started</Button>
+      <Play>Watch</Play>
+    </div>
+  </div> 
+
 </main>
 <footer>
   {#if show}
@@ -34,6 +46,12 @@
   <p class="text-active-blue bg-active-blue hover:bg-lightblue">Colors</p>
   <p class="text-active-purple bg-active-purple hover:bg-lightpurple">Colors</p>
   <p class="text-active-green bg-active-green hover:bg-lightgreen">Colors</p>
-  <p class="text-white bg-white hover:bg-white">All White</p>
+  <p class="border-3 text-white bg-white hover:bg-white">All White</p>
   {/if}
 </footer>
+<style>
+  main {
+    background-image: url('/homepage-splash.svg');
+    height: 950px;
+  }
+</style>

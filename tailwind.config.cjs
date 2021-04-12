@@ -18,6 +18,9 @@ module.exports = {
 	},
 	theme: {
 		extend: {
+      borderWidth: {
+        '3': '3px'
+      },
       borderRadius: {
         'large': '12px'
       },

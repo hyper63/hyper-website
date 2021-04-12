@@ -4,7 +4,7 @@ export let styles
 let focus = false
 
 </script>
-<div class="flex border p-1 rounded-large {focus ? 'border-blue' : 'border-lightgray'}">
+<div class="flex border-3 p-1 rounded-large {focus ? 'border-blue' : 'border-lightgray'}">
   <input 
     on:blur={() => focus = false }
     on:focus={() => focus = true } 
