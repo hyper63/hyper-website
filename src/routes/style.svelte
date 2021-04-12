@@ -245,12 +245,23 @@ import Select from 'svelte-select'
     <!--
     Does not work in svelte kit because it is an installed component
     I could try to copy to the src/lib dir and see if it works
-    <Select {items} {selectedValue} on:select={handleSelect}></Select>
     -->
+    <div class="select">
+      <Select {items} {selectedValue} on:select={handleSelect}></Select>
+    </div>
   </section>
   
 </main>
 <style lang="postcss">
+  .select {
+    --border: 3px solid #C6CAD3;
+    --borderRadius: 12px;
+    --placeholderColor: #1286F6;
+    @apply font-space text-xl;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
   .box {
     @apply rounded;
     height: 38px;
