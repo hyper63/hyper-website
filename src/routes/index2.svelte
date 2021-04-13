@@ -4,6 +4,9 @@
   import Button from '$lib/button.svelte'
   import Play from '$lib/play-button.svelte'
   import LinkButton from '$lib/link-button.svelte'
+  import Ports from '$lib/ports.svelte'
+  import FAQ from '$lib/faq.svelte'
+
   let show = false
 </script>
 <svelte:head>
@@ -22,7 +25,6 @@
       </div>
     </div> 
   </section>
-  <img class="flow" src="/flow.svg" alt="flow" />
   <section class="flex w-full">
     <div class="w-1/2">
     <h5 class="mt-72">THE PROBLEM</h5>
@@ -48,6 +50,41 @@
       </div>
     </div>
   </section>
+  <Ports />
+  <img class="flow" src="/flow.svg" alt="flow" />
+  <section class="flex flex-col items-center mt-24">
+    <h5>HYPER POWER</h5>
+    <h1 class="mt-16">All-In-One</h1>
+    <p class="mt-12 w-1/2 text-center">hyper contains all of the services primitives to build applications without having to deal with servers, services or clouds.</p>
+    <Button styles="mt-16 mb-24">Get Started</Button>
+    <img src="/all.svg" alt="hyper framework" />
+  </section>
+  <section class="flex flex-col bg-whitesmoke items-center mt-16 pt-8">
+    <h1>FAQs</h1>
+    <p class="mt-16 mb-8">Can't find the answer you're looking for? Reach out to our <a href="/contact" class="text-red underline">customer support team</a>.</p>
+    <div class="flex flex-col w-2/3">
+    <FAQ styles="w-full mb-8">
+      <span slot="question">What is hyper?</span>
+      <span slot="answer">A service framework</span>
+    </FAQ>
+    <FAQ styles="w-full mb-8">
+      <span slot="question">What is hyper?</span>
+      <span slot="answer">A service framework</span>
+    </FAQ>
+    <FAQ styles="w-full mb-8">
+      <span slot="question">What is hyper?</span>
+      <span slot="answer">A service framework</span>
+    </FAQ>
+    <FAQ styles="w-full mb-8">
+      <span slot="question">What is hyper?</span>
+      <span slot="answer">A service framework</span>
+    </FAQ>
+    <FAQ styles="w-full mb-8">
+      <span slot="question">What is hyper?</span>
+      <span slot="answer">A service framework</span>
+    </FAQ>
+    </div>
+  </section>
 </main>
 <style lang="postcss">
   main {
@@ -55,7 +92,7 @@
     width: 1440px;
   }
   .flow {
-    @apply absolute;
+    @apply absolute opacity-90;
     top: 1400px;
     left: 500px;
   }
