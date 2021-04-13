@@ -6,6 +6,7 @@
   import LinkButton from '$lib/link-button.svelte'
   import Ports from '$lib/ports.svelte'
   import FAQ from '$lib/faq.svelte'
+  import Testimonials from '$lib/testimonials.svelte'
 
   let show = false
 </script>
@@ -63,28 +64,29 @@
     <h1>FAQs</h1>
     <p class="mt-16 mb-8">Can't find the answer you're looking for? Reach out to our <a href="/contact" class="text-red underline">customer support team</a>.</p>
     <div class="flex flex-col w-2/3">
-    <FAQ styles="w-full mb-8">
+    <FAQ styles="w-full mb-8 bg-white">
       <span slot="question">What is hyper?</span>
       <span slot="answer">A service framework</span>
     </FAQ>
-    <FAQ styles="w-full mb-8">
+    <FAQ styles="w-full mb-8 bg-white">
       <span slot="question">What is hyper?</span>
       <span slot="answer">A service framework</span>
     </FAQ>
-    <FAQ styles="w-full mb-8">
+    <FAQ styles="w-full mb-8 bg-white">
       <span slot="question">What is hyper?</span>
       <span slot="answer">A service framework</span>
     </FAQ>
-    <FAQ styles="w-full mb-8">
+    <FAQ styles="w-full mb-8 bg-white">
       <span slot="question">What is hyper?</span>
       <span slot="answer">A service framework</span>
     </FAQ>
-    <FAQ styles="w-full mb-8">
+    <FAQ styles="w-full mb-8 bg-white">
       <span slot="question">What is hyper?</span>
       <span slot="answer">A service framework</span>
     </FAQ>
     </div>
   </section>
+  <Testimonials />  
 </main>
 <style lang="postcss">
   main {

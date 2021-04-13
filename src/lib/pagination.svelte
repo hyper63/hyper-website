@@ -4,6 +4,7 @@
 
   export let pages = 3
   export let color = 'red'
+  export let styles = ''
     
   let inactive = 'lightgray'
   let buttonList = times(pages, () => inactive)
@@ -28,7 +29,7 @@
     return result
   }
 </script>
-<div class="flex items-center justify-center">
+<div class="flex {styles}">
   {#each buttonList as b, i}
     <button on:click={toggle(i)} class="bg-{b}"></button>
   {/each}
