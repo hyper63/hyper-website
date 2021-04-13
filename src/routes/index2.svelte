@@ -10,7 +10,7 @@
   <title>hyper.io - the service framework</title>
 </svelte:head>
 <Header />
-<main class="ml-24 w-full">
+<main class="ml-24">
   <section class="splash bg-no-repeat">
     <div class="mt-20 w-1/2">
       <h1 class="width-full height-full">Build Your Web Applications at <b>hyper</b> Speed</h1>
@@ -52,11 +52,12 @@
 <style lang="postcss">
   main {
     min-width: 1440px;
+    width: 1440px;
   }
   .flow {
     @apply absolute;
     top: 1400px;
-    right: 200px;
+    left: 500px;
   }
   .splash {
     background-image: url('/homepage-splash.svg');
