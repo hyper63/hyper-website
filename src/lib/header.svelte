@@ -2,7 +2,7 @@
 import { goto } from '$app/navigation'
 import NavButton from '$lib/nav-button.svelte'
 </script>
-<header class="flex justify-between mt-20 ml-44 mr-44">
+<header class="flex justify-between mt-20 ml-24 mr-44">
   <section class="flex items-center width-full">
     <!-- logo -->
     <img src="/logo.svg" alt="hyper logo" />

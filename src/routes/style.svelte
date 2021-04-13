@@ -11,6 +11,8 @@ import Input from '$lib/input.svelte'
 import Search from '$lib/search.svelte'
 import Select from 'svelte-select'
 
+let show = false
+
   let items = [
     {value: 'chocolate', label: 'Chocolate'},
     {value: 'pizza', label: 'Pizza'},
@@ -252,6 +254,37 @@ import Select from 'svelte-select'
   </section>
   
 </main>
+<footer>
+  {#if show}
+  <p>adding colors here so they do not get purged</p>
+  <p class="text-black bg-white">Colors</p>
+  <p class="text-darkgray bg-lightgray">Colors</p>
+  <p class="text-gray bg-black">Colors</p>
+  <p class="text-lightgray bg-darkgray">Colors</p>
+  <p class="text-whitesmoke bg-gray">Colors</p>
+  <p class="text-yellow bg-lightyellow hover:bg-yellow">Colors</p>
+  <p class="text-orange bg-lightorange hover:bg-orange">Colors</p>
+  <p class="text-red bg-lightred hover:bg-red">Colors</p>
+  <p class="text-blue bg-lightblue hover:bg-blue">Colors</p>
+  <p class="text-purple bg-lightpurple hover:bg-purple">Colors</p>
+  <p class="text-green bg-lightgreen hover:bg-green">Colors</p>
+
+  <p class="text-lightyellow bg-yellow hover:bg-lightyellow">Colors</p>
+  <p class="text-lightorange bg-orange hover:bg-lightorange">Colors</p>
+  <p class="text-lightred bg-red hover:bg-lightred">Colors</p>
+  <p class="text-lightblue bg-blue hover:bg-lightblue">Colors</p>
+  <p class="text-lightpurple bg-purple hover:bg-lightpurple">Colors</p>
+  <p class="text-lightgreen bg-green hover:bg-lightgreen">Colors</p>
+  
+  <p class="text-active-yellow bg-active-yellow hover:bg-lightyellow">Colors</p>
+  <p class="text-active-orange bg-active-orange hover:bg-lightorange">Colors</p>
+  <p class="text-active-red bg-active-red hover:bg-lightred">Colors</p>
+  <p class="text-active-blue bg-active-blue hover:bg-lightblue">Colors</p>
+  <p class="text-active-purple bg-active-purple hover:bg-lightpurple">Colors</p>
+  <p class="text-active-green bg-active-green hover:bg-lightgreen">Colors</p>
+  <p class="border-3 text-white bg-white hover:bg-white">All White</p>
+  {/if}
+</footer>
 <style lang="postcss">
   .select {
     --border: 3px solid #C6CAD3;

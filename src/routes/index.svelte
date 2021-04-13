@@ -3,55 +3,84 @@
   import LinkBtn from '$lib/link-button.svelte'
   import Button from '$lib/button.svelte'
   import Play from '$lib/play-button.svelte'
+  import LinkButton from '$lib/link-button.svelte'
   let show = false
 </script>
+<svelte:head>
+  <title>hyper.io - the service framework</title>
+</svelte:head>
 <Header />
-<main class="ml-44 w-full bg-no-repeat">
-  <div class="mt-20 w-1/2">
-    <h1 class="width-full height-full">Build Your Web Applications at <b>hyper</b> Speed</h1>
-    <p class="mt-12 w-3/4">Let your development team focus on creating applications that solve the problems of the business, 
-    let hyper solve the problems of the cloud.</p>
-    <div class="mt-16 flex space-x-20">
-      <Button bgColor="blue" txtColor="white">Get Started</Button>
-      <Play>Watch</Play>
+<main class="ml-24">
+  <section class="splash bg-no-repeat">
+    <div class="mt-20 w-1/2">
+      <h1 class="width-full height-full">Build Your Web Applications at <b>hyper</b> Speed</h1>
+      <p class="mt-12 w-3/4">Let your development team focus on creating applications that solve the problems of the business, 
+      let hyper solve the problems of the cloud.</p>
+      <div class="mt-16 flex space-x-20">
+        <Button bgColor="blue" txtColor="white">Get Started</Button>
+        <Play>Watch</Play>
+      </div>
+    </div> 
+  </section>
+  <section class="flex w-full">
+    <div class="w-1/2">
+    <h5 class="mt-72">THE PROBLEM</h5>
+    <h2 class="mt-16">Software can cause just as many problems as it solves</h2>
+    <p class="mt-16">
+    Unfortunately, often times, the result leads to disappointment, As a software development community, can we do better? Can we create products that are a joy, to not only build, but to maintain, over time? Product that can migrate to new technologies and platforms incrementally?
+    </p>
     </div>
-  </div> 
-
+    <div class="w-1/2 ml-44 mt-44 mr-44">
+      <img src="/flow1.svg" alt="software-problem" />
+    </div>
+  </section>
+  <img class="connectors" src="/connectors.svg" alt="connectors" />
+  <section class="flex w-full">
+    <div class="w-1/2">
+      <h5>OUR SOLUTION</h5>
+      <h2 class="mt-8">
+      Don't re-invent the wheel
+      <br />
+      Use a service framework.
+      </h2>
+      <p class="mt-12">
+      hyper allows your development team to focus on the logic that makes your application special, not the necessary cloud service boilier plate.
+      </p>
+      <div class="mt-16">
+      <LinkButton styles="w-max" bgColor="lightblue" txtColor="blue" href="/company">Learn More About Us</LinkButton>
+      </div>
+    </div>
+    <div class="pl-20">
+      <img style="margin-top: -14px;" src="/hyper-box.svg" alt="hyper" />
+    </div>
+  </section>
+  <img class="circle" src="/circle.svg" alt="circle" />
+  <img class="line" src="/line.svg" alt="line" />
 </main>
-<footer>
-  {#if show}
-  <p>adding colors here so they do not get purged</p>
-  <p class="text-black bg-white">Colors</p>
-  <p class="text-darkgray bg-lightgray">Colors</p>
-  <p class="text-gray bg-black">Colors</p>
-  <p class="text-lightgray bg-darkgray">Colors</p>
-  <p class="text-whitesmoke bg-gray">Colors</p>
-  <p class="text-yellow bg-lightyellow hover:bg-yellow">Colors</p>
-  <p class="text-orange bg-lightorange hover:bg-orange">Colors</p>
-  <p class="text-red bg-lightred hover:bg-red">Colors</p>
-  <p class="text-blue bg-lightblue hover:bg-blue">Colors</p>
-  <p class="text-purple bg-lightpurple hover:bg-purple">Colors</p>
-  <p class="text-green bg-lightgreen hover:bg-green">Colors</p>
-
-  <p class="text-lightyellow bg-yellow hover:bg-lightyellow">Colors</p>
-  <p class="text-lightorange bg-orange hover:bg-lightorange">Colors</p>
-  <p class="text-lightred bg-red hover:bg-lightred">Colors</p>
-  <p class="text-lightblue bg-blue hover:bg-lightblue">Colors</p>
-  <p class="text-lightpurple bg-purple hover:bg-lightpurple">Colors</p>
-  <p class="text-lightgreen bg-green hover:bg-lightgreen">Colors</p>
-  
-  <p class="text-active-yellow bg-active-yellow hover:bg-lightyellow">Colors</p>
-  <p class="text-active-orange bg-active-orange hover:bg-lightorange">Colors</p>
-  <p class="text-active-red bg-active-red hover:bg-lightred">Colors</p>
-  <p class="text-active-blue bg-active-blue hover:bg-lightblue">Colors</p>
-  <p class="text-active-purple bg-active-purple hover:bg-lightpurple">Colors</p>
-  <p class="text-active-green bg-active-green hover:bg-lightgreen">Colors</p>
-  <p class="border-3 text-white bg-white hover:bg-white">All White</p>
-  {/if}
-</footer>
-<style>
+<style lang="postcss">
   main {
+    min-width: 1440px;
+    width: 1440px;
+  }
+  .splash {
     background-image: url('/homepage-splash.svg');
     height: 950px;
+  }
+  .connectors {
+    @apply absolute;
+    left: 965px;
+    top: 2065px;
+
+  }
+  .circle {
+    @apply absolute;
+    /*right: 325px;*/
+    left: 1045px;
+    top: 2385px;
+  }
+  .line {
+    @apply absolute;
+    left: 278px;
+    top: 2450px;
   }
 </style>
