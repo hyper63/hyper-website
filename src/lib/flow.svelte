@@ -5,7 +5,7 @@
     svg {
       @apply absolute;
       left: 230px;
-      top: 1500px;
+      top: 1400px;
       z-index: -200;
       width: 1040px;
       height: 1985px;
@@ -17,7 +17,7 @@
     svg {
       @apply absolute;
       left: 22%; 
-      top: 1280px;
+      top: 1380px;
       z-index: -200;
       height: 1985px;
       width: 1040px;
@@ -36,7 +36,7 @@
     }
   }
   svg {
-    @apply absolute;
+    @apply absolute sm:hidden md:block;
   }
 </style>
 <svg viewBox="0 0 1040 1985" fill="none" xmlns="http://www.w3.org/2000/svg">
