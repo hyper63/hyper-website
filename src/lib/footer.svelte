@@ -1,6 +1,6 @@
 <script></script>
 <footer class="">
-  <section class="flex pl-24 pr-24">
+  <section class="hidden md:flex md:pl-24 md:pr-24">
     <div class="w-1/4 p-24 flex items-center justify-center"><img src="/logo.svg" /></div>
     <div class="p-16">
       <div class="mb-8 text-blue"><a href="/product">PRODUCT</a></div>

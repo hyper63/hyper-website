@@ -36,7 +36,7 @@
     }
   }
   svg {
-    @apply absolute sm:hidden md:block;
+    @apply absolute hidden md:block;
   }
 </style>
 <svg viewBox="0 0 1040 1985" fill="none" xmlns="http://www.w3.org/2000/svg">

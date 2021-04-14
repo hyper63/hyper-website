@@ -37,7 +37,7 @@
     padding: 0;
   }
   .faq-container {
-    @apply border-3 p-5 border-lightgray font-space;
+    @apply text-sm md:text-2xl border-3 p-2 md:p-5 border-lightgray font-space;
   }
   .toggle {
     @apply flex p-3 items-center justify-center;
