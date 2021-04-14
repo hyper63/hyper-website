@@ -1,4 +1,5 @@
 <script>
+  export let styles = ''
   let active = 0 
   const ports = [
     { 
@@ -51,7 +52,7 @@
 
 
 </script>
-<section class="z-0 flex space-x-16 mt-48">
+<section class="z-0 flex space-x-16 mt-48 {styles}">
   <nav class="flex flex-col space-y-16 ml-16 w-1/4">
     <button on:click={showPort(0)} class="flex flex-col border border-{active === 0 ? 'green' : 'gray'} bg-{active === 0 ? 'green' : 'white'} text-{active === 0 ? 'white' : 'black'}">
       <div>01</div>

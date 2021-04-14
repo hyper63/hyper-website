@@ -1,7 +1,9 @@
 <script>
 import Pagination from './pagination.svelte'
+
+export let styles = ''
 </script>
-<section class="flex mt-24">
+<section class="flex mt-24 {styles}">
   <div class="w-1/2">
     <img src="/testimonials.svg" alt="testimonial graphic" />
   </div>
