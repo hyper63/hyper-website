@@ -393,7 +393,7 @@
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="18.5223" result="effect1_foregroundBlur"/>
 </filter>
-<filter id="filter20_i" x="882.801" y="345.766" width="10.6274" height="12.6847" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter20_i" x="884.358" y="346.998" width="7.51478" height="10.2219" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
@@ -943,4 +943,3 @@
 </linearGradient>
 </defs>
 </svg>
-
