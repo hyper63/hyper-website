@@ -8,7 +8,7 @@
         id: '01', 
         description: 'The data port provides common operations that any application will need to save structured data. The interface is document based and can manage complex structures of data without having to specify the data schema to the data persistence store.',
         image: '/data-port.svg',
-        target: '/product?port=data',
+        target: '/products#data',
         color: 'green'
     },
     { 
@@ -17,7 +17,7 @@
         id: '02', 
         description: 'A common service that all applications need to provide is the ability to search for data. While leveraging indexes for structured data can serve some search capabilities, the implementation of a full text search feature can make it easier for users to use the product. Therefore having a search port for a service framework is necessary',
         image: '/search-port.svg',
-        target: '/product?port=search',
+        target: '/products#search',
         color: 'orange'
     },
     {
@@ -26,7 +26,7 @@
         id: '03',
         description: 'A common service that all applications need to provide is the ability to search for data. While leveraging indexes for structured data can serve some search capabilities, the implementation of a full text search feature can make it easier for users to use the product. Therefore having a search port for a service framework is necessary',
         image: '/cache-port.svg',
-        target: '/product?port=cache',
+        target: '/products#cache',
         color: 'purple'
     },
     {
@@ -35,7 +35,7 @@
         id: '04',
         description: 'A common service that all applications need to provide is the ability to search for data. While leveraging indexes for structured data can serve some search capabilities, the implementation of a full text search feature can make it easier for users to use the product. Therefore having a search port for a service framework is necessary',
         image: '/storage-port.svg',
-        target: '/product?port=storage',
+        target: '/products#storage',
         color: 'blue'
       },
     {
@@ -44,7 +44,7 @@
         id: '05',
         description: 'A common service that all applications need to provide is the ability to search for data. While leveraging indexes for structured data can serve some search capabilities, the implementation of a full text search feature can make it easier for users to use the product. Therefore having a search port for a service framework is necessary',
         image: '/queue-port.svg',
-        target: '/product?port=queue',
+        target: '/products#queue', 
         color: 'red'
       }
     ]
