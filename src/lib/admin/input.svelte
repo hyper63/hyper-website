@@ -1,20 +1,14 @@
 <script>
-
 export let value
 export let styles
-export let id = '' 
-export let name = ''
-
 let focus = false
 
 </script>
-<div class="flex border-3 p-1 rounded-large {focus ? 'border-blue' : 'border-lightgray'} {styles}">
+<div class="flex border-3 p-1 rounded-large {focus ? 'border-blue' : 'border-lightgray'}">
   <input 
-    {name}
-    {id}
     on:blur={() => focus = false }
     on:focus={() => focus = true } 
-    type="text" on:input  
+    type="text" on:input 
     class="w-full m-3 p-1 font-mono" 
     bind:value 
   />

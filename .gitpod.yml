@@ -6,7 +6,7 @@ ports:
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: npm install
+  - init: yarn
     command: |
       echo "Applying a temporary workaround until https://github.com/vitejs/vite/pull/1992 is fixed"
       (

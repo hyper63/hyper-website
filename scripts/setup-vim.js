@@ -8,3 +8,6 @@ await $`vim +'PlugInstall --sync' +qa`
 
 await $`echo 'VIM is setup'`
 
+await $`export PS1=":) "`
+
+
