@@ -7,7 +7,6 @@
 		"start": "svelte-kit start --host -p 10000"
 	},
 	"dependencies": {
-		"jose": "^3.12.0",
 		"jsonwebtoken": "^8.5.1",
 		"node-fetch": "^2.6.1",
 		"ramda": "^0.27.1",

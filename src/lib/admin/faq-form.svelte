@@ -14,7 +14,7 @@
     const data = {
       question,
       answer,
-      active,
+      active: Boolean(active),
       tags: compose(
         map(trim),
         split(',')
