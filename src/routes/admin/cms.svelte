@@ -12,6 +12,7 @@
   <section class="w-full flex">
     <a class="card inactive" href="/admin/cms/priceplans">Price Plans</a>
     <a class="card inactive" href="/admin/cms/ports">Ports</a>
+    <a class="card inactive" href="/admin/cms/flags">Flags</a>
   </section>
 </main>
 <style>

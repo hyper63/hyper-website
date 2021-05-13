@@ -1,6 +1,7 @@
 <script>
   import Input from '$lib/input.svelte'
   import { createEventDispatcher } from 'svelte';
+  import { compose, map, trim, split } from 'ramda';
 
 	const dispatch = createEventDispatcher();
   let question = ''
@@ -14,11 +15,15 @@
       question,
       answer,
       active,
-      tags: tagsString
+      tags: compose(
+        map(trim),
+        split(',')
+      )(tagsString)
     }
 
-    console.log(data)
-    dispatch('submit',data )
+    console.log('data: ', data)
+
+    dispatch('submit', data)
   }
 
 </script>

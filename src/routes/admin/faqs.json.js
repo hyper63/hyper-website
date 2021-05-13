@@ -1,10 +1,31 @@
 import fetch from 'node-fetch'
+import { token } from '$lib/config.js'
+
+const url = 'https://webcms-api.hyper.io/api/faqs' 
+
 
 export async function get() {
   // call api
-  const faqs = await fetch('https://webcms-api.hyper.io/api/faqs').then(r => r.json())
+  const faqs = await fetch(url).then(r => r.json())
     .then(r => r.docs)
   return {
     body: faqs
   }
+}
+
+export async function post({body}) {
+  const result = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${token()}`
+    },
+    body: JSON.stringify(body)
+  })
+    .then(r => r.json())
+
+  return {
+    body: result 
+  }
+
 }
