@@ -12,7 +12,7 @@ function isCurrentPage(ref) {
   return window.location.pathname === ref ? 'active' : 'link'
 }
 </script>
-<header class="w-full flex justify-between mt-4 ml-4 md:mt-20 md:ml-24 md:mr-44">
+<header class="w-full flex justify-between mt-4 ml-4 md:mt-20 md:ml-24 md:mr-4">
   <section class="flex items-center width-full">
     <!-- logo -->
     <img src="/logo.svg" alt="hyper logo" />
@@ -26,7 +26,7 @@ function isCurrentPage(ref) {
       </svg>
     </button>
   </section>
-  <nav class="hidden w-1/2 md:block flex items-center space-x-4">
+  <nav class="hidden md:w-1/2 md:block flex items-center space-x-4">
     <!-- product -->
     <a class="font-space uppercase text-sm" href="/product">product</a>
     <!-- faq -->

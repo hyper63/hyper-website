@@ -7,7 +7,7 @@
 </button>
 <style lang="postcss">
   button {
-    @apply rounded-sm flex justify-center;
+    @apply rounded-sm inline justify-center;
     font-size: 14px;
     height: 38px;
     width: 89px;
