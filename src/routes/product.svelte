@@ -11,7 +11,7 @@ import Button from '$lib/button.svelte'
       <p class="text-base mx-4 text-darkgray md:mx-0">hyper provides a single entry point to five core application services, these services can be composed to effectively build any application.</p>
       <Button styles="mx-4 mt-8 md:hidden">Get Started</Button>
     </div>
-    <img class="w-full md:w-2/3 md:absolute" style="right: 0; top: -200px;" src="/services.svg" alt="hyper services" />
+    <img class="w-full md:w-2/3 md:absolute" style="z-index: -100;right: 0; top: -200px;" src="/services.svg" alt="hyper services" />
   </section>
   <section id="data" class="md:mt-96 relative h-96" >
     <img src="data-lg.svg" class="absolute md:w-2/3 md:-top-96" style="right: 0;z-index: -200;" />
