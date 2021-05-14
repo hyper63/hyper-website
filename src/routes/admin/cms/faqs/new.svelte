@@ -7,6 +7,8 @@
   let error = false
 
   async function handleSubmit({detail}) {
+
+    console.log("newsvelte", {detail})
     const res = await fetch('/admin/faqs.json', {
       method: 'POST',
       headers: {

@@ -12,6 +12,9 @@ export async function get() {
 }
 
 export async function post({ body }) {
+
+
+  console.log("faqs.json.js body", {body})
   const bearer = token()
   const result = await fetch(url, {
     method: 'POST',

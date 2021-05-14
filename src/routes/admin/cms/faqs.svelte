@@ -79,14 +79,10 @@
                 <a href="/admin/cms/faqs/{faq.id}/del" class="button">Delete</a>
               </td>
               <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                <a href="/admin/cms/faqs/{faq.id}/edit" class="button">Edit</a>
+                <a href="/admin/cms/faqs/{faq.id}/edit" class="button background-color">Edit</a>
               </td>
             </tr>
-
-            <!-- More people... -->
           </tbody>
-
-
           {/each}
         </table>
       </div>

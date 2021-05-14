@@ -2,11 +2,20 @@
     export async function load({ page, fetch }) {
       const url = `/api/faqs/${page.params.id}.json`
       const res = await fetch(url)
-    
+      const faq = await res.json()
+
+      const convertFAQConfirmData = faq => ({id: faq.id, 
+        promptPhrase: "Delete this FAQ?", 
+        promptWarningMsg: "It will be deleted permanently!",
+        msgLevel1: faq.question,
+        msgLevel2: faq.answer.substr(0,100),
+        confirmActionText: "Permanantly Delete FAQ" })
+
+     
       if (res.ok) {
         return {
           props: {
-            faq: await res.json()
+            confirmData: convertFAQConfirmData(faq) 
           }
         }
       }
@@ -15,17 +24,18 @@
     </script>
     <script>
       import Header from '$lib/admin/header.svelte'
-      import DeleteFAQForm from '$lib/admin/delete-faq.svelte'
+      import DeleteConfirmForm from '$lib/admin/delete-confirm.svelte'
       import { goto } from '$app/navigation'
-      export let faq = {}
-     
+      //export let faq = {}
+      export let confirmData = {}
+      
       let submitStatus = null 
       let error = false
       // destructuring event
       async function handleSubmit({detail}) {
         // put /api/faqs/:id detail
         console.log(detail)
-        const res = await fetch(`/api/faqs/${faq.id}.json`, {
+        const res = await fetch(`/api/faqs/${detail.confirmData.id}.json`, {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json'
@@ -59,7 +69,7 @@
         </div>
     
       {/if}
-      <DeleteFAQForm {faq} on:submit={handleSubmit} />
+      <DeleteConfirmForm {confirmData} on:submit={handleSubmit} />
     </main>
     
     

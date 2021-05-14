@@ -1,8 +1,10 @@
 <script>
     //import Input from '$lib/input.svelte'
     import { createEventDispatcher } from 'svelte'
-    export let faq = {}
-    
+    import Button from '$lib/button.svelte'
+    import LinkButton from '$lib/link-button.svelte'
+    export let confirmData = {}
+    let {id, promptPhrase, promptWarningMsg, msgLevel1, msgLevel2, confirmActionText} = confirmData
     
     const dispatch = createEventDispatcher();
     
@@ -10,7 +12,7 @@
       
       const data = {
         delete: true,
-        faq
+        confirmData
       }
   
        dispatch('submit', data)
@@ -19,18 +21,7 @@
   </script>
   <div class="ml-24 mr-44 mt-24">
     <div class="md:grid md:grid-cols-3 md:gap-6">
-      <div class="md:col-span-1">
-        <div class="px-4 sm:px-0">
-          <h3 class="text-lg font-medium leading-6 text-gray-900">Faq</h3>
-          <p class="mt-1 text-sm text-gray-600">
-            This information will be displayed publicly so be careful what you share.
-            
-          </p>
-          <p>
-            <a href="/faq" class="text-yellow bg-black px-4 py-2 mt-8">live faqs ⚡️</a>
-          </p>
-        </div>
-      </div>
+      
       <div class="mt-5 md:mt-0 md:col-span-2">
         <form on:submit|preventDefault={submit}>
           <!-- <div class="shadow sm:rounded-md sm:overflow-hidden">
@@ -97,22 +88,25 @@
           <div class="bg-white shadow sm:rounded-lg">
             <div class="px-4 py-5 sm:p-6">
               <h3 class="text-lg leading-6 font-medium text-gray-900">
-                Delete FAQ?
+                {promptPhrase}
               </h3>
-              <div class="mt-2 max-w-xl text-sm text-gray-500">
+              <div class="mt-1 max-w-xl text-md text-gray-500">
                 <p>
-                  Once you delete a FAQ, it shall be deleted...forever.
+                  <strong>{promptWarningMsg}</strong>
                 </p>
-                <p>
-                   {faq.id} - {faq.question} 
-                </p>
-                <p>Published?: {faq.active}</p>
+               <div class="mt-2 ml-2 max-w-xl text-sm">
+                   <p><em>{msgLevel1} - {msgLevel2} ...</em></p>
+               </div>
               </div>
-              <div class="mt-5">
-                <button type="submit"  class="inline-flex items-center justify-center px-4 py-2 border border-transparent font-medium rounded-md text-red-700 bg-red-100 hover:bg-red-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:text-sm">
-                  Delete FAQ
-                </button>
+              <div class="mt-16 flex space-x-4 md:space-x-20">
+                <Button bgColor="red" type="submit">
+                  {confirmActionText}
+                </Button>
+                <LinkButton styles="w-max" bgColor="lightgray" txtColor="white" href="/admin/cms/faqs">Cancel</LinkButton>
               </div>
+              
+
+              
             </div>
           </div>
         </form>
