@@ -34,5 +34,19 @@ export async function put({ params, body }) {
 }
 
 export async function del({ params }) {
+  const bearer = token()
+
+  const result = await fetch(`${url}/${params.id}`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${bearer}`
+    }
+  }).then(r => r.json())
+
+  return {
+    body: result
+  }
+
 
 }
