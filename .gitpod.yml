@@ -20,3 +20,4 @@ tasks:
 vscode:
   extensions:
     - svelte.svelte-vscode@104.12.1:e36e8a1b48e34a2e062a7a324bf8f153
+    - vscodevim.vim@1.20.2:a890e275dc0d6f05f4ea731538fd43fc

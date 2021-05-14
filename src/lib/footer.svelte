@@ -5,11 +5,11 @@
     <div class="p-16">
       <div class="mb-8 text-blue"><a href="/product">PRODUCT</a></div>
       <ul>
-        <li><a href="/product?port=data">DATA</a></li>
-        <li><a href="/product?port=search">SEARCH</a></li>
-        <li><a href="/product?port=cache">CACHE</a></li>
-        <li><a href="/product?port=storage">STORAGE</a></li>
-        <li><a href="/product?port=queue">QUEUE</a></li>
+        <li><a href="/product#data">DATA</a></li>
+        <li><a href="/product#search">SEARCH</a></li>
+        <li><a href="/product#cache">CACHE</a></li>
+        <li><a href="/product#storage">STORAGE</a></li>
+        <li><a href="/product#queue">QUEUE</a></li>
       </ul>
     </div>
     <div class="p-16">
@@ -25,18 +25,18 @@
     <div class="p-16">
       <div class="mb-8 text-blue"><a href="https://blog.hyper63.com">BLOG</a></div>
       <ul>
-        <li><a href="/product?port=data">COMPANY</a></li>
-        <li><a href="/product?port=search">GET STARTED</a></li>
-        <li><a href="/product?port=cache">FAQS</a></li>
+        <li><a href="/company">COMPANY</a></li>
+        <li><a href="https://docs.hyper63.com">GET STARTED</a></li>
+        <li><a href="/faqs">FAQS</a></li>
       </ul>
     </div>
     <div class="p-16">
-      <div class="mb-8 text-blue"><a href="/contact">CONTACT</a></div>
+      <div class="mb-8 text-blue">CONTACT</div>
       <ul>
-        <li><a href="/product?port=data">INFO@HYPER63.COM</a></li>
-        <li><a href="/product?port=search">SUPPORT@HYPER63.COM</a></li>
-        <li><a href="/product?port=cache">TWITTER</a></li>
-        <li><a href="/product?port=storage">GITHUB</a></li>
+        <li><a href="mailto:info@hyper.io">INFO@HYPER63.COM</a></li>
+        <li><a href="mailto:support@hyper.io">SUPPORT@HYPER63.COM</a></li>
+        <li><a href="https://twitter.com/_hyper_io">TWITTER</a></li>
+        <li><a href="https://github.com/hyper63">GITHUB</a></li>
       </ul>
     </div>
   </section>

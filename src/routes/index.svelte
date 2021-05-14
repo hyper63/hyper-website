@@ -18,7 +18,6 @@
 </svelte:head>
 <Header />
 <main class="ml-0 pl-0 pr-0 mr-0">
-  <Flow />
   <section class="splash bg-no-repeat pl-4 md:pl-24 md:pr-24">
     <div class="mt-8 md:mt-20 md:w-1/2">
       <h1 class="text-4xl font-semibold md:text-6xl width-full height-full">Build Your Web Applications at <b>hyper</b> Speed</h1>
@@ -31,7 +30,8 @@
     </div> 
   </section>
   <img class="md:hidden" src="/homepage-splash.svg" />
-  <section class="flex w-full md:pt-44 pl-4 md:pl-24 md:pr-24">
+  <section class="flex w-full md:pt-44 pl-4 md:pl-24 md:pr-24 md:relative">
+    <Flow />
     <div class="md:w-1/2 2xl:w-1/3">
       <h5 class="">THE PROBLEM</h5>
       <h2 class="text-3xl font-semibold md:text-5xl md:mt-16">Software can cause just as many problems as it solves</h2>

@@ -13,12 +13,14 @@ function isCurrentPage(ref) {
 }
 </script>
 <header class="w-full flex justify-between mt-4 ml-4 md:mt-20 md:ml-24 md:mr-4">
+  <a href="/">
   <section class="flex items-center width-full">
     <!-- logo -->
     <img src="/logo.svg" alt="hyper logo" />
     <!-- name -->
     <h3 class="ml-3">hyper</h3>
   </section>
+  </a>
   <section class="md:hidden">
     <button class="border-0 mr-4 focus:outline-none" on:click={() => mobile()}>
       <svg width="30" height="17" viewBox="0 0 30 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,8 +37,9 @@ function isCurrentPage(ref) {
     <a class="font-space uppercase text-sm" href="/company">company</a>
     <!-- blog -->
     <a class="font-space uppercase text-sm" href="https://blog.hyper63.com">blog</a>
-    <!-- get started -->
+    <!-- get started
     <a class="font-space uppercase text-sm" href="/get-started">get started</a>
+    -->
     <!-- api docs button -->
     <NavButton on:click={() => goto('https://docs.hyper63.com')}>API DOCS</NavButton>
   </nav>
@@ -51,7 +54,7 @@ function isCurrentPage(ref) {
     <a href="/faq" class="{isCurrentPage('/faq')}">FAQ</a>
     <a href="/company" class="{isCurrentPage('/company')}">Company</a>
     <a href="https://blog.hyper63.com" class="link">Blog</a>
-    <a href="/get-started" class="{isCurrentPage('/get-started')}">Get Started</a>
+    <!-- <a href="/get-started" class="{isCurrentPage('/get-started')}">Get Started</a> -->
     <hr />
     <a href="https://docs.hyper63.com" class="link">API DOCS</a>
   </div>
