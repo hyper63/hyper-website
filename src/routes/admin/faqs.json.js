@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 import { token } from '$lib/config.js'
-const url = 'https://webcms-api.hyper.io/api/faqs' 
+const url = 'https://webcms-api.hyper.io/api/faqs'
 
 export async function get() {
   // call api
@@ -11,9 +11,8 @@ export async function get() {
   }
 }
 
-export async function post({body}) {
+export async function post({ body }) {
   const bearer = token()
-  console.log({bearer, body})
   const result = await fetch(url, {
     method: 'POST',
     headers: {
@@ -24,9 +23,8 @@ export async function post({body}) {
   })
     .then(r => r.json())
 
-  console.log({result})
   return {
-    body: result 
+    body: result
   }
 
 }
