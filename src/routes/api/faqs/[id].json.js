@@ -19,7 +19,6 @@ export async function get({ params }) {
 
 export async function put({ params, body }) {
   const bearer = token()
-  console.log(body)
   const result = await fetch(`${url}/${params.id}`, {
     method: 'PUT',
     headers: {
@@ -32,4 +31,8 @@ export async function put({ params, body }) {
   return {
     body: result
   }
+}
+
+export async function del({ params }) {
+
 }
