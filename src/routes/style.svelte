@@ -9,7 +9,8 @@
   import FAQ from "$lib/faq.svelte";
   import Input from "$lib/input.svelte";
   import Search from "$lib/search.svelte";
-  import Select from "svelte-select";
+  //import Select from "svelte-select";
+  import Toggle from '$lib/toggle.svelte'
 
   let show = false;
 
@@ -276,14 +277,16 @@
     <Search />
     <h4 class="mt-8 mb-3">Input</h4>
     <Input />
-    <h4 class="mt-8 mb-3">Select</h4>
+    <h4 class="mt-8 mb-3">Toggle</h4>
     <!--
     Does not work in svelte kit because it is an installed component
     I could try to copy to the src/lib dir and see if it works
     -->
-    <div class="select">
+    <!-- <div class="select">
       <Select {items} {selectedValue} on:select={handleSelect} />
-    </div>
+    </div> -->
+    <Toggle toggleEnabled={true} />
+    <Toggle toggleEnabled={false} />
   </section>
 </main>
 <footer>

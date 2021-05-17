@@ -104,9 +104,6 @@
                 </Button>
                 <LinkButton styles="w-max" bgColor="lightgray" txtColor="white" href="/admin/cms/faqs">Cancel</LinkButton>
               </div>
-              
-
-              
             </div>
           </div>
         </form>

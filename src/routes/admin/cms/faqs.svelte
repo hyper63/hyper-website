@@ -21,7 +21,7 @@
 </script>
 <script>
   import Header from '$lib/admin/header.svelte'
-
+  import ActiveToggle from '$lib/toggle.svelte'
   export let faqs
 
 
@@ -49,7 +49,7 @@
               <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                 Tags
               </th>
-              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" class="px-6 py-3 text-lect text-xs font-medium text-gray-500 uppercase tracking-wider">
                 Updated
               </th>
               <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -72,11 +72,15 @@
               <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                 {faq.updated}
               </td>
-              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                {faq.active ? '⚡️' : ''}
+
+             
+             <td class="px-4 py-4 whitespace-nowrap text-sm font-medium text-gray-900 flex justify-center">
+               <!-- {faq.active ? '⚡️' : ''} -->
+               <ActiveToggle toggleEnabled={faq.active} enabledColor={"purple"} disabledColor={"lightgray"}/>
+                
               </td>
               <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                <a href="/admin/cms/faqs/{faq.id}/del" class="button">Delete</a>
+                <a href="/admin/cms/faqs/{faq.id}/del" class="delete-button">Delete</a>
               </td>
               <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                 <a href="/admin/cms/faqs/{faq.id}/edit" class="button background-color">Edit</a>
@@ -91,6 +95,10 @@
 </div>
 </main>
 <style>
+ .delete-button {
+    @apply border-3 px-4 py-2 rounded-lg bg-red font-space text-white;
+  }
+
   .button {
     @apply border-3 px-4 py-2 rounded-lg bg-yellow font-space text-white;
   }
