@@ -9,7 +9,8 @@
   import FAQ from "$lib/faq.svelte";
   import Input from "$lib/input.svelte";
   import Search from "$lib/search.svelte";
-  import Select from "svelte-select";
+  //import Select from "svelte-select";
+  import Toggle from '$lib/toggle.svelte'
 
   let show = false;
 
@@ -29,8 +30,9 @@
   }
 </script>
 
-<style lang="postcss">
-  .select {
+
+  <!-- 
+    .select {
     --border: 3px solid #c6cad3;
     --borderRadius: 12px;
     --placeholderColor: #1286f6;
@@ -38,7 +40,12 @@
     margin: 0;
     padding: 0;
     border: none;
-  }
+  } -->
+
+
+<style lang="postcss">
+
+
   .box {
     @apply rounded;
     height: 38px;
@@ -276,13 +283,33 @@
     <Search />
     <h4 class="mt-8 mb-3">Input</h4>
     <Input />
-    <h4 class="mt-8 mb-3">Select</h4>
-    <!--
-    Does not work in svelte kit because it is an installed component
-    I could try to copy to the src/lib dir and see if it works
-    -->
-    <div class="select">
-      <Select {items} {selectedValue} on:select={handleSelect} />
+    
+
+    <h4 class="mt-8">Toggle</h4>
+    <div class="mt-3 ml-2flex">
+      <Toggle toggleEnabled={true} />
+      <Toggle toggleEnabled={true} enabledColor={"red"} disabledColor={"lightgray"}/>
+      <Toggle toggleEnabled={true} enabledColor={"blue"} disabledColor={"lightgray"}/>
+      <Toggle toggleEnabled={true} enabledColor={"yellow"} disabledColor={"lightgray"}/>
+      <Toggle toggleEnabled={true} enabledColor={"orange"} disabledColor={"lightgray"}/>
+      
+      <Toggle toggleEnabled={true} enabledColor={"green"} disabledColor={"lightgray"}/>
+    </div>
+    <div class="mt-3 ml-2flex">
+      <Toggle toggleEnabled={false} enabledColor={"lightpurple"}/>
+      <Toggle toggleEnabled={false} enabledColor={"lightred"} disabledColor={"whitesmoke"}/>
+      <Toggle toggleEnabled={false} enabledColor={"lightblue"} disabledColor={"lightgray"}/>
+      <Toggle toggleEnabled={false} enabledColor={"lightyellow"} disabledColor={"gray"}/>
+      <Toggle toggleEnabled={false} enabledColor={"lightorange"} disabledColor={"black"}/>
+      <Toggle toggleEnabled={false} enabledColor={"green"} disabledColor={"lightgreen"}/> 
+    </div>
+    <div class="mt-3">
+      <h5>code</h5>
+      <pre>
+        <code>
+{`<Toggle toggleEnabled={true} enabledColor={"yellow"} disabledColor={"whitesmoke"}/>`}
+        </code>
+      </pre>
     </div>
   </section>
 </main>
