@@ -292,17 +292,16 @@
       <Toggle toggleEnabled={true} enabledColor={"blue"} disabledColor={"lightgray"}/>
       <Toggle toggleEnabled={true} enabledColor={"yellow"} disabledColor={"lightgray"}/>
       <Toggle toggleEnabled={true} enabledColor={"orange"} disabledColor={"lightgray"}/>
-      <Toggle toggleEnabled={true} enabledColor={"purple"} disabledColor={"lightgray"}/>
+      
       <Toggle toggleEnabled={true} enabledColor={"green"} disabledColor={"lightgray"}/>
     </div>
     <div class="mt-3 ml-2flex">
       <Toggle toggleEnabled={false} enabledColor={"lightpurple"}/>
-      <Toggle toggleEnabled={false} enabledColor={"lightred"} disabledColor={"gray"}/>
-      <Toggle toggleEnabled={false} enabledColor={"lightblue"} disabledColor={"gray"}/>
+      <Toggle toggleEnabled={false} enabledColor={"lightred"} disabledColor={"whitesmoke"}/>
+      <Toggle toggleEnabled={false} enabledColor={"lightblue"} disabledColor={"lightgray"}/>
       <Toggle toggleEnabled={false} enabledColor={"lightyellow"} disabledColor={"gray"}/>
-      <Toggle toggleEnabled={false} enabledColor={"lightorange"} disabledColor={"gray"}/>
-      <Toggle toggleEnabled={false} enabledColor={"lightpurple"} disabledColor={"gray"}/>
-      <Toggle toggleEnabled={false} enabledColor={"lightgreen"} disabledColor={"gray"}/> 
+      <Toggle toggleEnabled={false} enabledColor={"lightorange"} disabledColor={"black"}/>
+      <Toggle toggleEnabled={false} enabledColor={"green"} disabledColor={"lightgreen"}/> 
     </div>
     <div class="mt-3">
       <h5>code</h5>
