@@ -307,7 +307,7 @@
       <h5>code</h5>
       <pre>
         <code>
-{`<Toggle toggleEnabled={true} enabledColor={"blue"} disabledColor={"lightgray"}/>`}
+{`<Toggle toggleEnabled={true} enabledColor={"yellow"} disabledColor={"whitesmoke"}/>`}
         </code>
       </pre>
     </div>
