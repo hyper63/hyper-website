@@ -20,14 +20,21 @@
 
 </script>
 <script>
+  import {reject} from 'ramda'
   import Header from '$lib/admin/header.svelte'
   import ActiveToggle from '$lib/toggle.svelte'
+  import Button from '$lib/button.svelte'
+  import Modal from '$lib/admin/modal.svelte'
+  //import { goto } from '$app/navigation'
+import { identical, identity } from 'ramda';
+  let deleteModelOpen = false
+  let deleteId = null
   export let faqs
 
   let submitStatus = null 
   let error = false
   // destructuring event
-  async function saveToggle({detail}) {
+  async function handleSaveToggle({detail}) {
     // put /api/faqs/:id detail
     console.log(detail)
     const res = await fetch(`/api/faqs/${detail.id}.json`, {
@@ -42,6 +49,7 @@
 
       submitStatus = 'Successfully saved FAQ'  
       //setTimeout(() => goto('/admin/cms/faqs'), 1000)
+      
 
     } else {
       error = true
@@ -49,8 +57,40 @@
     }
   }
 
+  
+    // destructuring event
+    async function handleDelete() {
+      
+      // put /api/faqs/:id detail
+      console.log('handleDelete', deleteId)
+      const res = await fetch(`/api/faqs/${deleteId}.json`, {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      if (res.ok) {
+        const response = await res.json()
+  
+        submitStatus = 'Successfully deleted FAQ.'  
+
+        faqs = reject(faq => faq.id === deleteId, faqs)
+        //setTimeout(() => goto('/admin/cms/faqs'), 1000)
+  
+      } else {
+        error = true
+        deleteStatus = 'Error occured deleting FAQ.'
+      }
+    
+  }
 
 
+  const handleDeleteModalOpenClick = (id) => _ => {
+
+    console.log('handleDeleteModalOpenClick', id)
+    deleteModelOpen = true
+    deleteId = id
+  }
 
 </script>
 <Header />
@@ -76,10 +116,10 @@
               <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                 Tags
               </th>
-              <th scope="col" class="px-6 py-3 text-lect text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                 Updated
               </th>
-              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
                 Published
               </th>
               <th scope="col" class="relative px-6 py-3">
@@ -101,14 +141,16 @@
               </td>
 
              
-             <td class="px-4 py-4 whitespace-nowrap text-sm font-medium text-gray-900 flex justify-center">
+             <td class="px-6 py-6 whitespace-nowrap text-sm font-medium text-gray-900 flex justify-center">
                <!-- {faq.active ? '⚡️' : ''} -->
-               <ActiveToggle data={faq} on:toggleSave={saveToggle} toggleEnabled={faq.active} enabledColor={"yellow"} disabledColor={"lightgray"}/>
+               <ActiveToggle data={faq} on:toggleSave={handleSaveToggle} toggleEnabled={faq.active} enabledColor={"blue"} disabledColor={"whitesmoke"}/>
                 
               </td>
               <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                <a href="/admin/cms/faqs/{faq.id}/del" class="delete-button">Delete</a>
+                <!-- <a href="/admin/cms/faqs/{faq.id}/del" class="delete-button">Delete</a> -->
+                <Button on:click={handleDeleteModalOpenClick(faq.id)} txtColor="white" bgColor="red">Delete</Button>
               </td>
+
               <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                 <a href="/admin/cms/faqs/{faq.id}/edit" class="button background-color">Edit</a>
               </td>
@@ -121,12 +163,20 @@
   </div>
 </div>
 </main>
-<style>
- .delete-button {
-    @apply border-3 px-4 py-2 rounded-lg bg-red font-space text-white;
-  }
+<Modal {deleteModelOpen} on:cancel={_ => deleteModelOpen = false} on:delete={handleDelete}>
+  <h3>Delete it!</h3>
+  <figure ><img style="width: 100%;" alt="bill" src="https://www.fillmurray.com/300/300" /></figure>
+  <p>This is my delete modal dialog</p>
+</Modal>
 
+<!-- .delete-button {
+  @apply border-3 px-4 py-2 rounded-lg bg-red font-space text-white;
+}  -->
+<style>
+ 
+ 
   .button {
     @apply border-3 px-4 py-2 rounded-lg bg-yellow font-space text-white;
   }
 </style>
+
