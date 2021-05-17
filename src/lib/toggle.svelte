@@ -1,17 +1,33 @@
 <script>
+    import { createEventDispatcher } from 'svelte';
+    const dispatch = createEventDispatcher();
+    
     export let txtColor = 'black'
     //export let bgColor = 'whitesmoke'
     export let iconColor = '#7C7F86'
     export let toggleEnabled = false
     export let enabledColor = "purple"
     export let disabledColor = "lightgray"
+    export let faq = null
 
+    function saveToggle (e) {
+      toggleEnabled = !toggleEnabled
+    
+        //  active: faq.active === 'false' || faq.active === false ? false : true,
+        const data = {...faq, active: toggleEnabled }
+
+        console.log("submitting", {data})
+
+        dispatch('toggleSave', data)
+  
+
+    }
 
     console.log({toggleEnabled})
 </script>
   <!-- This example requires Tailwind CSS v2.0+ -->
 <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
-<button type="button" class="m-0 p-0 bg-{toggleEnabled ? enabledColor : disabledColor}   border-2 border-transparent rounded-full cursor-pointer h-7 w-12 transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-{iconColor}-500" role="switch" aria-checked="false">
+<button on:click={saveToggle} type="button" class="m-0 p-0 bg-{toggleEnabled ? enabledColor : disabledColor}   border-2 border-transparent rounded-full cursor-pointer h-7 w-12 transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-{iconColor}-500" role="switch" aria-checked="false">
   <span class="sr-only">Use setting</span>
     <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
     <span class="translate-x-{toggleEnabled ? 5: 0} pointer-events-none relative inline-block h-6 w-6 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200">

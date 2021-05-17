@@ -1,5 +1,5 @@
 <script context="module">
-
+//import { goto } from '$app/navigation'
   export async function load({ page, fetch, session, context }) {
 		const url = `/admin/faqs.json`;
 		const res = await fetch(url);
@@ -23,6 +23,33 @@
   import Header from '$lib/admin/header.svelte'
   import ActiveToggle from '$lib/toggle.svelte'
   export let faqs
+
+  let submitStatus = null 
+  let error = false
+  // destructuring event
+  async function saveToggle({detail}) {
+    // put /api/faqs/:id detail
+    console.log(detail)
+    const res = await fetch(`/api/faqs/${detail.id}.json`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(detail)
+    })
+    if (res.ok) {
+      const response = await res.json()
+
+      submitStatus = 'Successfully saved FAQ'  
+      //setTimeout(() => goto('/admin/cms/faqs'), 1000)
+
+    } else {
+      error = true
+      submitStatus = 'Error occured saving FAQ'
+    }
+  }
+
+
 
 
 </script>
@@ -76,7 +103,7 @@
              
              <td class="px-4 py-4 whitespace-nowrap text-sm font-medium text-gray-900 flex justify-center">
                <!-- {faq.active ? '⚡️' : ''} -->
-               <ActiveToggle toggleEnabled={faq.active} enabledColor={"purple"} disabledColor={"lightgray"}/>
+               <ActiveToggle {faq} on:toggleSave={saveToggle} toggleEnabled={faq.active} enabledColor={"purple"} disabledColor={"lightgray"}/>
                 
               </td>
               <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
