@@ -17,7 +17,10 @@
       body: JSON.stringify(detail)
     })
     if (res.ok) {
+      
       const response = await res.json()
+      console.log('************')
+      console.log({res, response})
       submitStatus = 'Successfully saved FAQ'  
       setTimeout(() => goto('/admin/cms/faqs'), 1000)
 
@@ -42,5 +45,5 @@
   </div>
 
 {/if}
-<Faqform on:submit={handleSubmit} />
+<Faqform faq= {{ tags: [], active: false }} on:submit={handleSubmit} />
 

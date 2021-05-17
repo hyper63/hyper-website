@@ -9,7 +9,7 @@
   const dispatch = createEventDispatcher();
   
   function submit(e) {
-    
+    //  active: faq.active === 'false' || faq.active === false ? false : true,
     const data = {
       question: faq.question,
       answer: faq.answer,
@@ -19,6 +19,8 @@
         split(',')
       )(tagString)
     }
+
+    console.log({data})
 
      dispatch('submit', data)
   }

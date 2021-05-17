@@ -30,8 +30,9 @@
   }
 </script>
 
-<style lang="postcss">
-  .select {
+
+  <!-- 
+    .select {
     --border: 3px solid #c6cad3;
     --borderRadius: 12px;
     --placeholderColor: #1286f6;
@@ -39,7 +40,12 @@
     margin: 0;
     padding: 0;
     border: none;
-  }
+  } -->
+
+
+<style lang="postcss">
+
+
   .box {
     @apply rounded;
     height: 38px;
