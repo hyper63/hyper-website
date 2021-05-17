@@ -1,3 +1,18 @@
+<script context="module">
+  import { filter, propEq } from 'ramda'
+
+  export async function load({fetch}) {
+    const faqs = await fetch('/admin/faqs.json').then(r => r.json())
+      .then(filter(propEq('active', true)))
+    return {
+      props: {
+        faqs
+      }
+    }
+
+  }
+
+</script>
 <script>
   import Header from '$lib/header.svelte'  
   import LinkBtn from '$lib/link-button.svelte'
@@ -10,6 +25,7 @@
   import Testimonials from '$lib/testimonials.svelte'
   import Flow from '$lib/flow.svelte'
   import Footer from '$lib/footer.svelte'
+  export let faqs
 
   let show = false
 </script>
@@ -34,23 +50,24 @@
     <Flow />
     <div class="md:w-1/2 2xl:w-1/3">
       <h5 class="">THE PROBLEM</h5>
-      <h2 class="text-3xl font-semibold md:text-5xl md:mt-16">Software can cause just as many problems as it solves</h2>
+      <h2 class="text-3xl font-semibold md:text-5xl md:mt-16">No need to re-invent the wheel</h2>
       <p class="mt-4 md:mt-16">
-      Unfortunately, often times, the result leads to disappointment, As a software development community, can we do better? Can we create products that are a joy, to not only build, but to maintain, over time? Product that can migrate to new technologies and platforms incrementally?
+        With hyper, you can separate your core features from the necessary implementation details of high scale solutions. hyper 
+        provides a service boundary so your business logic stays in the application layer while you leverage the robust core services
+        hyper provides.
       </p>
     </div>
   </section>
   <img class="md:hidden" src="/flow1.svg" />
-  <section class="flex w-full pl-4 md:pt-44 md:pl-24 md:pr-24">
+  <section class="flex w-full pl-4 md:pt-44 md:pl-24 md:pr-24 md:mb-96">
     <div class="md:w-1/2 2xl:w-1/3">
       <h5>OUR SOLUTION</h5>
       <h2 class="text-3xl font-semibold md:text-5xl md:mt-8">
-      Don't re-invent the wheel
-      <br />
-      Use a service framework.
+      Use a cloud-native service framework.
       </h2>
       <p class="mt-12">
-      hyper allows your development team to focus on the logic that makes your application special, not the necessary cloud service boilier plate.
+      hyper is a cloud-native solution that can run on any cloud and its ports and adapter architecture lets you use any
+      backend service you prefer. You can get started using the hyper cloud service in less that a minute. 
       </p>
       <div class="mt-16">
       <LinkButton styles="w-max" bgColor="lightblue" txtColor="blue" href="/company">Learn More About Us</LinkButton>
@@ -65,27 +82,13 @@
   <section class="flex flex-col bg-whitesmoke items-center mt-4 pt-8 md:mt-16 md:pt-8 md:pl-24 md:pr-24">
     <h1 class="text-3xl md:text-6xl">FAQs</h1>
     <p class="px-4 my-4 text-base md:mt-16 md:mb-8">Can't find the answer you're looking for? Reach out to our <a href="/contact" class="text-red underline">customer support team</a>.</p>
-    <div class="flex flex-col w-3/4 md:w-2/3">
-    <FAQ styles="w-full mb-8 bg-white">
-      <span slot="question">What is hyper?</span>
-      <span slot="answer">A service framework</span>
+    <div class="flex flex-col w-3/4 md:w-2/3 md:mb-32">
+    {#each faqs as {question, answer}}
+    <FAQ>
+      <span slot="question">{question}</span>
+      <span slot="answer">{answer}</span>
     </FAQ>
-    <FAQ styles="w-full mb-8 bg-white">
-      <span slot="question">What is hyper?</span>
-      <span slot="answer">A service framework</span>
-    </FAQ>
-    <FAQ styles="w-full mb-8 bg-white">
-      <span slot="question">What is hyper?</span>
-      <span slot="answer">A service framework</span>
-    </FAQ>
-    <FAQ styles="w-full mb-8 bg-white">
-      <span slot="question">What is hyper?</span>
-      <span slot="answer">A service framework</span>
-    </FAQ>
-    <FAQ styles="w-full mb-8 bg-white">
-      <span slot="question">What is hyper?</span>
-      <span slot="answer">A service framework</span>
-    </FAQ>
+    {/each}
     </div>
   </section>
   <Testimonials styles="pl-24 pr-24" />  
