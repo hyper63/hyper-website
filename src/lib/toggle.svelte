@@ -2,28 +2,27 @@
     import { createEventDispatcher } from 'svelte';
     const dispatch = createEventDispatcher();
     
-    export let txtColor = 'black'
-    //export let bgColor = 'whitesmoke'
+    let txtColor = "black"
     export let iconColor = '#7C7F86'
     export let toggleEnabled = false
     export let enabledColor = "purple"
     export let disabledColor = "lightgray"
-    export let faq = null
+    export let data = null
 
     function saveToggle (e) {
       toggleEnabled = !toggleEnabled
     
         //  active: faq.active === 'false' || faq.active === false ? false : true,
-        const data = {...faq, active: toggleEnabled }
+        const editedToggleData = {...data, active: toggleEnabled }
 
-        console.log("submitting", {data})
+        //console.log("submitting", {editedToggleData})
 
-        dispatch('toggleSave', data)
+        dispatch('toggleSave', editedToggleData)
   
 
     }
 
-    console.log({toggleEnabled})
+    //console.log({toggleEnabled})
 </script>
   <!-- This example requires Tailwind CSS v2.0+ -->
 <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->

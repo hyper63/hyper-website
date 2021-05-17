@@ -283,16 +283,35 @@
     <Search />
     <h4 class="mt-8 mb-3">Input</h4>
     <Input />
-    <h4 class="mt-8 mb-3">Toggle</h4>
-    <!--
-    Does not work in svelte kit because it is an installed component
-    I could try to copy to the src/lib dir and see if it works
-    -->
-    <!-- <div class="select">
-      <Select {items} {selectedValue} on:select={handleSelect} />
-    </div> -->
-    <Toggle toggleEnabled={true} />
-    <Toggle toggleEnabled={false} />
+    
+
+    <h4 class="mt-8">Toggle</h4>
+    <div class="mt-3 ml-2flex">
+      <Toggle toggleEnabled={true} />
+      <Toggle toggleEnabled={true} enabledColor={"red"} disabledColor={"lightgray"}/>
+      <Toggle toggleEnabled={true} enabledColor={"blue"} disabledColor={"lightgray"}/>
+      <Toggle toggleEnabled={true} enabledColor={"yellow"} disabledColor={"lightgray"}/>
+      <Toggle toggleEnabled={true} enabledColor={"orange"} disabledColor={"lightgray"}/>
+      <Toggle toggleEnabled={true} enabledColor={"purple"} disabledColor={"lightgray"}/>
+      <Toggle toggleEnabled={true} enabledColor={"green"} disabledColor={"lightgray"}/>
+    </div>
+    <div class="mt-3 ml-2flex">
+      <Toggle toggleEnabled={false} enabledColor={"lightpurple"}/>
+      <Toggle toggleEnabled={false} enabledColor={"lightred"} disabledColor={"gray"}/>
+      <Toggle toggleEnabled={false} enabledColor={"lightblue"} disabledColor={"gray"}/>
+      <Toggle toggleEnabled={false} enabledColor={"lightyellow"} disabledColor={"gray"}/>
+      <Toggle toggleEnabled={false} enabledColor={"lightorange"} disabledColor={"gray"}/>
+      <Toggle toggleEnabled={false} enabledColor={"lightpurple"} disabledColor={"gray"}/>
+      <Toggle toggleEnabled={false} enabledColor={"lightgreen"} disabledColor={"gray"}/> 
+    </div>
+    <div class="mt-3">
+      <h5>code</h5>
+      <pre>
+        <code>
+{`<Toggle toggleEnabled={true} enabledColor={"blue"} disabledColor={"lightgray"}/>`}
+        </code>
+      </pre>
+    </div>
   </section>
 </main>
 <footer>

@@ -103,7 +103,7 @@
              
              <td class="px-4 py-4 whitespace-nowrap text-sm font-medium text-gray-900 flex justify-center">
                <!-- {faq.active ? '⚡️' : ''} -->
-               <ActiveToggle {faq} on:toggleSave={saveToggle} toggleEnabled={faq.active} enabledColor={"purple"} disabledColor={"lightgray"}/>
+               <ActiveToggle data={faq} on:toggleSave={saveToggle} toggleEnabled={faq.active} enabledColor={"yellow"} disabledColor={"lightgray"}/>
                 
               </td>
               <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
