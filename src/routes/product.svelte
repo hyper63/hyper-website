@@ -9,7 +9,10 @@ import Section from '$lib/section.svelte'
   <section id="summary" class="md:flex md:relative" >
     <div class="md:w-1/3 md:h-96">
       <h1 class="text-3xl pl-4 mt-8 mb-4 md:pl-0 md:mt-24 md:text-6xl ">hyper <br /><b>services</b></h1>
-      <p class="text-base mx-4 text-darkgray md:mx-0">hyper provides a single entry point to five core application services, these services can be composed to effectively build any application.</p>
+      <p class="text-base mx-4 text-darkgray md:mx-0">hyper provides a single API entry point to core application services, these services can be composed to effectively build any application.</p>
+      <p class="font-mono bg-black text-white my-4 mx-4 p-4 md:p-8 rounded-lg">
+      VERB /:service/:app/[:identifier | :action]
+      </p>
       <ul class="ml-4 md:ml-8 md:mt-8">
         <li><a class="text-blue" href="#data">Data</a></li>
         <li><a class="text-blue" href="#search">Search</a></li>
@@ -27,14 +30,15 @@ import Section from '$lib/section.svelte'
       <div class="flex flex-col items-center">
         <h2 class="text-2xl px-4 md:text-center md:text-5xl">Data Service</h2>
         <p class="text-base mx-4 mt-4 text-darkgray md:w-1/2 md:text-center">
-          hyper provides a robust data service to 
-          support your structured data needs, with the
-          hyper data service, you can perform all the
-          necessary CRUD (create, read, update, delete)
-          operations, as well as use a simple and 
-          intuitive query syntax to efficiently manage
-          your structured data.
+          API powered data access:
         </p>
+        <ul class="md:mt-8 bg-black text-white text-mono rounded-lg p-8">
+          <li><span class="text-green"># Create </span><br />{'POST /data/{app} -d {...}'}</li>
+          <li><span class="text-green"># Read </span><br />{'GET /data/{app}/:id'}</li>
+          <li><span class="text-green"># Update </span><br />{'PUT /data/{app}/:id -d {...}'}</li>
+          <li><span class="text-green"># Delete </span><br />{'DELETE /data/{app}/:id'}</li>
+          <li><span class="text-green"># Query </span><br />{'POST /data/{app}/_query -d { selector }'}</li>
+        </ul>
       </div>
     </span>
     <span slot="image">
@@ -48,13 +52,16 @@ import Section from '$lib/section.svelte'
     <span slot="text">
       <div class="flex flex-col items-center">
         <h2 class="text-2xl px-4 md:text-5xl">Search Service</h2>
-        <p class="text-base mx-4 mt-4 text-darkgray md:w-1/2 md:text-center">hyper provides a robust data service to 
-        support your structured data needs, with the
-        hyper data service, you can perform all the
-        necessary CRUD (create, read, update, delete)
-        operations, as well as use a simple and 
-        intuitive query syntax to efficiently manage
-        your structured data.</p>
+        <p class="text-base mx-4 mt-4 text-darkgray md:w-1/2 md:text-center">
+          API powered search:
+        </p>
+        <ul class="md:mt-8 bg-black text-white text-mono rounded-lg p-8">
+          <li><span class="text-orange"># Index</span><br />{'POST /search/{app} -d {...}'}</li>
+          <li><span class="text-orange"># Find</span><br />{'POST /search/{app}/_query -d { query, filter }'}</li>
+          <li><span class="text-orange"># Read</span><br />{'GET /search/{app}/:id'}</li>
+          <li><span class="text-orange"># Update</span><br />{'PUT /search/{app}/:id -d {...}'}</li>
+          <li><span class="text-orange"># Delete</span><br />{'DELETE /search/{app}/:id'}</li>
+        </ul>
       </div>
     </span>
       
@@ -64,17 +71,14 @@ import Section from '$lib/section.svelte'
       <div class="flex flex-col items-center">
         <h2 class="text-2xl px-4 md:text-5xl">Storage Service</h2>
         <p class="text-base mx-4 mt-4 text-darkgray md:w-1/2 md:text-center">
-          Store files using a REST Interface, not only provides the ability to stream large files
-          to your storage container.
+          Store files using a REST API 
         </p>
-        <!--
-        <pre class="rounded-lg bg-black text-white p-8 my-8 w-1/2 mx-16"><code>
-  PUT /storage/app/:name
-
-  GET /storage/app/:name
-
-        </code></pre>
-        -->
+        <ul class="md:mt-8 bg-black text-white text-mono rounded-lg p-8">
+          <li><span class="text-blue"># Store</span><br />{'POST /storage/{app} -d {...}'}</li>
+          <li><span class="text-blue"># Retrieve</span><br />{'GET /storage/{app}/:id'}</li>
+          <li><span class="text-blue"># Update</span><br />{'PUT /storage/{app}/:id -d {...}'}</li>
+          <li><span class="text-blue"># Delete</span><br />{'DELETE /storage/{app}/:id'}</li>
+        </ul>
       </div>
     </span>
     <span slot="image">
@@ -87,14 +91,17 @@ import Section from '$lib/section.svelte'
     </span>
     <span slot="text">
       <div class="flex flex-col items-center">
-      <h2 class="text-2xl px-4 md:text-5xl md:text-center">Cache Service</h2>
-      <p class="z-10 text-base mx-4 mt-4 text-darkgray md:w-1/2 md:text-center">hyper provides a robust data service to 
-      support your structured data needs, with the
-      hyper data service, you can perform all the
-      necessary CRUD (create, read, update, delete)
-      operations, as well as use a simple and 
-      intuitive query syntax to efficiently manage
-      your structured data.</p>
+        <h2 class="text-2xl px-4 md:text-5xl md:text-center">Cache Service</h2>
+        <p class="z-10 text-base mx-4 mt-4 text-darkgray md:w-1/2 md:text-center">
+          JSON Key Value Store:
+        </p>
+        <ul class="md:mt-8 bg-black text-white text-mono rounded-lg p-8">
+          <li><span class="text-purple"># Store</span><br />{'POST /cache/{app} -d {key, value, ttl}'}</li>
+          <li><span class="text-purple"># Retrieve</span><br />{'GET /cache/{app}/:key'}</li>
+          <li><span class="text-purple"># Update</span><br />{'PUT /cache/{app}/:key -d {...}'}</li>
+          <li><span class="text-purple"># Delete</span><br />{'DELETE /cache/{app}/:key'}</li>
+          <li><span class="text-purple"># Query</span><br />{'POST /cache/{app}/_query?pattern="ABC*"'}</li>
+        </ul>
       </div>
     </span>
 
@@ -103,13 +110,15 @@ import Section from '$lib/section.svelte'
     <span slot="text">
       <div class="flex flex-col items-center">
         <h2 class="text-2xl px-4 md:text-5xl md:text-center">Queue Service</h2>
-        <p class="z-10 text-base mx-4 mt-4 text-darkgray md:w-1/2 md:text-center">hyper provides a robust data service to 
-        support your structured data needs, with the
-        hyper data service, you can perform all the
-        necessary CRUD (create, read, update, delete)
-        operations, as well as use a simple and 
-        intuitive query syntax to efficiently manage
-        your structured data.</p>
+        <p class="z-10 text-base mx-4 mt-4 text-darkgray md:w-1/2 md:text-center">
+        A RESTful web hook queue service:
+        </p>
+        <ul class="md:mt-8 bg-black text-white text-mono rounded-lg p-8">
+          <li><span class="text-red"># Create Queue</span><br />{'PUT /queue/{app}/:name -d {target}'}</li>
+          <li><span class="text-red"># Post Task</span><br />{'POST /queue/{app}/:name -d {job}'}</li>
+          <li><span class="text-red"># Get Tasks</span><br />{'GET /queue/{app}/:name?status=READY'}</li>
+          <li><span class="text-red"># Delete Queue</span><br />{'DELETE /queue/{app}/:name'}</li>
+        </ul>
       </div>
     </span>
     <span slot="image">
