@@ -24,11 +24,11 @@
   import Header from '$lib/admin/header.svelte'
   import ActiveToggle from '$lib/toggle.svelte'
   import Button from '$lib/button.svelte'
-  import Modal from '$lib/admin/modal.svelte'
+  import Modal from '$lib/admin/modal2.svelte'
   //import { goto } from '$app/navigation'
 import { identical, identity } from 'ramda';
   let deleteModelOpen = false
-  let deleteId = null
+  let deleteFaq = {}
   export let faqs
 
   let submitStatus = null 
@@ -58,12 +58,23 @@ import { identical, identity } from 'ramda';
   }
 
   
-    // destructuring event
-    async function handleDelete() {
+    
+
+
+  const handleDeleteModalOpenClick = (faq) => _ => {
+    
+    console.log('handleDeleteModalOpenClick', {faq})
+    deleteModelOpen = true
+    deleteFaq = faq
+  }
+
+
+  // destructuring event
+  async function handleDelete() {
       
       // put /api/faqs/:id detail
-      console.log('handleDelete', deleteId)
-      const res = await fetch(`/api/faqs/${deleteId}.json`, {
+      console.log('handleDelete', {deleteFaq})
+      const res = await fetch(`/api/faqs/${deleteFaq.id}.json`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json'
@@ -74,7 +85,7 @@ import { identical, identity } from 'ramda';
   
         submitStatus = 'Successfully deleted FAQ.'  
 
-        faqs = reject(faq => faq.id === deleteId, faqs)
+        faqs = reject(faq => faq.id === deleteFaq.id, faqs)
         //setTimeout(() => goto('/admin/cms/faqs'), 1000)
   
       } else {
@@ -82,14 +93,6 @@ import { identical, identity } from 'ramda';
         deleteStatus = 'Error occured deleting FAQ.'
       }
     
-  }
-
-
-  const handleDeleteModalOpenClick = (id) => _ => {
-
-    console.log('handleDeleteModalOpenClick', id)
-    deleteModelOpen = true
-    deleteId = id
   }
 
 </script>
@@ -146,12 +149,12 @@ import { identical, identity } from 'ramda';
                <ActiveToggle data={faq} on:toggleSave={handleSaveToggle} toggleEnabled={faq.active} enabledColor={"blue"} disabledColor={"whitesmoke"}/>
                 
               </td>
-              <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+              <td class="">
                 <!-- <a href="/admin/cms/faqs/{faq.id}/del" class="delete-button">Delete</a> -->
-                <Button on:click={handleDeleteModalOpenClick(faq.id)} txtColor="white" bgColor="red">Delete</Button>
+                <Button on:click={handleDeleteModalOpenClick(faq)} txtColor="white" bgColor="red">Delete</Button>
               </td>
 
-              <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+              <td class="">
                 <a href="/admin/cms/faqs/{faq.id}/edit" class="button background-color">Edit</a>
               </td>
             </tr>
@@ -163,10 +166,8 @@ import { identical, identity } from 'ramda';
   </div>
 </div>
 </main>
-<Modal {deleteModelOpen} on:cancel={_ => deleteModelOpen = false} on:delete={handleDelete}>
-  <h3>Delete it!</h3>
-  <figure ><img style="width: 100%;" alt="bill" src="https://www.fillmurray.com/300/300" /></figure>
-  <p>This is my delete modal dialog</p>
+<Modal dialogTitle={"FAQ"} {deleteModelOpen} on:cancel={_ => deleteModelOpen = false} on:delete={handleDelete}>
+        
 </Modal>
 
 <!-- .delete-button {
