@@ -1,4 +1,5 @@
 import fetch from 'node-fetch'
+
 const clientId = import.meta.env.VITE_CLIENT_ID
 const secret = import.meta.env.VITE_CLIENT_SECRET
 const tokenUrl = 'https://github.com/login/oauth/access_token'
@@ -25,12 +26,9 @@ export async function get(req) {
       authorization: `Bearer ${result.access_token}`
     }
   }).then(r => r.json())
-  req.locals.session.data = {
-    username: user.login,
-    token: result.access_token
-  }
-  //console.log('result', result)
-  //console.log('user', user)
+  req.locals.token = result.access_token
+  req.locals.username = user.login
+
   // Need to setup session
   return {
     status: 302,
