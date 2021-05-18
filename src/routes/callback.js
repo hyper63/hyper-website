@@ -1,4 +1,5 @@
 import fetch from 'node-fetch'
+import { contains } from 'ramda'
 
 const clientId = import.meta.env.VITE_CLIENT_ID
 const secret = import.meta.env.VITE_CLIENT_SECRET
@@ -26,8 +27,11 @@ export async function get(req) {
       authorization: `Bearer ${result.access_token}`
     }
   }).then(r => r.json())
-  req.locals.token = result.access_token
-  req.locals.username = user.login
+
+  if (contains(user.login, ['twilson63', 'tripott'])) {
+    req.locals.token = result.access_token
+    req.locals.username = user.login
+  }
 
   // Need to setup session
   return {
