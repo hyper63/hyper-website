@@ -24,6 +24,7 @@
   import Header from '$lib/admin/header.svelte'
   import ActiveToggle from '$lib/toggle.svelte'
   import Button from '$lib/button.svelte'
+  import LinkBtn from '$lib/link-button.svelte'
   import Modal from '$lib/admin/modal.svelte'
   //import { goto } from '$app/navigation'
 import { identical, identity } from 'ramda';
@@ -155,7 +156,8 @@ import { identical, identity } from 'ramda';
               </td>
 
               <td class="">
-                <a href="/admin/cms/faqs/{faq.id}/edit" class="button background-color">Edit</a>
+                <LinkBtn href="/admin/cms/faqs/{faq.id}/edit">Edit</LinkBtn>
+              
               </td>
             </tr>
           </tbody>
@@ -181,7 +183,8 @@ import { identical, identity } from 'ramda';
   @apply border-3 px-4 py-2 rounded-lg bg-red font-space text-white;
 }  -->
 <style>
- 
+
+  
  
   .button {
     @apply border-3 px-4 py-2 rounded-lg bg-yellow font-space text-white;
