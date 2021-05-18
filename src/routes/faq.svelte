@@ -50,7 +50,7 @@
     {#each faqs as {question, answer}}
     <FAQ>
       <span slot="question">{question}</span>
-      <span slot="answer">{answer}</span>
+      <span slot="answer">{@html answer}</span>
     </FAQ>
     {/each}
     </div>
