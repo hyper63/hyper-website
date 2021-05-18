@@ -10,10 +10,7 @@ import Faq from '$lib/faq.svelte';
   const dispatch = createEventDispatcher();
 
   function handleToggle ({detail}) {
-
-    console.log('detail', detail)
     faq = {...faq, active: detail.active}
-    console.log('faq', faq)
   }
   
   function submit(e) {
