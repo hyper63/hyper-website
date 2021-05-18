@@ -172,7 +172,8 @@ import { identical, identity } from 'ramda';
         <p class="mt-1 text-md text-gray-600">
           The following FAQ will be deleted permanantly. 
         </p>
-        <p class="mt-3 text-sm text-gray-700">Question: {deleteFaq.question}</p>
+        <p class="mt-3 ml-2 text-sm text-gray-700">Question: {deleteFaq.question}</p>
+        <p class="mt-3 ml-2 text-sm text-gray-700">Currently Published?: {deleteFaq.active ? "Yes": "No"}</p>
       </div>
 </Modal>
 
