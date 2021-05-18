@@ -36,16 +36,16 @@
     </div>
   </section>
   <section class="px-4 pt-8 md:mt-24 md:ml-24 md:mr-44">
-    <h3 class="text-2xl text-center">All software applications should be built with the following requirements:</h3>
+    <h3 class="text-2xl text-center">hyper ensures your backend services support the right ilities:</h3>
     <div class="md:mt-24 md:flex md:justify-around md:mx-48 ">
       <div class="mt-8 flex justify-center">
         <img src="/extensibility.svg" alt="extensibility image" />
       </div>
       <div class="mt-8 flex justify-center">
-        <img src="/scalability.svg" alt="extensibility image" />
+        <img src="/scalability.svg" alt="scalability image" />
       </div>
       <div class="mt-8 flex justify-center">
-        <img src="/flexibility.svg" alt="extensibility image" />
+        <img src="/flexibility.svg" alt="flexibility image" />
       </div>
     </div>
   </section>
@@ -53,7 +53,7 @@
     <div class="md:w-1/3">
       <h3 class="text-2xl md:text-5xl">We're here <br /><b>to help</b></h3>
       <p class="mt-4 text-darkgray text-base">
-  We are building a new set of products and services that will transform the software development. Don't partner with a framework or service that decreases your productivity over time and creates a mountain of technical debt. At hyper, we are building tools that require a different mindset and can give you a hyper focus on your problem domain.
+  As your code base expands, hyper actually increases productivity while decreasing your technical debt. At hyper, we build tools that require a different mindset. Tools that provide a hyper focus on your problem domain.
       </p>
       <Button styles="mt-8">Get Started</Button>
     </div>

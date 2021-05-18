@@ -37,7 +37,7 @@
   <section class="splash bg-no-repeat pl-4 md:pl-24 md:pr-24">
     <div class="mt-8 md:mt-20 md:w-1/2">
       <h1 class="text-4xl font-semibold md:text-6xl width-full height-full">Build Your Web Applications at <b>hyper</b> Speed</h1>
-      <p class="text-md mt-4 mr-8 md:mt-12 md:w-3/4">hyper provides a full suite of core backend services, letting you focus on what matters to your applications. Stop the bike-shedding, and start building scalable applications today.</p>
+      <p class="text-md mt-4 mr-8 md:mt-12 md:w-3/4">hyper provides a full suite of core backend services. Focus on what matters. Stop the bike-shedding. Start building scalable applications today.</p>
       <div class="mt-16 flex space-x-4 md:space-x-20">
         <Button bgColor="blue" txtColor="white">Get Started</Button>
         <Play>Watch</Play>
@@ -59,13 +59,13 @@
     <div class="md:w-1/2 2xl:w-1/3">
       <h5>OUR SOLUTION</h5>
       <h2 class="text-3xl font-semibold md:text-5xl md:mt-8">
-      hyper a service framework 
+      hyper. A service framework.
       </h2>
       <p class="mt-12">
-      hyper is a cloud-native service solution that gives you clean and easy wat to use APIs to create scalable performant services. With hyper you can get started building applications that scale quickly and keep <b>techical debt</b> low.  
+      hyper is a cloud-native service solution delivering a straightforward way to leverage APIs to create scalable performant services. Create features quickly into apps that scale, all while keeping <b>technical debt</b> at bay.  
       </p>
       <p class="mt-16">
-      hyper provides APIs to core application services: data, cache, storage, queues, and search. See below: 
+      hyper provides APIs to core application services: data, cache, storage, queues, and search. 
       </p>
     </div>
   </section>

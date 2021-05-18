@@ -9,7 +9,7 @@ import Section from '$lib/section.svelte'
   <section id="summary" class="md:flex md:relative" >
     <div class="md:w-1/3 md:h-96">
       <h1 class="text-3xl pl-4 mt-8 mb-4 md:pl-0 md:mt-24 md:text-6xl ">hyper <br /><b>services</b></h1>
-      <p class="text-base mx-4 text-darkgray md:mx-0">hyper provides a single API entry point to core application services, these services can be composed to effectively build any application.</p>
+      <p class="text-base mx-4 text-darkgray md:mx-0">Build any application by taking advantage of hyper's single API entry point and composable application services.</p>
       <p class="font-mono bg-black text-white my-4 mx-4 p-4 md:p-8 rounded-lg">
       VERB /:service/:app/[:identifier | :action]
       </p>
