@@ -24,7 +24,7 @@
   import Header from '$lib/admin/header.svelte'
   import ActiveToggle from '$lib/toggle.svelte'
   import Button from '$lib/button.svelte'
-  import Modal from '$lib/admin/modal2.svelte'
+  import Modal from '$lib/admin/modal.svelte'
   //import { goto } from '$app/navigation'
 import { identical, identity } from 'ramda';
   let deleteModelOpen = false
@@ -166,8 +166,14 @@ import { identical, identity } from 'ramda';
   </div>
 </div>
 </main>
-<Modal dialogTitle={"FAQ"} {deleteModelOpen} on:cancel={_ => deleteModelOpen = false} on:delete={handleDelete}>
-        
+<Modal {deleteModelOpen} on:cancel={_ => deleteModelOpen = false} on:delete={handleDelete}>
+      <div class="">
+        <h2 class="text-lg font-medium leading-6 text-gray-900">Delete FAQ?</h2>
+        <p class="mt-1 text-md text-gray-600">
+          The following FAQ will be deleted permanantly. 
+        </p>
+        <p class="mt-3 text-sm text-gray-700">Question: {deleteFaq.question}</p>
+      </div>
 </Modal>
 
 <!-- .delete-button {

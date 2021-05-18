@@ -1,6 +1,7 @@
 <script>
     import { createEventDispatcher } from 'svelte'
     import { scale } from 'svelte/transition'
+    import Button from '$lib/button.svelte'
     export let deleteModelOpen = false
     
     const dispatch = createEventDispatcher()
@@ -29,17 +30,23 @@
     }
   </script>
   {#if deleteModelOpen}
+  
     <div use:modalAction on:click={handleCancelClick}>
-      <section>
-        <aside in:scale out:scale={{duration: 500}}>
-          <slot />
-          <br />
-          <button on:click|preventDefault={handleCancelClick}>Cancel</button>
-
-          <button on:click|preventDefault={handleDeleteClick}>Delete</button>
-        </aside>
-      </section>
-    </div>
+        <section>
+          <aside class="px-8 py-6" in:scale out:scale={{duration: 500}}>
+            <slot />
+            <br />
+            
+            
+              <button class="border-darkgray px-4" txtColor="black" bgColor="lightgray" on:click={handleCancelClick}>Cancel</button>
+              <Button class="" txtColor="white" bgColor="red" on:click={handleDeleteClick}>Delete</Button>
+            
+            
+            <!-- <button on:click|preventDefault={handleDeleteClick}>Delete</button> -->
+          </aside>
+        </section>
+      </div>
+ 
   {/if}
   <style>
     section {
@@ -59,4 +66,3 @@
       width: 100%;
     }
   </style>
-  
