@@ -32,21 +32,20 @@
     <img class="mt-8 mx-auto md:w-1/2" src="/swirl.svg" alt="swirl" />
     <div class="md:w-1/2 md:px-36">
       <h2 class="text-3xl md:mt-48 md:text-5xl">Software is eating <br />the world</h2>
-      <p class="mt-4 text-darkgray text-base">but one can argule that software can cause just as many problems as it is meant to solve.</p>
-      <p class="mt-8 text-darkgray text-base">Building software is more than building a product and then selling it. It is a constant, fluid, process of discovery and refinement, a process that necessitates nurture and focus. Unfortunately, often times, the result leads to disappointment. As a software development community, can we do better? Can we create products that are a joy, to not only build, but to maintain, over time? Products that can migrate to new technologies and platforms, incrementally?</p>
+      <p class="mt-8 text-darkgray text-base">Building software is more than "setting it and forgetting it". Software change is a constant, fluid, process of discovery and refinement. The process that necessitates nurture and focus. With hyper you can avoid techinical debt and create exchangable interfaces.</p>
     </div>
   </section>
   <section class="px-4 pt-8 md:mt-24 md:ml-24 md:mr-44">
-    <h3 class="text-2xl text-center">To that end, all software applications should be built with the following requirements:</h3>
+    <h3 class="text-2xl text-center">hyper ensures your backend services support the right ilities:</h3>
     <div class="md:mt-24 md:flex md:justify-around md:mx-48 ">
       <div class="mt-8 flex justify-center">
         <img src="/extensibility.svg" alt="extensibility image" />
       </div>
       <div class="mt-8 flex justify-center">
-        <img src="/scalability.svg" alt="extensibility image" />
+        <img src="/scalability.svg" alt="scalability image" />
       </div>
       <div class="mt-8 flex justify-center">
-        <img src="/flexibility.svg" alt="extensibility image" />
+        <img src="/flexibility.svg" alt="flexibility image" />
       </div>
     </div>
   </section>
@@ -54,7 +53,7 @@
     <div class="md:w-1/3">
       <h3 class="text-2xl md:text-5xl">We're here <br /><b>to help</b></h3>
       <p class="mt-4 text-darkgray text-base">
-  We are building a new set of products and services that have the potential to transform the software community. These products and services provide development teams the guidance and capabilities to, not only, highly perform when building software, but to future proof their products, and create constant and consistent value over time.
+  As your code base expands, hyper actually increases productivity while decreasing your technical debt. At hyper, we build tools that require a different mindset. Tools that provide a hyper focus on your problem domain.
       </p>
       <Button styles="mt-8">Get Started</Button>
     </div>

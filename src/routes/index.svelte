@@ -37,8 +37,7 @@
   <section class="splash bg-no-repeat pl-4 md:pl-24 md:pr-24">
     <div class="mt-8 md:mt-20 md:w-1/2">
       <h1 class="text-4xl font-semibold md:text-6xl width-full height-full">Build Your Web Applications at <b>hyper</b> Speed</h1>
-      <p class="text-md mt-4 mr-8 md:mt-12 md:w-3/4">Let your development team focus on creating applications that solve the problems of the business, 
-      let hyper solve the problems of the cloud.</p>
+      <p class="text-md mt-4 mr-8 md:mt-12 md:w-3/4">hyper provides a full suite of core backend services. Focus on what matters. Stop the bike-shedding. Start building scalable applications today.</p>
       <div class="mt-16 flex space-x-4 md:space-x-20">
         <Button bgColor="blue" txtColor="white">Get Started</Button>
         <Play>Watch</Play>
@@ -50,12 +49,9 @@
     <Flow />
     <div class="md:w-1/2 2xl:w-1/3">
       <h5 class="">THE PROBLEM</h5>
-      <h2 class="text-3xl font-semibold md:text-5xl md:mt-16">No need to re-invent the wheel</h2>
-      <p class="mt-4 md:mt-16">
-        With hyper, you can separate your core features from the necessary implementation details of high scale solutions. hyper 
-        provides a service boundary so your business logic stays in the application layer while you leverage the robust core services
-        hyper provides.
-      </p>
+      <h2 class="text-3xl font-semibold md:text-5xl md:mt-16">Technical Debt</h2>
+      <p class="mt-4 md:mt-16">What do developers hate the most about software development? Many will say technical debt, having to work
+      through so much noise to implement a simple change request.</p>
     </div>
   </section>
   <img class="md:hidden" src="/flow1.svg" />
@@ -63,15 +59,14 @@
     <div class="md:w-1/2 2xl:w-1/3">
       <h5>OUR SOLUTION</h5>
       <h2 class="text-3xl font-semibold md:text-5xl md:mt-8">
-      Use a cloud-native service framework.
+      hyper. A service framework.
       </h2>
       <p class="mt-12">
-      hyper is a cloud-native solution that can run on any cloud and its ports and adapter architecture lets you use any
-      backend service you prefer. You can get started using the hyper cloud service in less that a minute. 
+      hyper is a cloud-native service solution delivering a straightforward way to leverage APIs to create scalable performant services. Create features quickly into apps that scale, all while keeping <b>technical debt</b> at bay.  
       </p>
-      <div class="mt-16">
-      <LinkButton styles="w-max" bgColor="lightblue" txtColor="blue" href="/company">Learn More About Us</LinkButton>
-      </div>
+      <p class="mt-16">
+      hyper provides APIs to core application services: data, cache, storage, queues, and search. 
+      </p>
     </div>
   </section>
   <div class="mt-16 md:hidden flex items-center justify-center">

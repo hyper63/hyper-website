@@ -4,47 +4,47 @@
   const ports = [
     { 
         index: 0,
-        text: 'Data Port', 
+        text: 'Data Service', 
         id: '01', 
-        description: 'The data port provides common operations that any application will need to save structured data. The interface is document based and can manage complex structures of data without having to specify the data schema to the data persistence store.',
+        description: 'Store, Retrieve and index structured data',
         image: '/data-port.svg',
-        target: '/products#data',
+        target: '/product#data',
         color: 'green'
     },
     { 
         index: 1,
-        text: 'Search Port', 
+        text: 'Search Service', 
         id: '02', 
-        description: 'A common service that all applications need to provide is the ability to search for data. While leveraging indexes for structured data can serve some search capabilities, the implementation of a full text search feature can make it easier for users to use the product. Therefore having a search port for a service framework is necessary',
+        description: 'Free-text search service',
         image: '/search-port.svg',
-        target: '/products#search',
+        target: '/product#search',
         color: 'orange'
     },
     {
         index: 2,
-        text: 'Cache Port',
+        text: 'Cache Service',
         id: '03',
-        description: 'A common service that all applications need to provide is the ability to search for data. While leveraging indexes for structured data can serve some search capabilities, the implementation of a full text search feature can make it easier for users to use the product. Therefore having a search port for a service framework is necessary',
+        description: 'Key-value data store with time to live capability',
         image: '/cache-port.svg',
-        target: '/products#cache',
+        target: '/product#cache',
         color: 'purple'
     },
     {
         index: 3,
-        text: 'Storage Port',
+        text: 'Storage Service',
         id: '04',
-        description: 'A common service that all applications need to provide is the ability to search for data. While leveraging indexes for structured data can serve some search capabilities, the implementation of a full text search feature can make it easier for users to use the product. Therefore having a search port for a service framework is necessary',
+        description: 'File storage using a directory tree',
         image: '/storage-port.svg',
-        target: '/products#storage',
+        target: '/product#storage',
         color: 'blue'
       },
     {
         index: 4,
-        text: 'Queue Port',
+        text: 'Queue Service',
         id: '05',
-        description: 'A common service that all applications need to provide is the ability to search for data. While leveraging indexes for structured data can serve some search capabilities, the implementation of a full text search feature can make it easier for users to use the product. Therefore having a search port for a service framework is necessary',
+        description: 'Add task to queue for distributing jobs',
         image: '/queue-port.svg',
-        target: '/products#queue', 
+        target: '/product#queue', 
         color: 'red'
       }
     ]
@@ -76,23 +76,23 @@
   <nav class="flex flex-col space-y-16 ml-16 w-1/4">
     <button on:click={showPort(0)} class="flex flex-col border border-{active === 0 ? 'green' : 'gray'} bg-{active === 0 ? 'green' : 'white'} text-{active === 0 ? 'white' : 'black'}">
       <div>01</div>
-      <div>Data Port</div>
+      <div>Data Service</div>
     </button>
     <button on:click={showPort(1)} class="flex flex-col border border-{active === 1 ? 'orange' : 'gray'} bg-{active === 1 ? 'orange' : 'white'} text-{active === 1 ? 'white' : 'black'}">
       <div>02</div>
-      <div>Search Port</div>
+      <div>Search Service</div>
     </button>
     <button on:click={showPort(2)} class="flex flex-col border border-{active === 2 ? 'purple' : 'gray'} bg-{active === 2 ? 'purple' : 'white'} text-{active === 2 ? 'white' : 'black'}">
       <div>03</div>
-      <div>Cache Port</div>
+      <div>Cache Service</div>
     </button>
     <button on:click={showPort(3)} class="flex flex-col border border-{active === 3 ? 'blue' : 'gray'} bg-{active === 3 ? 'blue' : 'white'} text-{active === 3 ? 'white' : 'black'}">
       <div>04</div>
-      <div>Storage Port</div>
+      <div>Storage Service</div>
     </button>
     <button on:click={showPort(4)} class="flex flex-col border border-{active === 4 ? 'red' : 'gray'} bg-{active === 4 ? 'red' : 'white'} text-{active === 4 ? 'white' : 'black'}">
       <div>05</div>
-      <div>Queue Port</div>
+      <div>Queue Service</div>
     </button>
   </nav>
   <article class="border rounded-xl border-white w-3/4 p-16 bg-gradient-to-br from-whitesmoke to-blue-100">
