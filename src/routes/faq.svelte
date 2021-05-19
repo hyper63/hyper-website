@@ -22,6 +22,9 @@
   export let flags = { search: false, filter: false }
   
 </script>
+<svelte:head>
+  <title>FAQ: hyper - service for building hyperscale applications</title>
+</svelte:head>
 <Header />
 <main>
   <h1 class="mt-8 mx-auto text-5xl text-center md:text-6xl">FAQs</h1> 

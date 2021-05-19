@@ -2,6 +2,9 @@
   import Header from '$lib/header.svelte'
   import Footer from '$lib/footer.svelte'
 </script>
+<svelte:head>
+  <title>Pricing: hyper - service for building hyperscale applications</title>
+</svelte:head>
 <Header />
 <main>
   <h1 class="text-3xl pl-4 mt-8 mb-8">Simple <b>Pricing</b></h1>
