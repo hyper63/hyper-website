@@ -17,7 +17,6 @@
   import Header from '$lib/header.svelte'  
   import Button from '$lib/button.svelte'
   import Play from '$lib/play-button.svelte'
-  import LinkButton from '$lib/link-button.svelte'
   import Ports from '$lib/ports.svelte'
   import FAQ from '$lib/faq.svelte'
   import All from '$lib/all-n-one.svelte'

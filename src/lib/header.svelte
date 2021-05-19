@@ -41,7 +41,7 @@ function isCurrentPage(ref) {
     <a class="font-space uppercase text-sm" href="/get-started">get started</a>
     -->
     <!-- api docs button -->
-    <NavButton on:click={() => goto('https://docs.hyper63.com')}>API DOCS</NavButton>
+    <NavButton><a href="https://docs.hyper63.com" target="_blank" >API DOCS</a></NavButton>
   </nav>
 
 </header>
