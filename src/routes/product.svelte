@@ -4,6 +4,9 @@
   import Button from '$lib/button.svelte'
   import Section from '$lib/section.svelte'
   </script>
+  <svelte:head>
+  <title>Product: hyper - service for building hyperscale applications</title>
+</svelte:head>
   <Header />
   <main class="md:ml-24 md:mr-44" >
     <section id="summary" class="md:flex md:relative" >

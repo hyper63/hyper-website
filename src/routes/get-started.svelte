@@ -16,6 +16,9 @@
     // .. do something here 🙂
   }
 </script>
+<svelte:head>
+  <title>Getting Started: hyper - service for building hyperscale applications</title>
+</svelte:head>
 <Header />
 <main>
   <h1 class="mx-4 my-8 text-center text-5xl">Get <b>Started</b></h1>

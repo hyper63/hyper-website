@@ -28,7 +28,7 @@
   let show = false
 </script>
 <svelte:head>
-  <title>hyper.io - the service framework</title>
+  <title>hyper - service for building hyperscale applications</title>
 </svelte:head>
 <Header />
 <main class="ml-0 pl-0 pr-0 mr-0">

@@ -3,6 +3,9 @@
   import Footer from '$lib/footer.svelte'
   import Button from '$lib/button.svelte'
 </script>
+<svelte:head>
+  <title>Company: hyper - service for building hyperscale applications</title>
+</svelte:head>
 <Header />
 <main>
   <section class="w-full flex px-4 pt-8 md:pl-24">
