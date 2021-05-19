@@ -10,16 +10,9 @@
     export let data = null
 
     function saveToggle (e) {
-      toggleEnabled = !toggleEnabled
-    
-        //  active: faq.active === 'false' || faq.active === false ? false : true,
+        toggleEnabled = !toggleEnabled
         const editedToggleData = {...data, active: toggleEnabled }
-
-        //console.log("submitting", {editedToggleData})
-
         dispatch('toggleSave', editedToggleData)
-  
-
     }
 
     //console.log({toggleEnabled})

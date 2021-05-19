@@ -2,11 +2,16 @@
   import Input from '$lib/input.svelte'
   import { createEventDispatcher } from 'svelte';
   import { compose, map, trim, split } from 'ramda';
-  
+  import ActiveToggle from '$lib/toggle.svelte'
+import Faq from '$lib/faq.svelte';
   export let faq = { tags: [], active: 'false' }
   
   let tagString = faq.tags.join(', ')
   const dispatch = createEventDispatcher();
+
+  function handleToggle ({detail}) {
+    faq = {...faq, active: detail.active}
+  }
   
   function submit(e) {
     //  active: faq.active === 'false' || faq.active === false ? false : true,
@@ -87,8 +92,9 @@
                   Published
                 </label>
                 <div class="mt-1 flex rounded-md shadow-sm w-full">
-                  <input type="checkbox" bind:checked={faq.active} />
-                  
+                  <!-- <input type="checkbox" bind:checked={faq.active} /> -->
+                  <ActiveToggle data={faq} on:toggleSave={handleToggle} toggleEnabled={faq.active} enabledColor={"blue"} disabledColor={"whitesmoke"}/>
+                
                 </div>
               </div>
             </div>
