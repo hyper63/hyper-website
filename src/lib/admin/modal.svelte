@@ -38,8 +38,8 @@
             <br />
             
             
-              <button class="border-darkgray px-4" txtColor="black" bgColor="lightgray" on:click={handleCancelClick}>Cancel</button>
-              <Button class="" txtColor="white" bgColor="red" on:click={handleDeleteClick}>Delete</Button>
+              <Button class="border-darkgray px-4" txtColor="black" bgColor="lightgray" hyperBolt={false} on:click={handleCancelClick}>Cancel</Button>
+              <Button txtColor="white" bgColor="red" on:click={handleDeleteClick}>Delete</Button>
             
             
             <!-- <button on:click|preventDefault={handleDeleteClick}>Delete</button> -->
