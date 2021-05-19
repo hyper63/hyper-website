@@ -1,8 +1,9 @@
 <script>
   export let txtColor = 'blue'
   export let bgColor = 'lightblue'
+  export let hoverTextColor = 'white'
 </script>
-<button on:click class="text-{txtColor} bg-{bgColor} hover:bg-{txtColor} hover:text-{bgColor}">
+<button on:click class="text-{txtColor} bg-{bgColor} hover:bg-{txtColor} hover:text-{hoverTextColor}">
   <slot></slot>
 </button>
 <style lang="postcss">

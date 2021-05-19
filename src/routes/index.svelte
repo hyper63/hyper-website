@@ -37,10 +37,12 @@
       <h1 class="text-4xl font-semibold md:text-6xl width-full height-full">Build Your Web Applications at <b>hyper</b> Speed</h1>
       <p class="text-md mt-4 mr-8 md:mt-12 md:w-3/4">hyper provides a full suite of core backend services. Focus on what matters. Stop the bike-shedding. Start building scalable applications today.</p>
       <div class="mt-16 flex space-x-4 md:space-x-20">
-        <Button><a href="https://docs.hyper63.com/getting-started" target="_blank">Get Started</a></Button>
+       <a href="https://docs.hyper63.com/getting-started"><Button>Get Started</Button></a>
         
-        <Play href="https://blog.hyper63.com/tour-of-hyper63-api/" target="_blank">
-          <a href="https://blog.hyper63.com/tour-of-hyper63-api/" target="_blank">Watch</a>
+
+
+        <Play href="https://blog.hyper63.com/tour-of-hyper63-api/" >
+          Watch
         </Play>
         
 

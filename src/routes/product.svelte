@@ -44,12 +44,12 @@
         </div>
       </span>
       <span slot="image">
-        <img src="data-lg.svg" />
+        <img src="data-lg.svg" alt="data" />
       </span>
     </Section>
     <Section id="search" image="left">
       <span slot="image">
-       <img src="search-lg.svg" />
+       <img src="search-lg.svg" alt="search"/>
       </span>
       <span slot="text">
         <div class="flex flex-col items-center">
@@ -84,12 +84,12 @@
         </div>
       </span>
       <span slot="image">
-        <img src="storage-lg.svg" />
+        <img src="storage-lg.svg" alt="storage"/>
       </span>
     </Section> 
     <Section id="cache" image="left">
       <span slot="image">
-        <img src="cache-lg.svg" />
+        <img src="cache-lg.svg" alt="cache"/>
       </span>
       <span slot="text">
         <div class="flex flex-col items-center">
@@ -124,7 +124,7 @@
         </div>
       </span>
       <span slot="image">
-        <img src="queue-lg.svg" />
+        <img src="queue-lg.svg" alt="queue"/>
       </span>    
     </Section>
   <Footer />
