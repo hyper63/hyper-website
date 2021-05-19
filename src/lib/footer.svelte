@@ -17,9 +17,9 @@
       <ul>
         <li><a class="uppercase" href="https://docs.hyper63.com/introduction">Introduction</a></li>
         <li><a class="uppercase" href="https://docs.hyper63.com/authentication">Authentication</a></li>
-        <li><a class="uppercase" href="https://docs.hyper63.com/">CONFIGURATION</a></li>
-        <li><a class="uppercase" href="https://docs.hyper63.com">HOOKS</a></li>
-        <li><a class="uppercase" href="https://docs.hyper63.com">DEPLOYING</a></li>
+        <li><a class="uppercase" href="https://docs.hyper63.com/configuration">CONFIGURATION</a></li>
+        <li><a class="uppercase" href="https://docs.hyper63.com/hooks-">HOOKS</a></li>
+        <li><a class="uppercase" href="https://docs.hyper63.com/deploying">DEPLOYING</a></li>
       </ul>
     </div>
     <div class="p-16">
@@ -27,7 +27,7 @@
       <ul>
         <li><a href="/company">COMPANY</a></li>
         <li><a href="https://docs.hyper63.com">GET STARTED</a></li>
-        <li><a href="/faqs">FAQS</a></li>
+        <li><a href="/faq">FAQS</a></li>
       </ul>
     </div>
     <div class="p-16">
