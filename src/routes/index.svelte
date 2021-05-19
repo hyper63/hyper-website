@@ -15,10 +15,8 @@
 </script>
 <script>
   import Header from '$lib/header.svelte'  
-  import LinkBtn from '$lib/link-button.svelte'
   import Button from '$lib/button.svelte'
   import Play from '$lib/play-button.svelte'
-  import LinkButton from '$lib/link-button.svelte'
   import Ports from '$lib/ports.svelte'
   import FAQ from '$lib/faq.svelte'
   import All from '$lib/all-n-one.svelte'
@@ -39,12 +37,19 @@
       <h1 class="text-4xl font-semibold md:text-6xl width-full height-full">Build Your Web Applications at <b>hyper</b> Speed</h1>
       <p class="text-md mt-4 mr-8 md:mt-12 md:w-3/4">hyper provides a full suite of core backend services. Focus on what matters. Stop the bike-shedding. Start building scalable applications today.</p>
       <div class="mt-16 flex space-x-4 md:space-x-20">
-        <Button bgColor="blue" txtColor="white">Get Started</Button>
-        <Play>Watch</Play>
+       <a href="https://docs.hyper63.com/getting-started"><Button>Get Started</Button></a>
+        
+
+
+        <Play href="https://blog.hyper63.com/tour-of-hyper63-api/" >
+          Watch
+        </Play>
+        
+
       </div>
     </div> 
   </section>
-  <img class="md:hidden" src="/homepage-splash.svg" />
+  <img class="md:hidden" src="/homepage-splash.svg" alt="homepage splash"/>
   <section class="flex w-full md:pt-44 pl-4 md:pl-24 md:pr-24 md:relative">
     <Flow />
     <div class="md:w-1/2 2xl:w-1/3">
@@ -54,7 +59,7 @@
       through so much noise to implement a simple change request.</p>
     </div>
   </section>
-  <img class="md:hidden" src="/flow1.svg" />
+  <img class="md:hidden" src="/flow1.svg" alt="flow"/>
   <section class="flex w-full pl-4 md:pt-44 md:pl-24 md:pr-24 md:mb-96">
     <div class="md:w-1/2 2xl:w-1/3">
       <h5>OUR SOLUTION</h5>
@@ -70,7 +75,7 @@
     </div>
   </section>
   <div class="mt-16 md:hidden flex items-center justify-center">
-  <img class="" src="/hyper-box.svg" />
+  <img class="" src="/hyper-box.svg" alt="hyper box"/>
   </div>
   <Ports styles="pl-24 pr-24" />
   <All styles="pl-24 pr-24" />
@@ -81,7 +86,7 @@
     {#each faqs as {question, answer}}
     <FAQ>
       <span slot="question">{question}</span>
-      <span slot="answer">{answer}</span>
+      <span slot="answer">{@html answer}</span>
     </FAQ>
     {/each}
     </div>
@@ -89,26 +94,18 @@
   <Testimonials styles="pl-24 pr-24" />  
 </main>
 <Footer />
-<style lang="postcss">
-  @media (min-width: 768px) {
-    .splash {
-      background-image: url('/homepage-splash.svg');
-      height: 950px;
-    }
-  }
-  main {
-    width: 100%;
-  }
-  .flow {
-    @apply sm:hidden md:block absolute opacity-90;
-  }
-  .connectors {
+
+<!-- .flow {
+  @apply sm:hidden md:block absolute opacity-90;
+} 
+
+ .connectors {
     @apply absolute;
     left: 965px;
     top: 2065px;
 
   }
-  .circle {
+ .circle {
     @apply absolute;
     /*right: 325px;*/
     left: 1045px;
@@ -119,4 +116,16 @@
     left: 278px;
     top: 2450px;
   }
+-->
+<style lang="postcss">
+  @media (min-width: 768px) {
+    .splash {
+      background-image: url('/homepage-splash.svg');
+      height: 950px;
+    }
+  }
+  main {
+    width: 100%;
+  }
+
 </style>
