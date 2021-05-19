@@ -7,20 +7,22 @@ import Section from '$lib/section.svelte'
 <Header />
 <main class="md:ml-24 md:mr-44" >
   <section id="summary" class="md:flex md:relative" >
-    <div class="md:w-1/3 md:h-96">
+    <div class="md:w-1/2 md:h-96">
       <h1 class="text-3xl pl-4 mt-8 mb-4 md:pl-0 md:mt-24 md:text-6xl ">hyper <br /><b>services</b></h1>
       <p class="text-base mx-4 text-darkgray md:mx-0">Build any application by taking advantage of hyper's single API entry point and composable application services.</p>
-      <p class="font-mono bg-black text-white my-4 mx-4 p-4 md:p-8 rounded-lg">
-      VERB /:service/:app/[:identifier | :action]
-      </p>
-      <ul class="ml-4 md:ml-8 md:mt-8">
+      <ul class="font-mono md:mt-8 bg-black text-white text-mono rounded-lg p-8">
+        <li><span class="text-green"># Single API Entry Point </span><br />{'VERB /:service/:app/[:identifier | :action]'}</li>
+
+      </ul>
+
+      <!-- <ul class="ml-4 md:ml-8 md:mt-8">
         <li><a class="text-blue" href="#data">Data</a></li>
         <li><a class="text-blue" href="#search">Search</a></li>
         <li><a class="text-blue" href="#storage">Storage</a></li>
         <li><a class="text-blue" href="#cache">Cache</a></li>
         <li><a class="text-blue" href="#queue">Queue</a></li>
       </ul>
-      <Button styles="mx-4 mt-8 md:hidden">Get Started</Button>
+      <Button styles="mx-4 mt-8 md:hidden">Get Started</Button> -->
     </div>
     <img class="w-full md:w-2/3 md:absolute" style="z-index: -100;right: 0; top: -200px;" src="/services.svg" alt="hyper services" />
   </section>
@@ -32,7 +34,7 @@ import Section from '$lib/section.svelte'
         <p class="text-base mx-4 mt-4 text-darkgray md:w-1/2 md:text-center">
           API powered data access:
         </p>
-        <ul class="md:mt-8 bg-black text-white text-mono rounded-lg p-8">
+        <ul class="font-mono md:mt-8 bg-black text-white rounded-lg p-8">
           <li><span class="text-green"># Create </span><br />{'POST /data/{app} -d {...}'}</li>
           <li><span class="text-green"># Read </span><br />{'GET /data/{app}/:id'}</li>
           <li><span class="text-green"># Update </span><br />{'PUT /data/{app}/:id -d {...}'}</li>
