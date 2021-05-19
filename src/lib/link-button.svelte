@@ -1,10 +1,11 @@
 <script>
   export let href
+  export let target = null
   export let bgColor = 'active-blue'
   export let txtColor = 'white'
   export let styles = ''
 </script>
-<a {href} class="bg-{bgColor} text-{txtColor} {styles}">
+<a {href} {target} class="bg-{bgColor} text-{txtColor} {styles}">
   <slot></slot>
 </a>
 <style>
