@@ -184,7 +184,6 @@
     <div class="mt-3 flex justify-between">
       <Play>Watch</Play>
       <Play bgColor="lightblue" iconColor="blue">Watch</Play>
-
       <Play bgColor="lightorange" iconColor="orange">Watch</Play>
       <Play bgColor="lightred" iconColor="red">Watch</Play>
       <Play bgColor="lightpurple" iconColor="purple">Watch</Play>
