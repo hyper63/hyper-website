@@ -22,7 +22,12 @@ function isCurrentPage(ref) {
   </section>
   </a>
   <section class="md:hidden">
-    <button class="border-0 mr-4 focus:outline-none" on:click={() => mobile()}>
+    <button 
+      aria-expanded="{mobileMenu ? 'true' : 'false'}"
+      aria-label="mobile-menu" 
+      class="border-0 mr-4 focus:outline-none" 
+      on:click={() => mobile()}
+      >
       <svg width="30" height="17" viewBox="0 0 30 17" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 1H30M30 8.5H0M0 16H30" stroke="#1286F6" stroke-width="2"/>
       </svg>
