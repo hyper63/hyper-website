@@ -13,20 +13,20 @@
       </ul>
     </div>
     <div class="p-16">
-      <div class="mb-8 text-blue"><a href="https://docs.hyper63.com">API DOCS</a></div>
+      <div class="mb-8 text-blue"><a href="https://docs.hyper.io">API DOCS</a></div>
       <ul>
-        <li><a class="uppercase" href="https://docs.hyper63.com/introduction">Introduction</a></li>
-        <li><a class="uppercase" href="https://docs.hyper63.com/authentication">Authentication</a></li>
-        <li><a class="uppercase" href="https://docs.hyper63.com/configuration">CONFIGURATION</a></li>
-        <li><a class="uppercase" href="https://docs.hyper63.com/hooks-">HOOKS</a></li>
-        <li><a class="uppercase" href="https://docs.hyper63.com/deploying">DEPLOYING</a></li>
+        <li><a class="uppercase" href="https://docs.hyper.io/introduction">Introduction</a></li>
+        <li><a class="uppercase" href="https://docs.hyper.io/authentication">Authentication</a></li>
+        <li><a class="uppercase" href="https://docs.hyper.io/configuration">CONFIGURATION</a></li>
+        <li><a class="uppercase" href="https://docs.hyper.io/hooks-">HOOKS</a></li>
+        <li><a class="uppercase" href="https://docs.hyper.io/deploying">DEPLOYING</a></li>
       </ul>
     </div>
     <div class="p-16">
-      <div class="mb-8 text-blue"><a href="https://blog.hyper63.com">BLOG</a></div>
+      <div class="mb-8 text-blue"><a href="https://blog.hyper.io">BLOG</a></div>
       <ul>
         <li><a href="/company">COMPANY</a></li>
-        <li><a href="https://docs.hyper63.com">GET STARTED</a></li>
+        <li><a href="https://shop.hyper.io">SHOP</a></li>
         <li><a href="/faq">FAQS</a></li>
       </ul>
     </div>

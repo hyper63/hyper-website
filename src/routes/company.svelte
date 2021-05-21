@@ -17,7 +17,7 @@
       incredible products.
       </p>
       <!-- <Button styles="mx-4 mt-8 hidden md:block md:mx-0">Get Started</Button> -->
-      <a href="https://docs.hyper63.com/getting-started"><Button styles="mx-4 mt-8">Get Started</Button></a>
+      <a href="https://docs.hyper.io/getting-started"><Button styles="mx-4 mt-8">Get Started</Button></a>
     </div>
     <div class="w-full flex items-center justify-center">
       <img src="/company-bolt.svg" class="w-full" alt="company bolt logo" />
@@ -30,7 +30,7 @@
     incredible products.
     </p>
     <!-- <Button styles="mx-4 mt-8">Get Started</Button> -->
-    <a href="https://docs.hyper63.com/getting-started"><Button styles="mx-4 mt-8">Get Started</Button></a>
+    <a href="https://docs.hyper.io/getting-started"><Button styles="mx-4 mt-8">Get Started</Button></a>
   </section>
   <section class="pt-8 px-4 md:flex md:ml-24 md:mr-44">
     <img class="mt-8 mx-auto md:w-1/2" src="/swirl.svg" alt="swirl" />
@@ -59,7 +59,7 @@
       <p class="mt-4 text-darkgray text-base">
   As your code base expands, hyper actually increases productivity while decreasing your technical debt. At hyper, we build tools that require a different mindset. Tools that provide a hyper focus on your problem domain.
       </p>
-      <a href="https://docs.hyper63.com/getting-started"><Button styles="mx-4 mt-8">Get Started</Button></a>
+      <a href="https://docs.hyper.io/getting-started"><Button styles="mx-4 mt-8">Get Started</Button></a>
     </div>
     <img class="mt-8 md:w-2/3" src="/hyper-connected.svg" alt="connected" />
   </section>
