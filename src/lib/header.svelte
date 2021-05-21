@@ -41,14 +41,14 @@
       <!-- company -->
       <a class="font-space uppercase text-sm" href="/company">company</a>
       <!-- blog -->
-      <a class="font-space uppercase text-sm" href="https://blog.hyper63.com">blog</a>
+      <a class="font-space uppercase text-sm" href="https://blog.hyper.io">blog</a>
       <!-- get started
       <a class="font-space uppercase text-sm" href="/get-started">get started</a>
       -->
       <!-- api docs button -->
-      <!-- <a href="https://docs.hyper63.com"><button>API DOCS</button></a> -->
-      <a class="font-space uppercase text-sm" href="https://docs.hyper63.com"><NavButton>API DOCS</NavButton></a>
-      <!-- <NavButton href="https://docs.hyper63.com">API DOCS</NavButton> -->
+      <!-- <a href="https://docs.hyper.io"><button>API DOCS</button></a> -->
+      <a class="font-space uppercase text-sm" href="https://docs.hyper.io"><NavButton>API DOCS</NavButton></a>
+      <!-- <NavButton href="https://docs.hyper.io">API DOCS</NavButton> -->
     </nav>
   
   </header>
@@ -60,11 +60,11 @@
       <a href="/pricing" class="{isCurrentPage('/pricing')}">Pricing</a>
       <a href="/faq" class="{isCurrentPage('/faq')}">FAQ</a>
       <a href="/company" class="{isCurrentPage('/company')}">Company</a>
-      <a href="https://blog.hyper63.com" class="link">Blog</a>
+      <a href="https://blog.hyper.io" class="link">Blog</a>
       <!-- <a href="/get-started" class="{isCurrentPage('/get-started')}">Get Started</a> -->
       <hr />
-      <Button href="https://docs.hyper63.com">API DOCS</Button>
-      <NavButton><a href="https://docs.hyper63.com">API DOCS</a></NavButton>
+      <Button href="https://docs.hyper.io">API DOCS</Button>
+      <NavButton><a href="https://docs.hyper.io">API DOCS</a></NavButton>
     </div>
   </div>
   {/if}
