@@ -4,12 +4,13 @@
   export let txtColor = 'white'
   export let styles = ''
   export let hyperBolt = true
+  export let hoverBgColor ='purple'
     
   </script>
   <button 
     on:click 
     type={type} 
-    class="space-x-4 text-{txtColor} bg-{bgColor} hover:bg-light{bgColor} focus:ring-{bgColor} {styles}">
+    class="space-x-4 text-{txtColor} bg-{bgColor} hover:bg-{hoverBgColor} focus:ring-{bgColor} {styles}">
       <div>
         <slot></slot>
       </div>
