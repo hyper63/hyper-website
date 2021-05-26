@@ -33,8 +33,8 @@
     <div class="p-16">
       <div class="mb-8 text-blue">CONTACT</div>
       <ul>
-        <li><a href="mailto:info@hyper.io">INFO@HYPER63.COM</a></li>
-        <li><a href="mailto:support@hyper.io">SUPPORT@HYPER63.COM</a></li>
+        <li><a href="mailto:info@hyper.io">INFO@HYPER.IO</a></li>
+        <li><a href="mailto:support@hyper.io">SUPPORT@HYPER.IO</a></li>
         <li><a href="https://twitter.com/_hyper_io">TWITTER</a></li>
         <li><a href="https://github.com/hyper63">GITHUB</a></li>
       </ul>
