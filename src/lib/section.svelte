@@ -3,7 +3,7 @@
   export let id = ''
   export let image = 'left'
 </script>
-<section {id} class="md:flex {styles}">
+<section {id} class="md:flex pb-16 {styles}">
   {#if image === 'left'}
   <div class="hidden md:w-1/2 md:flex md:flex-col md:items-center md:justify-center">
     <slot name="image"></slot>
