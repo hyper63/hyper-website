@@ -40,7 +40,7 @@
       </ul>
     </div>
   </section>
-  <section class="flex justify-center mt-16 mb-16">
+  <section class="flex justify-center items-center mt-16 mb-16 ml-4 w-full">
     <p class="font-mono text-sm">&copy; 2021 HYPER63, LLC ALL RIGHTS RESERVED.</p>
   </section>
 </footer>

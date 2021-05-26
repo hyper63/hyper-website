@@ -36,7 +36,7 @@
     <div class="mt-8 md:mt-20 md:w-1/2">
       <h1 class="text-4xl font-semibold md:text-6xl width-full height-full">Build Your Web Applications at <b>hyper</b> Speed</h1>
       <p class="text-md mt-4 mr-8 md:mt-12 md:w-3/4">hyper provides a full suite of core backend services. Focus on what matters. Stop the bike-shedding. Start building scalable applications today.</p>
-      <div class="mt-16 flex space-x-4 md:space-x-20">
+      <div class="mt-16 flex flex-col md:flex-row space-y-4 space-x-4 md:space-y-0 md:space-x-20">
        <a href="https://docs.hyper.io/getting-started"><Button>Get Started</Button></a>
         
 
@@ -78,11 +78,11 @@
   <img class="" src="/hyper-box.svg" alt="hyper box"/>
   </div>
   <Ports styles="pl-24 pr-24" />
-  <All styles="pl-24 pr-24" />
+  <All styles="md:pl-24 md:pr-24" />
   <section class="flex flex-col bg-whitesmoke items-center mt-4 pt-8 md:mt-16 md:pt-8 md:pl-24 md:pr-24">
     <h1 class="text-3xl md:text-6xl">FAQs</h1>
     <p class="px-4 my-4 text-base md:mt-16 md:mb-8">Can't find the answer you're looking for? Reach out to our <a href="/contact" class="text-red underline">customer support team</a>.</p>
-    <div class="flex flex-col w-3/4 md:w-2/3 md:mb-32">
+    <div class="flex flex-col space-y-4 w-3/4 md:w-2/3 md:mb-32 mb-8">
     {#each faqs as {question, answer}}
     <FAQ>
       <span slot="question">{question}</span>
@@ -91,7 +91,7 @@
     {/each}
     </div>
   </section>
-  <Testimonials styles="pl-24 pr-24" />  
+  <Testimonials styles="pl-4 pr-4 md:pl-24 md:pr-24" />  
 </main>
 <Footer />
 
@@ -120,6 +120,7 @@
 <style lang="postcss">
   @media (min-width: 768px) {
     .splash {
+      background-position: top right;
       background-image: url('/homepage-splash.svg');
       height: 950px;
     }
