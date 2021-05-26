@@ -30,7 +30,7 @@
   <h1 class="mt-8 mx-auto text-5xl text-center md:text-6xl">FAQs</h1> 
   <p class="mt-4 px-4 text-base text-darkgray md:text-center">
   Can’t find the answer you’re looking for? Reach out to our 
-  <a href="/contact" class="text-red underline">customer support team</a>.
+  <a href="https://github.com/hyper63/hyper63/discussions" class="text-red underline">customer support team</a>.
   </p>
   {#if flags.search}
   <section class="mt-4 mx-4 md:flex md:justify-center">
