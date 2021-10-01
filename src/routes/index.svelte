@@ -34,8 +34,8 @@
 <main class="ml-0 pl-0 pr-0 mr-0">
   <section class="splash bg-no-repeat pl-4 md:pl-24 md:pr-24">
     <div class="mt-8 md:mt-20 md:w-1/2">
-      <h1 class="text-4xl font-semibold md:text-6xl width-full height-full">Build Your Web Applications at <b>hyper</b> Speed</h1>
-      <p class="text-md mt-4 mr-8 md:mt-12 md:w-3/4">hyper provides a full suite of core backend services. Focus on what matters. Stop the bike-shedding. Start building scalable applications today.</p>
+      <h1 class="text-4xl font-semibold md:text-6xl width-full height-full">One <b>API</b>... many services...</h1>
+      <p class="text-md mt-4 mr-8 md:mt-12 md:w-3/4">hyper is a dev-ops team wrapped in a single API. One consistent, frictionless API to manage data, cache, storage, search, and queue services. hyper promotes clean architecture application development.</p>
       <div class="mt-16 flex flex-col md:flex-row space-y-4 space-x-4 md:space-y-0 md:space-x-20">
        <a href="https://docs.hyper.io/getting-started"><Button>Get Started</Button></a>
         

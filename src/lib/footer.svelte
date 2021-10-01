@@ -6,27 +6,29 @@
       <div class="mb-8 text-blue"><a href="/product">PRODUCT</a></div>
       <ul>
         <li><a href="/product#data">DATA</a></li>
+        <!--
         <li><a href="/product#search">SEARCH</a></li>
         <li><a href="/product#cache">CACHE</a></li>
         <li><a href="/product#storage">STORAGE</a></li>
         <li><a href="/product#queue">QUEUE</a></li>
+        -->
       </ul>
     </div>
     <div class="p-16">
       <div class="mb-8 text-blue"><a href="https://docs.hyper.io">API DOCS</a></div>
+      <!--
       <ul>
         <li><a class="uppercase" href="https://docs.hyper.io/introduction">Introduction</a></li>
         <li><a class="uppercase" href="https://docs.hyper.io/authentication">Authentication</a></li>
         <li><a class="uppercase" href="https://docs.hyper.io/configuration">CONFIGURATION</a></li>
-        <li><a class="uppercase" href="https://docs.hyper.io/hooks-">HOOKS</a></li>
-        <li><a class="uppercase" href="https://docs.hyper.io/deploying">DEPLOYING</a></li>
       </ul>
+      -->
     </div>
     <div class="p-16">
       <div class="mb-8 text-blue"><a href="https://blog.hyper.io">BLOG</a></div>
       <ul>
         <li><a href="/company">COMPANY</a></li>
-        <li><a href="https://shop.hyper.io">SHOP</a></li>
+        <li><a href="https://join.slack.com/t/hyper-chat/shared_invite/zt-wefinvvb-EA7gchLaXKwKzJE_libKOw">CHAT</a></li>
         <li><a href="/faq">FAQS</a></li>
       </ul>
     </div>
@@ -34,9 +36,8 @@
       <div class="mb-8 text-blue">CONTACT</div>
       <ul>
         <li><a href="mailto:info@hyper.io">INFO@HYPER.IO</a></li>
-        <li><a href="mailto:support@hyper.io">SUPPORT@HYPER.IO</a></li>
         <li><a href="https://twitter.com/_hyper_io">TWITTER</a></li>
-        <li><a href="https://github.com/hyper63">GITHUB</a></li>
+        <li><a href="https://github.com/hyper63/hyper">GITHUB</a></li>
       </ul>
     </div>
   </section>
