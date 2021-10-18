@@ -46,7 +46,7 @@
       <div
         class="mt-16 flex flex-col md:flex-row space-y-4 space-x-4 md:space-y-0 md:space-x-20"
       >
-        <a href="https://docs.hyper.io/getting-started"
+        <a href="https://docs.hyper.io/cloud"
           ><Button>Get Started</Button></a
         >
 
