@@ -36,9 +36,14 @@
   <section class="splash bg-no-repeat pl-4 md:pl-24 md:pr-24">
     <div class="flex">
       <div class="mt-8 md:mt-20 md:w-1/2">
-        <h1 class="text-4xl font-semibold md:text-6xl width-full height-full">
-          One <b>API</b>... many services...
+        <h1
+          class="text-1xl font-semibold md:text-2xl width-full height-full text-gray"
+        >
+          hyper - service for building hyperscale applications
         </h1>
+        <h2 class="text-4xl font-semibold md:text-6xl width-full height-full">
+          One <b>API</b>... many services...
+        </h2>
         <p class="text-md mt-4 mr-8 md:mt-12 md:w-3/4">
           hyper is a dev-ops team wrapped in a single API. One consistent,
           frictionless API to manage data, cache, storage, search, and queue

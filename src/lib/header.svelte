@@ -19,7 +19,7 @@
       <!-- logo -->
       <img src="/logo.svg" alt="hyper logo" />
       <!-- name -->
-      <h3 class="ml-3">hyper</h3>
+      <h2 class="ml-3 text-xl md:text-5xl">hyper</h2>
     </section>
   </a>
   <section class="md:hidden">
