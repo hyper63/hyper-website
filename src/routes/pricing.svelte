@@ -48,24 +48,24 @@
     </article>
   </section>
   <h5 class="mx-4 mt-8 mb-4 uppercase">All Paid Plans Include:</h5>
-  <ul class="mx-4">
-    <li class="flex items-center">
+  <ul class="mx-4" role="list">
+    <li class="flex items-center" role="listitem">
       <img src="/data-sm.svg" alt="data service" role="img"/>
       <p class="text-sm font-semibold">Data Service</p>
     </li>
-    <li class="flex items-center">
+    <li class="flex items-center" role="listitem">
       <img src="/search-sm.svg" alt="search service" role="img"/>
       <p class="text-sm font-semibold">Search Service</p>
     </li>
-    <li class="flex items-center">
+    <li class="flex items-center" role="listitem">
       <img src="/cache-sm.svg" alt="cache service" role="img"/>
       <p class="text-sm font-semibold">Cache Service</p>
     </li>
-    <li class="flex items-center">
+    <li class="flex items-center" role="listitem">
       <img src="/storage-sm.svg" alt="storage service" role="img" />
       <p class="text-sm font-semibold">Storage Service</p>
     </li>
-    <li class="flex items-center">
+    <li class="flex items-center" role="listitem">
       <img src="/queue-sm.svg" alt="queue service" role="img"/>
       <p class="text-sm font-semibold">Queue Service</p>
     </li>

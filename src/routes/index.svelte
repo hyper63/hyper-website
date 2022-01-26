@@ -68,7 +68,7 @@
       />
     </div>
   </section>
-  <img class="md:hidden" src="/homepage-splash.svg" alt="homepage splash" />
+  <img class="md:hidden" src="/homepage-splash.svg" alt="homepage splash" role="img"/>
   <section class="flex w-full md:pt-44 pl-4 md:pl-24 md:pr-24 md:relative">
     <Flow />
     <div class="md:w-1/2 2xl:w-1/3">
@@ -83,7 +83,7 @@
       </p>
     </div>
   </section>
-  <img class="md:hidden" src="/flow1.svg" alt="flow" />
+  <img class="md:hidden" src="/flow1.svg" alt="flow" role="img"/>
   <section class="flex w-full pl-4 md:pt-44 md:pl-24 md:pr-24 md:mb-96">
     <div class="md:w-1/2 2xl:w-1/3">
       <h5>OUR SOLUTION</h5>
@@ -104,7 +104,7 @@
     </div>
   </section>
   <div class="mt-16 md:hidden flex items-center justify-center">
-    <img class="" src="/hyper-box.svg" alt="hyper box" />
+    <img class="" src="/hyper-box.svg" alt="hyper box" role="img"/>
   </div>
   <Ports styles="pl-24 pr-24" />
   <All styles="md:pl-24 md:pr-24" />
