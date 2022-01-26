@@ -50,32 +50,32 @@
   <h5 class="mx-4 mt-8 mb-4 uppercase">All Paid Plans Include:</h5>
   <ul class="mx-4">
     <li class="flex items-center">
-      <img src="/data-sm.svg" />
+      <img src="/data-sm.svg" alt="data service" role="img"/>
       <p class="text-sm font-semibold">Data Service</p>
     </li>
     <li class="flex items-center">
-      <img src="/search-sm.svg" />
+      <img src="/search-sm.svg" alt="search service" role="img"/>
       <p class="text-sm font-semibold">Search Service</p>
     </li>
     <li class="flex items-center">
-      <img src="/cache-sm.svg" />
+      <img src="/cache-sm.svg" alt="cache service" role="img"/>
       <p class="text-sm font-semibold">Cache Service</p>
     </li>
     <li class="flex items-center">
-      <img src="/storage-sm.svg" />
+      <img src="/storage-sm.svg" alt="storage service" role="img" />
       <p class="text-sm font-semibold">Storage Service</p>
     </li>
     <li class="flex items-center">
-      <img src="/queue-sm.svg" />
+      <img src="/queue-sm.svg" alt="queue service" role="img"/>
       <p class="text-sm font-semibold">Queue Service</p>
     </li>
   </ul>
   <hr class="mx-4 my-8 border-lightgray" />
   <section class="mx-4">
-    <p class="flex space-x-4"><img src="/check.svg" /><span>Daily backups</span></p>
-    <p class="flex space-x-4"><img src="/check.svg" /><span>24/7 Monitoring</span></p>
-    <p class="flex space-x-4" ><img src="/check.svg" /><span>Hosted or Managed Solution</span></p>
-    <p class="flex space-x-4"><img src="/check.svg" /><span>Dedicated sub-domain name</span></p>
+    <p class="flex space-x-4"><img src="/check.svg" alt="check" role="img"/><span>Daily backups</span></p>
+    <p class="flex space-x-4"><img src="/check.svg" alt="check" role="img" /><span>24/7 Monitoring</span></p>
+    <p class="flex space-x-4" ><img src="/check.svg" alt="check" role="img"/><span>Hosted or Managed Solution</span></p>
+    <p class="flex space-x-4"><img src="/check.svg"  alt="check" role="img"/><span>Dedicated sub-domain name</span></p>
   </section>
 </main>
 <Footer />
