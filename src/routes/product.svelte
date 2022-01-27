@@ -56,23 +56,24 @@
       </p>
       <ul class="font-mono md:mt-8 bg-black text-white rounded-lg p-8" role="list">
         <li role="listitem">
-          <span class="text-green"># Create </span><br
-          />{"POST /data/{app} -d {...}"}
+          <span class="text-green">// Add Document</span><br
+          />{"await hyper.data.add({ _id: 'game-1', type: 'game', name: 'Super Mario Bros 3', rating: 5})"}
         </li>
         <li role="listitem">
-          <span class="text-green"># Read </span><br />{"GET /data/{app}/:id"}
+          <span class="text-green">// Read Document</span><br />
+          {"await hyper.data.get('game-1')"}
         </li>
         <li role="listitem">
-          <span class="text-green"># Update </span><br
-          />{"PUT /data/{app}/:id -d {...}"}
+          <span class="text-green">// Query</span><br
+          />{"await hyper.data.query({type: 'game'})"}
         </li>
         <li role="listitem">
-          <span class="text-green"># Delete </span><br
-          />{"DELETE /data/{app}/:id"}
+          <span class="text-green">// Update</span><br
+          />{"await hyper.data.update('game-1', { _id: 'game-1', type: 'game', name: 'Super Mario Bros 3', rating: 4})"}
         </li>
         <li role="listitem">
-          <span class="text-green"># Query </span><br
-          />{"POST /data/{app}/_query -d { selector }"}
+          <span class="text-green">// Remove</span><br
+          />{"await hyper.data.remove('game-1')"}
         </li>
       </ul>
     </div>
