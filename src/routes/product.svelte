@@ -50,12 +50,9 @@
 <Section id="data" styles="md:mt-96" image="right">
   <span slot="text">
     <div class="flex flex-col items-center">
-      <h2 class="text-2xl px-4 md:text-center md:text-5xl">Data Service</h2>
-      <p class="text-base mx-4 mt-4 text-darkgray md:w-1/2 md:text-center">
-        API powered data access:
-      </p>
+      <h2 class="text-2xl md:text-5xl md:hidden">Data Service</h2>
       <ul
-        class="font-mono md:mt-8 bg-black text-white rounded-lg p-8"
+        class="font-mono md:mt-8 md:ml-24 bg-black text-white rounded-lg p-8"
         role="list"
       >
         <li role="listitem">
@@ -82,14 +79,24 @@
     </div>
   </span>
   <span slot="image">
-    <div class="relative">
-      <img src="data-lg.svg" alt="data" role="img" class="z-0"/>
-      <div class="absolute z-10 bottom-4">
-        <p class="text-base">The hyper data service is a document data store model that encourages the single table design
-          pattern, by leveraging attributes like `type` or `doc_type` to differentiate document schemas you can
-          store multiple documents of different `types` or `tables` in a single data store. This pattern provides 
-          efficient horizontal scalability.</p>
+    <div class="relative h-screen flex justify-center items-center">
+      <div class="z-10 md:ml-8">
+        <h2 class="text-2xl mx-8 md:text-5xl">Data Service</h2>
+        <p class="text-base mx-8 mt-8 text-darkgray">
+          API powered data access:
+        </p>
+        <p class="text-base mx-8 mt-8">
+          The hyper data service is a document data store model that encourages
+          the single table design pattern.
+        </p>
+        <p class="text-base mx-8">
+          Leveraging attributes like `type` or `doc_type` to differentiate
+          document schemas you can store multiple documents of different `types`
+          or `tables` in a single data store. This pattern provides efficient
+          horizontal scalability.
+        </p>
       </div>
+      <img src="data-lg.svg" alt="data" role="img" class="z-0 w-full" />
     </div>
   </span>
 </Section>
