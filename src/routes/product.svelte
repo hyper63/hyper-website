@@ -79,7 +79,15 @@
     </div>
   </span>
   <span slot="image">
-    <img src="data-lg.svg" alt="data" role="img" />
+    <div class="relative">
+      <img src="data-lg.svg" alt="data" role="img" class="z-0"/>
+      <div class="absolute z-10 bottom-4">
+        <p class="text-base">The hyper data service is a document data store model that encourages the single table design
+          pattern, by leveraging attributes like `type` or `doc_type` to differentiate document schemas you can
+          store multiple documents of different `types` or `tables` in a single data store. This pattern provides 
+          efficient horizontal scalability.</p>
+      </div>
+    </div>
   </span>
 </Section>
 <Section id="search" image="left">
