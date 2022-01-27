@@ -37,7 +37,7 @@
     <div class="flex">
       <div class="mt-8 md:mt-20 md:w-1/2">
         <h1
-          class="text-1xl font-semibold md:text-2xl width-full height-full text-gray"
+          class="text-base font-semibold md:text-2xl width-full height-full text-gray"
         >
           hyper - service for building hyperscale applications
         </h1>
