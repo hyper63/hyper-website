@@ -29,7 +29,7 @@
         </li>
       </ul>
 
-      <!-- <ul class="ml-4 md:ml-8 md:mt-8">
+      <!-- <ul class="ml-4 md:ml-8 md:mt-8" role="list">
           <li role="listitem"><a class="text-blue" href="#data">Data</a></li>
           <li role="listitem"><a class="text-blue" href="#search">Search</a></li>
           <li role="listitem"><a class="text-blue" href="#storage">Storage</a></li>
@@ -93,24 +93,27 @@
       </p>
       <ul class="md:mt-8 bg-black text-white text-mono rounded-lg p-8" role="list">
         <li role="listitem">
-          <span class="text-orange"># Index</span><br
-          />{"POST /search/{app} -d {...}"}
+          <span class="text-orange">// add document to search index</span><br
+          />{"await hyper.search.add({ id: 'game-1', type: 'game', name: 'Super Mario Bros 3' })"}
         </li>
         <li role="listitem">
-          <span class="text-orange"># Find</span><br
-          />{"POST /search/{app}/_query -d { query, filter }"}
+          <span class="text-orange">// search for games that contain 'Super'</span><br
+          />{"await hyper.search.query('Super')"}
         </li>
         <li role="listitem">
-          <span class="text-orange"># Read</span><br />{"GET /search/{app}/:id"}
+          <span class="text-orange">// load multiple search documents</span><br />
+          {"await hyper.search.load(games)"}
         </li>
         <li role="listitem">
-          <span class="text-orange"># Update</span><br
-          />{"PUT /search/{app}/:id -d {...}"}
+          <span class="text-orange">// remove search document</span><br
+          />{"await hyper.search.remove('game-1')"}
         </li>
+        <!--
         <li role="listitem">
           <span class="text-orange"># Delete</span><br
           />{"DELETE /search/{app}/:id"}
         </li>
+      -->
       </ul>
     </div>
   </span>
