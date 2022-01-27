@@ -34,7 +34,7 @@
 <Header />
 <main class="ml-0 pl-0 pr-0 mr-0">
   <section class="splash bg-no-repeat pl-4 md:pl-24 md:pr-24">
-    <div class="flex">
+    <div class="flex-col lg:flex">
       <div class="mt-8 md:mt-20 md:w-1/2">
         <h1
           class="text-base font-semibold md:text-2xl width-full height-full text-gray"
