@@ -23,9 +23,14 @@
         class="font-mono md:mt-8 bg-black text-white text-mono rounded-lg p-8"
         role="list"
       >
-        <li role="listitem">
-          <span class="text-green"># Single API Entry Point </span><br
-          />{"VERB /:service/:app/[:identifier | :action]"}
+        <li role="listitem" class="mt-2 md:mt-0">
+          <span class="text-green"
+            >// connect to Hyper using Hyper-Connect
+          </span>
+          <br />
+          <span>{"import {connect} from 'hyper-connect'"}</span>
+          <br />
+          <span>{"const hyper = connect(process.env.HYPER)"}</span>
         </li>
       </ul>
 
