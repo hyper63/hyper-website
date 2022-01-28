@@ -24,8 +24,13 @@
         role="list"
       >
         <li role="listitem" class="mt-2 md:mt-0">
-          <span class="text-green">// connect to Hyper Connect </span><br
-          />{"import {connect} from 'hyper-connect'\nconst hyper = connect(process.env.HYPER)"}
+          <span class="text-green"
+            >// connect to Hyper using Hyper-Connect
+          </span>
+          <br />
+          <span>{"import {connect} from 'hyper-connect'"}</span>
+          <br />
+          <span>{"const hyper = connect(process.env.HYPER)"}</span>
         </li>
       </ul>
 
