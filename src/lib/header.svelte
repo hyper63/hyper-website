@@ -43,6 +43,8 @@
   <nav class="hidden md:w-1/2 md:block flex items-center space-x-4">
     <!-- product -->
     <a class="font-space uppercase text-sm" href="/product">product</a>
+    <!-- pricing -->
+    <a class="font-space uppercase text-sm" href="/pricing">pricing</a>
     <!-- faq -->
     <a class="font-space uppercase text-sm" href="/faq">faq</a>
     <!-- company -->
