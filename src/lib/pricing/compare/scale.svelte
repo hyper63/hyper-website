@@ -1,7 +1,8 @@
 <script>
   import CircleCheck from "$lib/svgs/circle-check.svelte";
-
+  import CircleDollar from "$lib/svgs/circle-dollar.svelte";
   var autoScaleTip = false;
+  var proApps = false;
 </script>
 
 <div class="flex items-center">
@@ -27,7 +28,7 @@
 <table class="table table-fixed border-3 border-black" style="width: 100%;">
   <tr>
     <th>Plans</th>
-    <th>Free</th>
+    <th>Starter</th>
     <th>Pro</th>
     <th>Business</th>
     <th>Enterprise</th>
@@ -71,17 +72,17 @@
     </td>
     <td class="border w-1/5">
       <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#138BF7" />
       </div>
     </td>
     <td class="border w-1/5">
       <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#3AC43F" />
       </div>
     </td>
     <td class="border w-1/5">
       <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#54056A" />
       </div>
     </td>
   </tr>
@@ -91,10 +92,16 @@
       ><div class="flex items-center justify-center">3</div></td
     >
     <td class="border w-1/5"
-      ><div class="flex items-center justify-center">10</div></td
+      ><div class="flex flex-col items-center justify-center">
+        <div>10</div>
+        <div class="text-sm">($25 / additional)</div>
+      </div></td
     >
     <td class="border w-1/5"
-      ><div class="flex items-center justify-center">20</div></td
+      ><div class="flex flex-col items-center justify-center">
+        <div>20</div>
+        <div class="text-sm">($100 / additional)</div>
+      </div></td
     >
     <td class="border w-1/5"
       ><div class="flex items-center justify-center">50</div></td
@@ -103,13 +110,22 @@
   <tr>
     <td class="border w-1/5 px-4 py-4">API Requests</td>
     <td class="border w-1/5"
-      ><div class="flex items-center justify-center">100K</div></td
+      ><div class="flex flex-col items-center justify-center">
+        <div>100k</div>
+        <div class="text-sm">($1 per 25k additional)</div>
+      </div></td
     >
     <td class="border w-1/5"
-      ><div class="flex items-center justify-center">500K</div></td
+      ><div class="flex flex-col items-center justify-center">
+        <div>500k</div>
+        <div class="text-sm">($1 per 25k additional)</div>
+      </div></td
     >
     <td class="border w-1/5"
-      ><div class="flex items-center justify-center">2M</div></td
+      ><div class="flex flex-col items-center justify-center">
+        <div>2M</div>
+        <div class="text-sm">($1 per 25k additional)</div>
+      </div></td
     >
     <td class="border w-1/5"
       ><div class="flex items-center justify-center">Custom</div></td
@@ -118,13 +134,22 @@
   <tr>
     <td class="border w-1/5 px-4 py-4">Bandwidth</td>
     <td class="border w-1/5"
-      ><div class="flex items-center justify-center">10GB</div></td
+      ><div class="flex flex-col items-center justify-center">
+        <div>10GB</div>
+        <div class="text-sm">($1 per 5GB additional)</div>
+      </div></td
     >
     <td class="border w-1/5"
-      ><div class="flex items-center justify-center">500GB</div></td
+      ><div class="flex flex-col items-center justify-center">
+        <div>500GB</div>
+        <div class="text-sm">($1 per 5GB additional)</div>
+      </div></td
     >
     <td class="border w-1/5"
-      ><div class="flex items-center justify-center">1TB</div></td
+      ><div class="flex flex-col items-center justify-center">
+        <div>1TB</div>
+        <div class="text-sm">($1 per 5GB additional)</div>
+      </div></td
     >
     <td class="border w-1/5"
       ><div class="flex items-center justify-center">Custom</div></td
@@ -133,13 +158,22 @@
   <tr>
     <td class="border w-1/5 px-4 py-4">Database Space</td>
     <td class="border w-1/5"
-      ><div class="flex items-center justify-center">500MB</div></td
+      ><div class="flex flex-col items-center justify-center">
+        <div>500GB</div>
+        <div class="text-sm">($0.125 per additional GB)</div>
+      </div></td
     >
     <td class="border w-1/5"
-      ><div class="flex items-center justify-center">15GB</div></td
+      ><div class="flex flex-col items-center justify-center">
+        <div>15GB</div>
+        <div class="text-sm">($0.125 per additional GB)</div>
+      </div></td
     >
     <td class="border w-1/5"
-      ><div class="flex items-center justify-center">32GB</div></td
+      ><div class="flex flex-col items-center justify-center">
+        <div>32GB</div>
+        <div class="text-sm">($0.125 per additional GB)</div>
+      </div></td
     >
     <td class="border w-1/5"
       ><div class="flex items-center justify-center">Custom</div></td
@@ -148,36 +182,50 @@
   <tr>
     <td class="border w-1/5 px-4 py-4">Storage</td>
     <td class="border w-1/5"
-      ><div class="flex items-center justify-center">500GB</div></td
+      ><div class="flex flex-col items-center justify-center">
+        <div>500GB</div>
+        <div class="text-sm">($0.05 per additional GB)</div>
+      </div></td
     >
     <td class="border w-1/5"
-      ><div class="flex items-center justify-center">1.5TB</div></td
+      ><div class="flex flex-col items-center justify-center">
+        <div>1.5TB</div>
+        <div class="text-sm">($0.05 per additional GB)</div>
+      </div></td
     >
     <td class="border w-1/5"
-      ><div class="flex items-center justify-center">5TB</div></td
+      ><div class="flex flex-col items-center justify-center">
+        <div>5TB</div>
+        <div class="text-sm">($0.05 per additional GB)</div>
+      </div></td
     >
     <td class="border w-1/5"
       ><div class="flex items-center justify-center">Custom</div></td
     >
   </tr>
   <tr>
-    <td class="border w-1/55 px-4 py-4">Logging</td>
+    <td class="border w-1/55 px-4 py-4">
+      <div class="flex flex-col">
+        <div>Logging</div>
+        <div class="text-sm">(available V1.0)</div>
+      </div>
+    </td>
     <td class="border w-1/5"
       ><div class="flex items-center justify-center">Limited</div></td
     >
     <td class="border w-1/5"
       ><div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#138BF7" />
       </div></td
     >
     <td class="border w-1/5"
       ><div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#3AC43F" />
       </div></td
     >
     <td class="border w-1/5"
       ><div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#54056A" />
       </div></td
     >
   </tr>
@@ -187,10 +235,16 @@
       ><div class="flex items-center justify-center">1</div></td
     >
     <td class="border w-1/5"
-      ><div class="flex items-center justify-center">5</div></td
+      ><div class="flex flex-col items-center justify-center">
+        <div>5</div>
+        <div class="text-sm">($5 / additional)</div>
+      </div></td
     >
     <td class="border w-1/5"
-      ><div class="flex items-center justify-center">15</div></td
+      ><div class="flex flex-col items-center justify-center">
+        <div>15</div>
+        <div class="text-sm">($10 / additional)</div>
+      </div></td
     >
     <td class="border w-1/5"
       ><div class="flex items-center justify-center">Custom</div></td
@@ -203,17 +257,17 @@
     >
     <td class="border w-1/5"
       ><div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#138BF7" />
       </div></td
     >
     <td class="border w-1/5"
       ><div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#3AC43F" />
       </div></td
     >
     <td class="border w-1/5"
       ><div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#54056A" />
       </div></td
     >
   </tr>

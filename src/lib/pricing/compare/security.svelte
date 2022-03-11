@@ -25,7 +25,7 @@
 <table class="table table-fixed border-3 border-black" style="width: 100%;">
   <tr>
     <th>Plans</th>
-    <th>Free</th>
+    <th>Starter</th>
     <th>Pro</th>
     <th>Business</th>
     <th>Enterprise</th>
@@ -39,17 +39,17 @@
     </td>
     <td class="border w-1/5">
       <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#138BF7" />
       </div>
     </td>
     <td class="border w-1/5">
       <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#3AC43F" />
       </div>
     </td>
     <td class="border w-1/5">
       <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#54056A" />
       </div>
     </td>
   </tr>
@@ -62,17 +62,17 @@
     </td>
     <td class="border w-1/5">
       <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#138BF7" />
       </div>
     </td>
     <td class="border w-1/5">
       <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#3AC43F" />
       </div>
     </td>
     <td class="border w-1/5">
       <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#54056A" />
       </div>
     </td>
   </tr>
@@ -85,17 +85,17 @@
     </td>
     <td class="border w-1/5">
       <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#138BF7" />
       </div>
     </td>
     <td class="border w-1/5">
       <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#3AC43F" />
       </div>
     </td>
     <td class="border w-1/5">
       <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#54056A" />
       </div>
     </td>
   </tr>
@@ -108,17 +108,17 @@
     </td>
     <td class="border w-1/5">
       <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#138BF7" />
       </div>
     </td>
     <td class="border w-1/5">
       <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#3AC43F" />
       </div>
     </td>
     <td class="border w-1/5">
       <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#54056A" />
       </div>
     </td>
   </tr>
@@ -131,17 +131,17 @@
     </td>
     <td class="border w-1/5">
       <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#138BF7" />
       </div>
     </td>
     <td class="border w-1/5">
       <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#3AC43F" />
       </div>
     </td>
     <td class="border w-1/5">
       <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+        <CircleCheck color="#54056A" />
       </div>
     </td>
   </tr>
