@@ -1,6 +1,6 @@
 <div class="w-1/4 px-2 shadow">
   <div class="rounded bg-purple pb-4">
-    <h2 class="mx-4 pt-8 text-white">Enterprise</h2>
+    <h3 class="mx-4 pt-8 text-white">Enterprise</h3>
     <p class="mx-4  text-white">Customized pricing</p>
   </div>
   <div class="bg-whitesmoke">

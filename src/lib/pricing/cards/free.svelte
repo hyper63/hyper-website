@@ -1,6 +1,6 @@
 <div class="w-1/4 px-2 h-100% shadow">
   <div class="rounded shadow border-white pb-4">
-    <h2 class="mx-4 pt-8">Starter</h2>
+    <h3 class="mx-4 pt-8">Starter</h3>
     <p class="mx-4">Free</p>
   </div>
   <div class="bg-whitesmoke" style="height: 500px;">
