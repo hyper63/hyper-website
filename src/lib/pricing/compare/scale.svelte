@@ -159,7 +159,7 @@
     <td class="border w-1/5 px-4 py-4">Database Space</td>
     <td class="border w-1/5"
       ><div class="flex flex-col items-center justify-center">
-        <div>500GB</div>
+        <div>500MB</div>
         <div class="text-sm">($0.125 per additional GB)</div>
       </div></td
     >
