@@ -4,7 +4,7 @@
 
 <h1 class="mt-24 mb-16 text-center">Compare Plans</h1>
 <div class="flex flex-row justify-between">
-  <div class="bg-white w-1/2" />
+  <div class="bg-white w-1/3" />
   <div class="">
     <div class="font-bold text-2xl">Starter</div>
     <a
