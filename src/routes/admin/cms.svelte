@@ -1,7 +1,7 @@
 <script>
-  import Header from '$lib/admin/header.svelte'
-
+  import Header from "$lib/admin/header.svelte";
 </script>
+
 <Header />
 <main class="ml-24 mr-44">
   <section class="w-full flex">
@@ -15,13 +15,13 @@
     <a class="card inactive" href="/admin/cms/flags">Flags</a>
   </section>
 </main>
-<style>
 
+<style>
   .card {
     @apply w-1/4 m-16 p-24 border rounded-lg bg-yellow text-white text-3xl font-space;
   }
-  
+
   .inactive {
-    @apply bg-darkgray
+    @apply bg-darkgray;
   }
 </style>

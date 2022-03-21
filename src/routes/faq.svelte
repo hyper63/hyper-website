@@ -30,9 +30,8 @@
   <h1 class="mt-8 mx-auto text-5xl text-center md:text-6xl">FAQs</h1>
   <p class="mt-4 px-4 text-base text-darkgray md:text-center">
     Can’t find the answer you’re looking for? Reach out to our
-    <a
-      href="https://github.com/hyper63/hyper63/discussions"
-      class="text-red underline">customer support team</a
+    <a href="https://github.com/hyper63/hyper63/discussions" class="text-red underline"
+      >customer support team</a
     >.
   </p>
   {#if flags.search}
@@ -51,9 +50,7 @@
       </div>
     </section>
   {/if}
-  <section
-    class="mx-4 mt-8 py-8 px-4 rounded bg-whitesmoke bg-white md:flex md:justify-center"
-  >
+  <section class="mx-4 mt-8 py-8 px-4 rounded bg-whitesmoke bg-white md:flex md:justify-center">
     <div class="space-y-4 md:w-2/3">
       {#each faqs as { question, answer }}
         <FAQ>

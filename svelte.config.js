@@ -1,5 +1,5 @@
-import sveltePreprocess from 'svelte-preprocess'
-import node from '@sveltejs/adapter-node'
+import sveltePreprocess from "svelte-preprocess";
+import node from "@sveltejs/adapter-node";
 /*
 const sveltePreprocess = require("svelte-preprocess");
 const node = require('@sveltejs/adapter-node');
@@ -12,7 +12,7 @@ export default {
       defaults: {
         style: "postcss",
       },
-      postcss: true
+      postcss: true,
     }),
   ],
   kit: {
@@ -22,12 +22,12 @@ export default {
     adapter: node(),
 
     // hydrate the <div id="svelte"> element in src/app.html
-    target: '#svelte',
+    target: "#svelte",
 
     vite: {
       ssr: {
-        noExternal: '' // (pkg.dependencies || {}) 
-      }
-    }
-  }
+        noExternal: "", // (pkg.dependencies || {})
+      },
+    },
+  },
 };

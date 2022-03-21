@@ -1,7 +1,10 @@
 <script></script>
+
 <footer class="">
   <section class="hidden md:flex md:pl-24 md:pr-24">
-    <div class="w-1/4 p-24 flex items-center justify-center"><img src="/logo.svg" alt="logo" /></div>
+    <div class="w-1/4 p-24 flex items-center justify-center">
+      <img src="/logo.svg" alt="logo" />
+    </div>
     <div class="p-16">
       <div class="mb-8 text-blue"><a href="/product">PRODUCT</a></div>
       <ul role="list">
@@ -28,7 +31,12 @@
       <div class="mb-8 text-blue"><a href="https://blog.hyper.io">BLOG</a></div>
       <ul role="list">
         <li role="listitem"><a href="/company">COMPANY</a></li>
-        <li role="listitem" ><a href="https://join.slack.com/t/hyper-chat/shared_invite/zt-wefinvvb-EA7gchLaXKwKzJE_libKOw">CHAT</a></li>
+        <li role="listitem">
+          <a
+            href="https://join.slack.com/t/hyper-chat/shared_invite/zt-wefinvvb-EA7gchLaXKwKzJE_libKOw"
+            >CHAT</a
+          >
+        </li>
         <li role="listitem"><a href="/faq">FAQS</a></li>
       </ul>
     </div>

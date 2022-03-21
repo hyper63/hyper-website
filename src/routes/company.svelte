@@ -13,10 +13,9 @@
     <div class="md:w-1/2">
       <h1 class="text-5xl mt-8 md:text-6xl">About <br /><b>hyper</b></h1>
       <p class="hidden px-4 text-base text-darkgray md:block md:px-0 md:mt-8">
-        hyper, is a company focused on building products and services for
-        developers and improving the development experience. As a result,
-        development teams are able to grow into high performing teams and create
-        incredible products.
+        hyper, is a company focused on building products and services for developers and improving
+        the development experience. As a result, development teams are able to grow into high
+        performing teams and create incredible products.
       </p>
       <!-- <Button styles="mx-4 mt-8 hidden md:block md:mx-0">Get Started</Button> -->
       <a href="https://docs.hyper.io/getting-started"
@@ -29,10 +28,9 @@
   </section>
   <section class="md:hidden">
     <p class="px-4 text-base text-darkgray">
-      hyper, is a company focused on building products and services for
-      developers and improving the development experience. As a result,
-      development teams are able to grow into high performing teams and create
-      incredible products.
+      hyper, is a company focused on building products and services for developers and improving the
+      development experience. As a result, development teams are able to grow into high performing
+      teams and create incredible products.
     </p>
     <!-- <Button styles="mx-4 mt-8">Get Started</Button> -->
     <a href="https://docs.hyper.io/getting-started"
@@ -46,10 +44,9 @@
         Software is eating <br />the world
       </h2>
       <p class="mt-8 text-darkgray text-base">
-        Building software is more than "setting it and forgetting it". Software
-        change is a constant, fluid, process of discovery and refinement. The
-        process that necessitates nurture and focus. With hyper you can avoid
-        techinical debt and create exchangable interfaces.
+        Building software is more than "setting it and forgetting it". Software change is a
+        constant, fluid, process of discovery and refinement. The process that necessitates nurture
+        and focus. With hyper you can avoid techinical debt and create exchangable interfaces.
       </p>
     </div>
   </section>
@@ -73,10 +70,9 @@
     <div class="md:w-1/3">
       <h3 class="text-2xl md:text-5xl">We're here <br /><b>to help</b></h3>
       <p class="mt-4 text-darkgray text-base">
-        As your code base expands, hyper actually increases productivity while
-        decreasing your technical debt. At hyper, we build tools that require a
-        different mindset. Tools that provide a hyper focus on your problem
-        domain.
+        As your code base expands, hyper actually increases productivity while decreasing your
+        technical debt. At hyper, we build tools that require a different mindset. Tools that
+        provide a hyper focus on your problem domain.
       </p>
       <a href="https://docs.hyper.io/getting-started"
         ><Button styles="mx-4 mt-8">Get Started</Button></a

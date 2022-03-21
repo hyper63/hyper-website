@@ -9,57 +9,10 @@
   import FAQ from "$lib/faq.svelte";
   import Input from "$lib/input.svelte";
   import Search from "$lib/search.svelte";
-  //import Select from "svelte-select";
-  import Toggle from '$lib/toggle.svelte'
+  import Toggle from "$lib/toggle.svelte";
 
   let show = false;
-
-  let items = [
-    { value: "chocolate", label: "Chocolate" },
-    { value: "pizza", label: "Pizza" },
-    { value: "cake", label: "Cake" },
-    { value: "chips", label: "Chips" },
-    { value: "ice-cream", label: "Ice Cream" },
-  ];
-
-  let selectedValue = { value: "cake", label: "Cake" };
-
-  function handleSelect(event) {
-    console.log("selected item", event.detail);
-    // .. do something here 🙂
-  }
 </script>
-
-
-  <!-- 
-    .select {
-    --border: 3px solid #c6cad3;
-    --borderRadius: 12px;
-    --placeholderColor: #1286f6;
-    @apply font-space text-xl;
-    margin: 0;
-    padding: 0;
-    border: none;
-  } -->
-
-
-<style lang="postcss">
-
-
-  .box {
-    @apply rounded;
-    height: 38px;
-    width: 38px;
-    margin: 4px;
-  }
-  .colors {
-    margin-top: 24px;
-  }
-
-  p {
-    margin-bottom: 16px;
-  }
-</style>
 
 <main class="container mx-auto mt-5">
   <section class="p-20">
@@ -80,18 +33,16 @@
     <h5 class="mb-8">H5/ Example Text</h5>
 
     <blockquote class="mb-8">
-      // Blockquote Example Software development is the constant embrace. The
-      secret of the universe is 42
+      // Blockquote Example Software development is the constant embrace. The secret of the universe
+      is 42
     </blockquote>
 
     <p>
-      A simple paragraph, core basic paragraph need more text, for this block so
-      that it can show how things are working
+      A simple paragraph, core basic paragraph need more text, for this block so that it can show
+      how things are working
     </p>
 
-    <p class="detail">
-      A detailed paragraph that should show up with a 600 weight
-    </p>
+    <p class="detail">A detailed paragraph that should show up with a 600 weight</p>
 
     <h2 class="mt-8 mb-10">Colors</h2>
     <div class="colors flex justify-between">
@@ -156,21 +107,11 @@
     <h4 class="mt-8">Link Buttons</h4>
     <div class="mt-8 flex">
       <LinkBtn href="/">Learn More About Us</LinkBtn>
-      <LinkBtn href="/" styles="ml-3" bgColor="active-yellow">
-        Learn More About Us
-      </LinkBtn>
-      <LinkBtn href="/" styles="ml-3" bgColor="active-orange">
-        Learn More About Us
-      </LinkBtn>
-      <LinkBtn href="/" styles="ml-3" bgColor="active-red">
-        Learn More About Us
-      </LinkBtn>
-      <LinkBtn href="/" styles="ml-3" bgColor="active-purple">
-        Learn More About Us
-      </LinkBtn>
-      <LinkBtn href="/" styles="ml-3" bgColor="active-green">
-        Learn More About Us
-      </LinkBtn>
+      <LinkBtn href="/" styles="ml-3" bgColor="active-yellow">Learn More About Us</LinkBtn>
+      <LinkBtn href="/" styles="ml-3" bgColor="active-orange">Learn More About Us</LinkBtn>
+      <LinkBtn href="/" styles="ml-3" bgColor="active-red">Learn More About Us</LinkBtn>
+      <LinkBtn href="/" styles="ml-3" bgColor="active-purple">Learn More About Us</LinkBtn>
+      <LinkBtn href="/" styles="ml-3" bgColor="active-green">Learn More About Us</LinkBtn>
     </div>
     <div class="mt-3">
       <h5>code</h5>
@@ -263,8 +204,7 @@
     <h3 class="mt-8">Elements</h3>
     <h4 class="mt-8">FAQ Toggle</h4>
     <FAQ class="mt-8">
-      <span slot="question">How can I know if the services hyper provides is
-        right for me?</span>
+      <span slot="question">How can I know if the services hyper provides is right for me?</span>
       <span slot="answer">All things are benefited greatly by hyper!</span>
     </FAQ>
     <h5>Code</h5>
@@ -282,7 +222,6 @@
     <Search />
     <h4 class="mt-8 mb-3">Input</h4>
     <Input />
-    
 
     <h4 class="mt-8">Toggle</h4>
     <div class="mt-3 ml-2flex">
@@ -291,16 +230,16 @@
       <Toggle toggleEnabled={true} enabledColor={"blue"} />
       <Toggle toggleEnabled={true} enabledColor={"yellow"} />
       <Toggle toggleEnabled={true} enabledColor={"orange"} />
-      
-      <Toggle toggleEnabled={true} enabledColor={"green"} disabledColor={"lightgray"}/>
+
+      <Toggle toggleEnabled={true} enabledColor={"green"} disabledColor={"lightgray"} />
     </div>
     <div class="mt-3 ml-2flex">
-      <Toggle toggleEnabled={false} enabledColor={"lightpurple"} disabledColor={"whitesmoke"}/>
-      <Toggle toggleEnabled={false} enabledColor={"lightred"} disabledColor={"lightgray"}/>
-      <Toggle toggleEnabled={false} enabledColor={"lightblue"} disabledColor={"gray"}/>
-      <Toggle toggleEnabled={false} enabledColor={"lightyellow"} disabledColor={"darkgray"}/>
-      <Toggle toggleEnabled={false} enabledColor={"lightorange"} disabledColor={"black"}/>
-      <Toggle toggleEnabled={false} enabledColor={"green"} disabledColor={"red"}/> 
+      <Toggle toggleEnabled={false} enabledColor={"lightpurple"} disabledColor={"whitesmoke"} />
+      <Toggle toggleEnabled={false} enabledColor={"lightred"} disabledColor={"lightgray"} />
+      <Toggle toggleEnabled={false} enabledColor={"lightblue"} disabledColor={"gray"} />
+      <Toggle toggleEnabled={false} enabledColor={"lightyellow"} disabledColor={"darkgray"} />
+      <Toggle toggleEnabled={false} enabledColor={"lightorange"} disabledColor={"black"} />
+      <Toggle toggleEnabled={false} enabledColor={"green"} disabledColor={"red"} />
     </div>
     <div class="mt-3">
       <h5>code</h5>
@@ -334,18 +273,38 @@
     <p class="text-lightpurple bg-purple hover:bg-lightpurple">Colors</p>
     <p class="text-lightgreen bg-green hover:bg-lightgreen">Colors</p>
 
-    <p class="text-active-yellow bg-active-yellow hover:bg-lightyellow">
-      Colors
-    </p>
-    <p class="text-active-orange bg-active-orange hover:bg-lightorange">
-      Colors
-    </p>
+    <p class="text-active-yellow bg-active-yellow hover:bg-lightyellow">Colors</p>
+    <p class="text-active-orange bg-active-orange hover:bg-lightorange">Colors</p>
     <p class="text-active-red bg-active-red hover:bg-lightred">Colors</p>
     <p class="text-active-blue bg-active-blue hover:bg-lightblue">Colors</p>
-    <p class="text-active-purple bg-active-purple hover:bg-lightpurple">
-      Colors
-    </p>
+    <p class="text-active-purple bg-active-purple hover:bg-lightpurple">Colors</p>
     <p class="text-active-green bg-active-green hover:bg-lightgreen">Colors</p>
     <p class="border-3 text-white bg-white hover:bg-white">All White</p>
   {/if}
 </footer>
+
+<!-- 
+    .select {
+    --border: 3px solid #c6cad3;
+    --borderRadius: 12px;
+    --placeholderColor: #1286f6;
+    @apply font-space text-xl;
+    margin: 0;
+    padding: 0;
+    border: none;
+  } -->
+<style lang="postcss">
+  .box {
+    @apply rounded;
+    height: 38px;
+    width: 38px;
+    margin: 4px;
+  }
+  .colors {
+    margin-top: 24px;
+  }
+
+  p {
+    margin-bottom: 16px;
+  }
+</style>

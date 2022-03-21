@@ -1,7 +1,8 @@
 <script>
-  import { goto } from "$app/navigation";
   import Button from "$lib/button.svelte";
   import NavButton from "$lib/nav-button.svelte";
+  import BetaBadge from "$lib/badge-beta.svelte";
+  import { isBetaEnabled } from "$lib/feature-flags";
   let mobileMenu = false;
 
   function mobile() {
@@ -19,7 +20,10 @@
       <!-- logo -->
       <img src="/logo.svg" alt="hyper logo" />
       <!-- name -->
-      <h2 class="ml-3 text-xl md:text-5xl">hyper</h2>
+      <h2 class="ml-3 text-xl md:text-5xl">hyper&nbsp;</h2>
+      {#if isBetaEnabled}
+        <BetaBadge />
+      {/if}
     </section>
   </a>
   <section class="md:hidden">
@@ -50,15 +54,12 @@
     <!-- company -->
     <a class="font-space uppercase text-sm" href="/company">company</a>
     <!-- blog -->
-    <a class="font-space uppercase text-sm" href="https://blog.hyper.io">blog</a
-    >
+    <a class="font-space uppercase text-sm" href="https://blog.hyper.io">blog</a>
     <!-- get started
       <a class="font-space uppercase text-sm" href="/get-started">get started</a>
       -->
     <!-- api docs button -->
-    <a class="font-space uppercase text-sm" href="https://docs.hyper.io/cloud"
-      >Docs</a
-    >
+    <a class="font-space uppercase text-sm" href="https://docs.hyper.io/cloud">Docs</a>
     <a class="font-space uppercase text-sm" href="https://dashboard.hyper.io"
       ><NavButton>Dashboard</NavButton></a
     >

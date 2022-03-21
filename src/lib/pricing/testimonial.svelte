@@ -1,7 +1,4 @@
-<section
-  class="bg-whitesmoke flex items-center md:pl-24 md:pr-24"
-  style="height: 500px"
->
+<section class="bg-whitesmoke flex items-center md:pl-24 md:pr-24" style="height: 500px">
   <svg
     width="351"
     height="329"
@@ -19,10 +16,7 @@
         width="354"
         height="329"
       >
-        <path
-          d="M350.342 0H-2.56201V328.226H350.342V0Z"
-          fill="url(#paint0_linear_801_3069)"
-        />
+        <path d="M350.342 0H-2.56201V328.226H350.342V0Z" fill="url(#paint0_linear_801_3069)" />
       </mask>
       <g mask="url(#mask0_801_3069)">
         <path
@@ -123,16 +117,8 @@
             stroke-width="1.80569"
           />
         </g>
-        <path
-          d="M112.957 164.377L142.053 150.553"
-          stroke="#FDC007"
-          stroke-width="1.80569"
-        />
-        <path
-          d="M104.837 83.0194L133.933 69.1953"
-          stroke="#FDC007"
-          stroke-width="1.80569"
-        />
+        <path d="M112.957 164.377L142.053 150.553" stroke="#FDC007" stroke-width="1.80569" />
+        <path d="M104.837 83.0194L133.933 69.1953" stroke="#FDC007" stroke-width="1.80569" />
         <g filter="url(#filter5_f_801_3069)">
           <path
             d="M104.763 117.201L133.858 103.377"
@@ -140,11 +126,7 @@
             stroke-width="1.80569"
           />
         </g>
-        <path
-          d="M96.9009 35.699L125.996 21.875"
-          stroke="#FDC007"
-          stroke-width="1.80569"
-        />
+        <path d="M96.9009 35.699L125.996 21.875" stroke="#FDC007" stroke-width="1.80569" />
       </g>
     </g>
     <defs>
@@ -158,16 +140,8 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
-        <feBlend
-          mode="normal"
-          in="SourceGraphic"
-          in2="BackgroundImageFix"
-          result="shape"
-        />
-        <feGaussianBlur
-          stdDeviation="92.324"
-          result="effect1_foregroundBlur_801_3069"
-        />
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feGaussianBlur stdDeviation="92.324" result="effect1_foregroundBlur_801_3069" />
       </filter>
       <filter
         id="filter1_f_801_3069"
@@ -179,16 +153,8 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
-        <feBlend
-          mode="normal"
-          in="SourceGraphic"
-          in2="BackgroundImageFix"
-          result="shape"
-        />
-        <feGaussianBlur
-          stdDeviation="0.385"
-          result="effect1_foregroundBlur_801_3069"
-        />
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feGaussianBlur stdDeviation="0.385" result="effect1_foregroundBlur_801_3069" />
       </filter>
       <filter
         id="filter2_ii_801_3069"
@@ -200,12 +166,7 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
-        <feBlend
-          mode="normal"
-          in="SourceGraphic"
-          in2="BackgroundImageFix"
-          result="shape"
-        />
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -215,15 +176,8 @@
         <feOffset dy="-6.15785" />
         <feGaussianBlur stdDeviation="9.23678" />
         <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-        <feColorMatrix
-          type="matrix"
-          values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.96 0"
-        />
-        <feBlend
-          mode="overlay"
-          in2="shape"
-          result="effect1_innerShadow_801_3069"
-        />
+        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.96 0" />
+        <feBlend mode="overlay" in2="shape" result="effect1_innerShadow_801_3069" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -253,16 +207,8 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
-        <feBlend
-          mode="normal"
-          in="SourceGraphic"
-          in2="BackgroundImageFix"
-          result="shape"
-        />
-        <feGaussianBlur
-          stdDeviation="0.722278"
-          result="effect1_foregroundBlur_801_3069"
-        />
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feGaussianBlur stdDeviation="0.722278" result="effect1_foregroundBlur_801_3069" />
       </filter>
       <filter
         id="filter4_f_801_3069"
@@ -274,16 +220,8 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
-        <feBlend
-          mode="normal"
-          in="SourceGraphic"
-          in2="BackgroundImageFix"
-          result="shape"
-        />
-        <feGaussianBlur
-          stdDeviation="1.80569"
-          result="effect1_foregroundBlur_801_3069"
-        />
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feGaussianBlur stdDeviation="1.80569" result="effect1_foregroundBlur_801_3069" />
       </filter>
       <filter
         id="filter5_f_801_3069"
@@ -295,16 +233,8 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
-        <feBlend
-          mode="normal"
-          in="SourceGraphic"
-          in2="BackgroundImageFix"
-          result="shape"
-        />
-        <feGaussianBlur
-          stdDeviation="1.80569"
-          result="effect1_foregroundBlur_801_3069"
-        />
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feGaussianBlur stdDeviation="1.80569" result="effect1_foregroundBlur_801_3069" />
       </filter>
       <linearGradient
         id="paint0_linear_801_3069"
@@ -408,15 +338,12 @@
   </svg>
   <div class="w-2/3">
     <p>
-      hyper enables us to spend time on what matters. By providing a
-      well-defined interface for things like data persistence, caching, and
-      search, hyper allows us to avoid bike-shedding and reinventing logic that
-      is common across the majority of our applications. Instead, we can spend
-      our time working on the details that make each project unique and keep our
-      focus on providing value to the customer.
+      hyper enables us to spend time on what matters. By providing a well-defined interface for
+      things like data persistence, caching, and search, hyper allows us to avoid bike-shedding and
+      reinventing logic that is common across the majority of our applications. Instead, we can
+      spend our time working on the details that make each project unique and keep our focus on
+      providing value to the customer.
     </p>
-    <p class="mt-8 font-bold">
-      Travis Nesland, Senior Lead Developer at Sovereign, co.
-    </p>
+    <p class="mt-8 font-bold">Travis Nesland, Senior Lead Developer at Sovereign, co.</p>
   </div>
 </section>

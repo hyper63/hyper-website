@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
-    "start": "svelte-kit preview --host -p 10000"
+    "start": "svelte-kit preview --host -p 10000",
+    "format": "prettier --write './**/*.{css,html,js,svelte}'",
+    "lint": "eslint --fix --quiet . --ext .js,.svelte"
   },
   "dependencies": {
     "cookie": "^0.4.1",
@@ -24,7 +26,12 @@
     "svelte-preprocess": "^4.7.0",
     "tailwindcss": "^3.0.23",
     "vite": "^2.1.0",
-    "zx": "^1.4.0"
+    "zx": "^1.4.0",
+    "prettier": "^2.5.1",
+    "prettier-plugin-svelte": "^2.6.0",
+    "eslint": "^8.10.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-svelte3": "^3.4.1"
   },
   "type": "module"
 }

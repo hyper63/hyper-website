@@ -1,26 +1,30 @@
-import cookie from 'cookie';
-import { compose, head, last, split } from 'ramda'
+import cookie from "cookie";
+import { compose, head, last, split } from "ramda";
 
 export const handle = async ({ request, render }) => {
-  const cookies = cookie.parse(request.headers.cookie || '{}');
-  request.locals.token = (cookies.data && cookies.data !== 'deleted') ? compose(last, split('|'))(cookies.data) : '';
-  request.locals.username = (cookies.data && cookies.data !== 'deleted') ? compose(head, split('|'))(cookies.data) : '';
+  const cookies = cookie.parse(request.headers.cookie || "{}");
+  request.locals.token =
+    cookies.data && cookies.data !== "deleted" ? compose(last, split("|"))(cookies.data) : "";
+  request.locals.username =
+    cookies.data && cookies.data !== "deleted" ? compose(head, split("|"))(cookies.data) : "";
 
-  const response = await render(request)
+  const response = await render(request);
 
-  if (request.locals.token !== '') {
-    response.headers['set-cookie'] = `data=${request.locals.username}|${request.locals.token}; Path=/; HttpOnly`;
+  if (request.locals.token !== "") {
+    response.headers[
+      "set-cookie"
+    ] = `data=${request.locals.username}|${request.locals.token}; Path=/; HttpOnly`;
   }
 
   if (request.locals.logout) {
-    response.headers['set-cookie'] = `data=deleted; Path=/; HttpOnly`;
+    response.headers["set-cookie"] = `data=deleted; Path=/; HttpOnly`;
   }
 
-  return response
-}
+  return response;
+};
 
 export async function getSession(request) {
   return {
-    username: request.locals.username
-  }
+    username: request.locals.username,
+  };
 }
