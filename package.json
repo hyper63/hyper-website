@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
-    "start": "svelte-kit preview --host -p 10000"
+    "start": "svelte-kit preview --host -p 10000",
+    "format": "prettier --write './**/*.{css,html,js,svelte}'"
   },
   "dependencies": {
     "cookie": "^0.4.1",
