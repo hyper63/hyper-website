@@ -2,6 +2,8 @@
   import { goto } from "$app/navigation";
   import Button from "$lib/button.svelte";
   import NavButton from "$lib/nav-button.svelte";
+  import BetaBadge from "$lib/badge-beta.svelte";
+  import { isBetaEnabled } from "$lib/feature-flags";
   let mobileMenu = false;
 
   function mobile() {
@@ -19,7 +21,11 @@
       <!-- logo -->
       <img src="/logo.svg" alt="hyper logo" />
       <!-- name -->
-      <h2 class="ml-3 text-xl md:text-5xl">hyper</h2>
+      <h2 class="ml-3 text-xl md:text-5xl">hyper&nbsp;</h2>
+      {#if isBetaEnabled}
+        <BetaBadge/>
+      {/if}
+     
     </section>
   </a>
   <section class="md:hidden">

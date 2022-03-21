@@ -16,7 +16,7 @@ tasks:
 
 vscode:
   extensions:
-    - svelte.svelte-vscode@104.12.1:e36e8a1b48e34a2e062a7a324bf8f153
+    - svelte.svelte-vscode
 
 github:
   prebuilds:
