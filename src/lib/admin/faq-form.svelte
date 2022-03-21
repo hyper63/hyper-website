@@ -3,7 +3,6 @@
   import { createEventDispatcher } from "svelte";
   import { compose, map, trim, split } from "ramda";
   import ActiveToggle from "$lib/toggle.svelte";
-  import Faq from "$lib/faq.svelte";
   export let faq = { tags: [], active: "false" };
 
   let tagString = faq.tags.join(", ");
@@ -13,7 +12,7 @@
     faq = { ...faq, active: detail.active };
   }
 
-  function submit(e) {
+  function submit() {
     //  active: faq.active === 'false' || faq.active === false ? false : true,
     const data = {
       question: faq.question,

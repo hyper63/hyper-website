@@ -1,8 +1,6 @@
 <script>
   import CircleCheck from "$lib/svgs/circle-check.svelte";
-  import CircleDollar from "$lib/svgs/circle-dollar.svelte";
   var autoScaleTip = false;
-  var proApps = false;
 </script>
 
 <div class="flex items-center">

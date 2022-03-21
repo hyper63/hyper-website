@@ -1,6 +1,5 @@
 <script>
   import CircleCheck from "$lib/svgs/circle-check.svelte";
-  import CircleDollar from "$lib/svgs/circle-dollar.svelte";
 
   var showBasicTip = false;
   var showExtTip = false;

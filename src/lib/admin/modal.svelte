@@ -6,17 +6,17 @@
 
   const dispatch = createEventDispatcher();
 
-  function handleCancelClick(e) {
+  function handleCancelClick() {
     dispatch("cancel");
   }
 
-  function handleDeleteClick(e) {
+  function handleDeleteClick() {
     dispatch("delete");
   }
 
   // action
 
-  function modalAction(node) {
+  function modalAction() {
     let fns = [];
     if (document.body.style.overflow !== "hidden") {
       const original = document.body.style.overflow;

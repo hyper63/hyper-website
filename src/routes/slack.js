@@ -1,4 +1,4 @@
-export function get(req) {
+export function get() {
   return {
     headers: {
       location:

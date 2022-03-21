@@ -9,7 +9,7 @@
   export let disabledColor = "lightgray";
   export let data = null;
 
-  function saveToggle(e) {
+  function saveToggle() {
     toggleEnabled = !toggleEnabled;
     const editedToggleData = { ...data, active: toggleEnabled };
     dispatch("toggleSave", editedToggleData);

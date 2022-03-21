@@ -33,8 +33,6 @@
       body: JSON.stringify(detail),
     });
     if (res.ok) {
-      const response = await res.json();
-
       submitStatus = "Successfully saved FAQ";
       setTimeout(() => goto("/admin/cms/faqs"), 1000);
     } else {

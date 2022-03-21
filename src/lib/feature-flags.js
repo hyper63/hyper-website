@@ -14,7 +14,7 @@ export const featureFlags = [
     flag: Feature.BETA,
     default: false,
     [DEVELOPMENT]: true,
-    [STAGING]: false,
+    [STAGING]: true,
     [PRODUCTION]: false,
   },
 ];

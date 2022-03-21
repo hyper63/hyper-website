@@ -1,6 +1,5 @@
 <script context="module">
-  //import { goto } from '$app/navigation'
-  export async function load({ page, fetch, session, context }) {
+  export async function load({ fetch }) {
     const url = `/admin/faqs.json`;
     const res = await fetch(url);
 
@@ -26,8 +25,7 @@
   import Button from "$lib/button.svelte";
   import LinkBtn from "$lib/link-button.svelte";
   import Modal from "$lib/admin/modal.svelte";
-  //import { goto } from '$app/navigation'
-  import { identical, identity } from "ramda";
+
   let deleteModelOpen = false;
   let deleteFaq = {};
   export let faqs;
@@ -37,7 +35,7 @@
   // destructuring event
   async function handleSaveToggle({ detail }) {
     // put /api/faqs/:id detail
-    console.log(detail);
+
     const res = await fetch(`/api/faqs/${detail.id}.json`, {
       method: "PUT",
       headers: {
@@ -46,17 +44,14 @@
       body: JSON.stringify(detail),
     });
     if (res.ok) {
-      const response = await res.json();
-
       submitStatus = "Successfully saved FAQ";
-      //setTimeout(() => goto('/admin/cms/faqs'), 1000)
     } else {
       error = true;
       submitStatus = "Error occured saving FAQ";
     }
   }
 
-  const handleDeleteModalOpenClick = (faq) => (_) => {
+  const handleDeleteModalOpenClick = (faq) => () => {
     console.log("handleDeleteModalOpenClick", { faq });
     deleteModelOpen = true;
     deleteFaq = faq;
@@ -73,15 +68,10 @@
       },
     });
     if (res.ok) {
-      const response = await res.json();
-
       submitStatus = "Successfully deleted FAQ.";
-
       faqs = reject((faq) => faq.id === deleteFaq.id, faqs);
-      //setTimeout(() => goto('/admin/cms/faqs'), 1000)
     } else {
       error = true;
-      deleteStatus = "Error occured deleting FAQ.";
     }
   }
 </script>
@@ -178,7 +168,7 @@
     </div>
   </div>
 </main>
-<Modal {deleteModelOpen} on:cancel={(_) => (deleteModelOpen = false)} on:delete={handleDelete}>
+<Modal {deleteModelOpen} on:cancel={() => (deleteModelOpen = false)} on:delete={handleDelete}>
   <div class="">
     <h2 class="text-lg font-medium leading-6 text-gray-900">Delete FAQ?</h2>
     <p class="mt-1 text-md text-gray-600">The following FAQ will be deleted permanantly.</p>

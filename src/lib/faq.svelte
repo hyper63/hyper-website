@@ -1,7 +1,6 @@
 <script>
   export let styles = "";
   let toggle = false;
-  import LinkBtn from "$lib/link-button.svelte";
 </script>
 
 <div class="faq-container rounded-large {styles}" on:click={() => (toggle = !toggle)}>

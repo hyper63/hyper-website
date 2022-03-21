@@ -13,21 +13,6 @@
   import Toggle from "$lib/toggle.svelte";
 
   let show = false;
-
-  let items = [
-    { value: "chocolate", label: "Chocolate" },
-    { value: "pizza", label: "Pizza" },
-    { value: "cake", label: "Cake" },
-    { value: "chips", label: "Chips" },
-    { value: "ice-cream", label: "Ice Cream" },
-  ];
-
-  let selectedValue = { value: "cake", label: "Cake" };
-
-  function handleSelect(event) {
-    console.log("selected item", event.detail);
-    // .. do something here 🙂
-  }
 </script>
 
 <main class="container mx-auto mt-5">

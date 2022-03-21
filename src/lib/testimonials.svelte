@@ -1,6 +1,4 @@
 <script>
-  import Pagination from "./pagination.svelte";
-
   export let styles = "";
 </script>
 

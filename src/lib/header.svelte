@@ -1,5 +1,4 @@
 <script>
-  import { goto } from "$app/navigation";
   import Button from "$lib/button.svelte";
   import NavButton from "$lib/nav-button.svelte";
   import BetaBadge from "$lib/badge-beta.svelte";

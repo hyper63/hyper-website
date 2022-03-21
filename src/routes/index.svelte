@@ -16,7 +16,6 @@
 <script>
   import Header from "$lib/header.svelte";
   import Button from "$lib/button.svelte";
-  import Play from "$lib/play-button.svelte";
   import Ports from "$lib/ports.svelte";
   import FAQ from "$lib/faq.svelte";
   import All from "$lib/all-n-one.svelte";
@@ -24,8 +23,6 @@
   import Flow from "$lib/flow.svelte";
   import Footer from "$lib/footer.svelte";
   export let faqs;
-
-  let show = false;
 </script>
 
 <svelte:head>

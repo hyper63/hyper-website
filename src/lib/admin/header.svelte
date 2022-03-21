@@ -1,7 +1,4 @@
 <script>
-  import { goto } from "$app/navigation";
-  import NavButton from "$lib/nav-button.svelte";
-
   let mobileMenu = false;
 
   function mobile() {
