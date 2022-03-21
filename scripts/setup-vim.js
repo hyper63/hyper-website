@@ -1,13 +1,11 @@
 #!/usr/bin/env zx
 
-await $`curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
+await $`curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`;
 
-await $`cp .vimrc ~/.vimrc`
+await $`cp .vimrc ~/.vimrc`;
 
-await $`vim +'PlugInstall --sync' +qa`
+await $`vim +'PlugInstall --sync' +qa`;
 
-await $`echo 'VIM is setup'`
+await $`echo 'VIM is setup'`;
 
-await $`export PS1=":) "`
-
-
+await $`export PS1=":) "`;

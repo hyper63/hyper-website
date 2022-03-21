@@ -16,17 +16,12 @@
         hyper <br /><b>services</b>
       </h1>
       <p class="text-base mx-4 text-darkgray md:mx-0">
-        Build any application by taking advantage of hyper's single API entry
-        point and composable application services.
+        Build any application by taking advantage of hyper's single API entry point and composable
+        application services.
       </p>
-      <ul
-        class="font-mono md:mt-8 bg-black text-white text-mono rounded-lg p-8"
-        role="list"
-      >
+      <ul class="font-mono md:mt-8 bg-black text-white text-mono rounded-lg p-8" role="list">
         <li role="listitem" class="mt-2 md:mt-0">
-          <span class="text-green"
-            >// connect to Hyper using Hyper-Connect
-          </span>
+          <span class="text-green">// connect to Hyper using Hyper-Connect </span>
           <br />
           <span>{"import {connect} from 'hyper-connect'"}</span>
           <br />
@@ -56,10 +51,7 @@
   <span slot="text">
     <div class="flex flex-col items-center">
       <h2 class="text-2xl md:text-5xl md:hidden">Data Service</h2>
-      <ul
-        class="font-mono md:mt-8 md:ml-24 bg-black text-white rounded-lg p-8"
-        role="list"
-      >
+      <ul class="font-mono md:mt-8 md:ml-24 bg-black text-white rounded-lg p-8" role="list">
         <li role="listitem">
           <span class="text-green">// Add Document</span><br
           />{"await hyper.data.add({ _id: 'game-1', type: 'game', name: 'Super Mario Bros 3', rating: 5})"}
@@ -69,16 +61,14 @@
           {"await hyper.data.get('game-1')"}
         </li>
         <li role="listitem">
-          <span class="text-green">// Query</span><br
-          />{"await hyper.data.query({type: 'game'})"}
+          <span class="text-green">// Query</span><br />{"await hyper.data.query({type: 'game'})"}
         </li>
         <li role="listitem">
           <span class="text-green">// Update</span><br
           />{"await hyper.data.update('game-1', { _id: 'game-1', type: 'game', name: 'Super Mario Bros 3', rating: 4})"}
         </li>
         <li role="listitem">
-          <span class="text-green">// Remove</span><br
-          />{"await hyper.data.remove('game-1')"}
+          <span class="text-green">// Remove</span><br />{"await hyper.data.remove('game-1')"}
         </li>
       </ul>
     </div>
@@ -87,18 +77,15 @@
     <div class="relative h-screen flex justify-center items-center">
       <div class="z-10 md:ml-8">
         <h2 class="text-2xl mx-8 md:text-5xl">Data Service</h2>
-        <p class="text-base mx-8 mt-8 text-darkgray">
-          API powered data access:
-        </p>
+        <p class="text-base mx-8 mt-8 text-darkgray">API powered data access:</p>
         <p class="text-base mx-8 mt-8">
-          The hyper data service is a document data store model that encourages
-          the single table design pattern.
+          The hyper data service is a document data store model that encourages the single table
+          design pattern.
         </p>
         <p class="text-base mx-8">
-          Leveraging attributes like `type` or `doc_type` to differentiate
-          document schemas you can store multiple documents of different `types`
-          or `tables` in a single data store. This pattern provides efficient
-          horizontal scalability.
+          Leveraging attributes like `type` or `doc_type` to differentiate document schemas you can
+          store multiple documents of different `types` or `tables` in a single data store. This
+          pattern provides efficient horizontal scalability.
         </p>
       </div>
       <img src="data-lg.svg" alt="data" role="img" class="z-0 w-full" />
@@ -113,12 +100,11 @@
         <h2 class="text-2xl md:text-5xl">Search Service</h2>
         <p class="text-base mt-4 text-darkgray">API powered search:</p>
         <p class="text-sm mt-8">
-          high powered search API that is easy to use, with a single API call,
-          your app can load multiple documents.
+          high powered search API that is easy to use, with a single API call, your app can load
+          multiple documents.
         </p>
         <p class="text-sm mt-8">
-          To query, simply provide a text string and any match will be returned
-          in milliseconds.
+          To query, simply provide a text string and any match will be returned in milliseconds.
         </p>
       </div>
     </div>
@@ -126,22 +112,17 @@
   <span slot="text">
     <div class="flex flex-col items-center">
       <h2 class="text-2xl md:text-5xl md:hidden">Search Service</h2>
-      <ul
-        class="md:mt-8 bg-black text-white text-mono rounded-lg p-8"
-        role="list"
-      >
+      <ul class="md:mt-8 bg-black text-white text-mono rounded-lg p-8" role="list">
         <li role="listitem">
           <span class="text-orange">// add document to search index</span><br
           />{"await hyper.search.add({ id: 'game-1', type: 'game', name: 'Super Mario Bros 3' })"}
         </li>
         <li role="listitem">
-          <span class="text-orange"
-            >// search for games that contain 'Super'</span
-          ><br />{"await hyper.search.query('Super')"}
+          <span class="text-orange">// search for games that contain 'Super'</span><br
+          />{"await hyper.search.query('Super')"}
         </li>
         <li role="listitem">
-          <span class="text-orange">// load multiple search documents</span><br
-          />
+          <span class="text-orange">// load multiple search documents</span><br />
           {"await hyper.search.load(games)"}
         </li>
         <li role="listitem">
@@ -165,25 +146,18 @@
       <p class="text-base mx-4 mt-4 text-darkgray md:w-1/2 md:text-center">
         Store files using a REST API
       </p>
-      <ul
-        class="md:mt-8 bg-black text-white text-mono rounded-lg p-8"
-        role="list"
-      >
+      <ul class="md:mt-8 bg-black text-white text-mono rounded-lg p-8" role="list">
         <li role="listitem">
-          <span class="text-blue"># Store</span><br
-          />{"POST /storage/{app} -d {...}"}
+          <span class="text-blue"># Store</span><br />{"POST /storage/{app} -d {...}"}
         </li>
         <li role="listitem">
-          <span class="text-blue"># Retrieve</span><br
-          />{"GET /storage/{app}/:id"}
+          <span class="text-blue"># Retrieve</span><br />{"GET /storage/{app}/:id"}
         </li>
         <li role="listitem">
-          <span class="text-blue"># Update</span><br
-          />{"PUT /storage/{app}/:id -d {...}"}
+          <span class="text-blue"># Update</span><br />{"PUT /storage/{app}/:id -d {...}"}
         </li>
         <li role="listitem">
-          <span class="text-blue"># Delete</span><br
-          />{"DELETE /storage/{app}/:id"}
+          <span class="text-blue"># Delete</span><br />{"DELETE /storage/{app}/:id"}
         </li>
       </ul>
     </div>
@@ -202,29 +176,21 @@
       <p class="z-10 text-base mx-4 mt-4 text-darkgray md:w-1/2 md:text-center">
         JSON Key Value Store:
       </p>
-      <ul
-        class="md:mt-8 bg-black text-white text-mono rounded-lg p-8"
-        role="list"
-      >
+      <ul class="md:mt-8 bg-black text-white text-mono rounded-lg p-8" role="list">
         <li role="listitem">
-          <span class="text-purple"># Store</span><br
-          />{"POST /cache/{app} -d {key, value, ttl}"}
+          <span class="text-purple"># Store</span><br />{"POST /cache/{app} -d {key, value, ttl}"}
         </li>
         <li role="listitem">
-          <span class="text-purple"># Retrieve</span><br
-          />{"GET /cache/{app}/:key"}
+          <span class="text-purple"># Retrieve</span><br />{"GET /cache/{app}/:key"}
         </li>
         <li role="listitem">
-          <span class="text-purple"># Update</span><br
-          />{"PUT /cache/{app}/:key -d {...}"}
+          <span class="text-purple"># Update</span><br />{"PUT /cache/{app}/:key -d {...}"}
         </li>
         <li role="listitem">
-          <span class="text-purple"># Delete</span><br
-          />{"DELETE /cache/{app}/:key"}
+          <span class="text-purple"># Delete</span><br />{"DELETE /cache/{app}/:key"}
         </li>
         <li role="listitem">
-          <span class="text-purple"># Query</span><br
-          />{'POST /cache/{app}/_query?pattern="ABC*"'}
+          <span class="text-purple"># Query</span><br />{'POST /cache/{app}/_query?pattern="ABC*"'}
         </li>
       </ul>
     </div>
@@ -237,25 +203,18 @@
       <p class="z-10 text-base mx-4 mt-4 text-darkgray md:w-1/2 md:text-center">
         A RESTful web hook queue service:
       </p>
-      <ul
-        class="md:mt-8 bg-black text-white text-mono rounded-lg p-8"
-        role="listitem"
-      >
+      <ul class="md:mt-8 bg-black text-white text-mono rounded-lg p-8" role="listitem">
         <li role="listitem">
-          <span class="text-red"># Create Queue</span><br
-          />{"PUT /queue/{app}/:name -d {target}"}
+          <span class="text-red"># Create Queue</span><br />{"PUT /queue/{app}/:name -d {target}"}
         </li>
         <li role="listitem">
-          <span class="text-red"># Post Task</span><br
-          />{"POST /queue/{app}/:name -d {job}"}
+          <span class="text-red"># Post Task</span><br />{"POST /queue/{app}/:name -d {job}"}
         </li>
         <li role="listitem">
-          <span class="text-red"># Get Tasks</span><br
-          />{"GET /queue/{app}/:name?status=READY"}
+          <span class="text-red"># Get Tasks</span><br />{"GET /queue/{app}/:name?status=READY"}
         </li>
         <li role="listitem">
-          <span class="text-red"># Delete Queue</span><br
-          />{"DELETE /queue/{app}/:name"}
+          <span class="text-red"># Delete Queue</span><br />{"DELETE /queue/{app}/:name"}
         </li>
       </ul>
     </div>

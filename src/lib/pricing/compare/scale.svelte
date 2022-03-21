@@ -6,13 +6,7 @@
 </script>
 
 <div class="flex items-center">
-  <svg
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
       d="M20 20H16M4 8V4V8ZM4 4H8H4ZM4 4L9 9L4 4ZM20 8V4V8ZM20 4H16H20ZM20 4L15 9L20 4ZM4 16V20V16ZM4 20H8H4ZM4 20L9 15L4 20ZM20 20L15 15L20 20ZM20 20V16V20Z"
       stroke="#4C6D93"
@@ -88,9 +82,7 @@
   </tr>
   <tr>
     <td class="border w-1/5 px-4 py-4"># of hyper apps</td>
-    <td class="border w-1/5"
-      ><div class="flex items-center justify-center">3</div></td
-    >
+    <td class="border w-1/5"><div class="flex items-center justify-center">3</div></td>
     <td class="border w-1/5"
       ><div class="flex flex-col items-center justify-center">
         <div>10</div>
@@ -103,9 +95,7 @@
         <div class="text-sm">($100 / additional)</div>
       </div></td
     >
-    <td class="border w-1/5"
-      ><div class="flex items-center justify-center">50</div></td
-    >
+    <td class="border w-1/5"><div class="flex items-center justify-center">50</div></td>
   </tr>
   <tr>
     <td class="border w-1/5 px-4 py-4">API Requests</td>
@@ -127,9 +117,7 @@
         <div class="text-sm">($1 per 25k additional)</div>
       </div></td
     >
-    <td class="border w-1/5"
-      ><div class="flex items-center justify-center">Custom</div></td
-    >
+    <td class="border w-1/5"><div class="flex items-center justify-center">Custom</div></td>
   </tr>
   <tr>
     <td class="border w-1/5 px-4 py-4">Bandwidth</td>
@@ -151,9 +139,7 @@
         <div class="text-sm">($1 per 5GB additional)</div>
       </div></td
     >
-    <td class="border w-1/5"
-      ><div class="flex items-center justify-center">Custom</div></td
-    >
+    <td class="border w-1/5"><div class="flex items-center justify-center">Custom</div></td>
   </tr>
   <tr>
     <td class="border w-1/5 px-4 py-4">Database Space</td>
@@ -175,9 +161,7 @@
         <div class="text-sm">($0.125 per additional GB)</div>
       </div></td
     >
-    <td class="border w-1/5"
-      ><div class="flex items-center justify-center">Custom</div></td
-    >
+    <td class="border w-1/5"><div class="flex items-center justify-center">Custom</div></td>
   </tr>
   <tr>
     <td class="border w-1/5 px-4 py-4">Storage</td>
@@ -199,9 +183,7 @@
         <div class="text-sm">($0.05 per additional GB)</div>
       </div></td
     >
-    <td class="border w-1/5"
-      ><div class="flex items-center justify-center">Custom</div></td
-    >
+    <td class="border w-1/5"><div class="flex items-center justify-center">Custom</div></td>
   </tr>
   <tr>
     <td class="border w-1/55 px-4 py-4">
@@ -210,9 +192,7 @@
         <div class="text-sm">(available V1.0)</div>
       </div>
     </td>
-    <td class="border w-1/5"
-      ><div class="flex items-center justify-center">Limited</div></td
-    >
+    <td class="border w-1/5"><div class="flex items-center justify-center">Limited</div></td>
     <td class="border w-1/5"
       ><div class="px-16 py-4 flex items-center justify-center">
         <CircleCheck color="#138BF7" />
@@ -231,9 +211,7 @@
   </tr>
   <tr>
     <td class="border w-1/55 px-4 py-4">Users</td>
-    <td class="border w-1/5"
-      ><div class="flex items-center justify-center">1</div></td
-    >
+    <td class="border w-1/5"><div class="flex items-center justify-center">1</div></td>
     <td class="border w-1/5"
       ><div class="flex flex-col items-center justify-center">
         <div>5</div>
@@ -246,15 +224,11 @@
         <div class="text-sm">($10 / additional)</div>
       </div></td
     >
-    <td class="border w-1/5"
-      ><div class="flex items-center justify-center">Custom</div></td
-    >
+    <td class="border w-1/5"><div class="flex items-center justify-center">Custom</div></td>
   </tr>
   <tr>
     <td class="border w-1/55 px-4 py-4">Teams</td>
-    <td class="border w-1/5"
-      ><div class="flex items-center justify-center" /></td
-    >
+    <td class="border w-1/5"><div class="flex items-center justify-center" /></td>
     <td class="border w-1/5"
       ><div class="px-16 py-4 flex items-center justify-center">
         <CircleCheck color="#138BF7" />

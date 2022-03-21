@@ -1,11 +1,16 @@
 <script>
-  export let txtColor = 'blue'
-  export let bgColor = 'lightblue'
-  export let hoverTextColor = 'white'
+  export let txtColor = "blue";
+  export let bgColor = "lightblue";
+  export let hoverTextColor = "white";
 </script>
-<button on:click class="text-{txtColor} bg-{bgColor} hover:bg-{txtColor} hover:text-{hoverTextColor}">
-  <slot></slot>
+
+<button
+  on:click
+  class="text-{txtColor} bg-{bgColor} hover:bg-{txtColor} hover:text-{hoverTextColor}"
+>
+  <slot />
 </button>
+
 <style lang="postcss">
   button {
     @apply rounded-sm inline justify-center;

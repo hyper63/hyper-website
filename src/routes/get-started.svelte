@@ -16,6 +16,7 @@
     // .. do something here 🙂
   }
 </script>
+
 <svelte:head>
   <title>Getting Started: hyper - service for building hyperscale applications</title>
 </svelte:head>
@@ -33,11 +34,11 @@
       <p class="text-darkgray">1 hyper app service</p>
       <div class="mt-8 space-y-4">
         <article class="flex items-center">
-          <img src="/data-sm.svg" alt="data service" role="img"/>
+          <img src="/data-sm.svg" alt="data service" role="img" />
           <span>Data Service</span>
         </article>
         <article class="flex items-center">
-          <img src="/search-sm.svg" alt="search service" role="img"/>
+          <img src="/search-sm.svg" alt="search service" role="img" />
           <span>Search Service</span>
         </article>
         <article class="flex items-center">
@@ -45,32 +46,33 @@
           <span>Cache Service</span>
         </article>
         <article class="flex items-center">
-          <img src="/storage-sm.svg" alt="storage service" role="img"/>
+          <img src="/storage-sm.svg" alt="storage service" role="img" />
           <span>Storage Service</span>
         </article>
         <article class="flex items-center">
-          <img src="/queue-sm.svg" alt="queue service" role="img"/>
+          <img src="/queue-sm.svg" alt="queue service" role="img" />
           <span>Queue Service</span>
         </article>
       </div>
     </div>
     <div class="mt-4 p-8 space-y-2">
       <div class="flex items-center">
-        <img src="/check.svg" alt="check" role="img"/>
+        <img src="/check.svg" alt="check" role="img" />
         <span class="ml-4">Multi-Tenant Service</span>
       </div>
       <div class="flex items-center">
-        <img src="/check.svg" alt="check" role="img"/>
+        <img src="/check.svg" alt="check" role="img" />
         <span class="ml-4">Daily Backups</span>
       </div>
       <div class="flex items-center">
-        <img src="/check.svg" alt="check" role="img"/>
+        <img src="/check.svg" alt="check" role="img" />
         <span class="ml-4">Community Chat Support</span>
       </div>
     </div>
   </section>
 </main>
 <Footer />
+
 <style lang="postcss">
   .select {
     --border: 3px solid #c6cad3;
@@ -82,4 +84,3 @@
     border: none;
   }
 </style>
-

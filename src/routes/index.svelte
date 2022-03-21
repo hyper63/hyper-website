@@ -36,22 +36,18 @@
   <section class="splash bg-no-repeat pl-4 md:pl-24 md:pr-24">
     <div class="flex">
       <div class="mt-8 md:mt-20 md:w-1/2">
-        <h1
-          class="text-base font-semibold md:text-2xl width-full height-full text-gray"
-        >
+        <h1 class="text-base font-semibold md:text-2xl width-full height-full text-gray">
           hyper - service for building hyperscale applications
         </h1>
         <h2 class="text-4xl font-semibold md:text-6xl width-full height-full">
           One <b>API</b>... many services...
         </h2>
         <p class="text-md mt-4 mr-8 md:mt-12 md:w-3/4">
-          hyper is a dev-ops team wrapped in a single API. One consistent,
-          frictionless API to manage data, cache, storage, search, and queue
-          services. hyper promotes clean architecture application development.
+          hyper is a dev-ops team wrapped in a single API. One consistent, frictionless API to
+          manage data, cache, storage, search, and queue services. hyper promotes clean architecture
+          application development.
         </p>
-        <div
-          class="mt-16 flex flex-col md:flex-row space-y-4 space-x-4 md:space-y-0 md:space-x-20"
-        >
+        <div class="mt-16 flex flex-col md:flex-row space-y-4 space-x-4 md:space-y-0 md:space-x-20">
           <a href="https://docs.hyper.io/cloud"><Button>Get Started</Button></a>
 
           <!--
@@ -62,31 +58,19 @@
         </div>
       </div>
       <div class="md:w-1/2 hidden md:block">
-        <img
-          class="md:w-100%"
-          src="/hyper-connect-screenshot.png"
-          alt="hyper-connect screenshot"
-        />
+        <img class="md:w-100%" src="/hyper-connect-screenshot.png" alt="hyper-connect screenshot" />
       </div>
     </div>
   </section>
-  <img
-    class="md:hidden"
-    src="/homepage-splash.svg"
-    alt="homepage splash"
-    role="img"
-  />
+  <img class="md:hidden" src="/homepage-splash.svg" alt="homepage splash" role="img" />
   <section class="flex w-full md:pt-44 pl-4 md:pl-24 md:pr-24 md:relative">
     <Flow />
     <div class="md:w-1/2 2xl:w-1/3">
       <h5 class="">THE PROBLEM</h5>
-      <h2 class="text-3xl font-semibold md:text-5xl md:mt-16">
-        Technical Debt
-      </h2>
+      <h2 class="text-3xl font-semibold md:text-5xl md:mt-16">Technical Debt</h2>
       <p class="mt-4 md:mt-16">
-        What do developers hate the most about software development? Many will
-        say technical debt, having to work through so much noise to implement a
-        simple change request.
+        What do developers hate the most about software development? Many will say technical debt,
+        having to work through so much noise to implement a simple change request.
       </p>
     </div>
   </section>
@@ -94,19 +78,14 @@
   <section class="flex w-full pl-4 md:pt-44 md:pl-24 md:pr-24 md:mb-96">
     <div class="md:w-1/2 2xl:w-1/3">
       <h5>OUR SOLUTION</h5>
-      <h2 class="text-3xl font-semibold md:text-5xl md:mt-8">
-        hyper. A service framework.
-      </h2>
+      <h2 class="text-3xl font-semibold md:text-5xl md:mt-8">hyper. A service framework.</h2>
       <p class="mt-12">
-        hyper is a cloud-native service solution delivering a straightforward
-        way to leverage APIs to create scalable performant services. Create
-        features quickly into apps that scale, all while keeping <b
-          >technical debt</b
-        > at bay.
+        hyper is a cloud-native service solution delivering a straightforward way to leverage APIs
+        to create scalable performant services. Create features quickly into apps that scale, all
+        while keeping <b>technical debt</b> at bay.
       </p>
       <p class="mt-16">
-        hyper provides APIs to core application services: data, cache, storage,
-        queues, and search.
+        hyper provides APIs to core application services: data, cache, storage, queues, and search.
       </p>
     </div>
   </section>

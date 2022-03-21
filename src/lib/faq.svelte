@@ -4,10 +4,7 @@
   import LinkBtn from "$lib/link-button.svelte";
 </script>
 
-<div
-  class="faq-container rounded-large {styles}"
-  on:click={() => (toggle = !toggle)}
->
+<div class="faq-container rounded-large {styles}" on:click={() => (toggle = !toggle)}>
   <div class="flex">
     <span class="w-full">
       <slot name="question" />
@@ -22,11 +19,7 @@
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path
-              d="M1 13.813L12.9667 1.81299L24.9334 13.813"
-              stroke="#1286F6"
-              stroke-width="2"
-            />
+            <path d="M1 13.813L12.9667 1.81299L24.9334 13.813" stroke="#1286F6" stroke-width="2" />
           </svg>
         </button>
       {:else}

@@ -3,6 +3,5 @@ const ENVIRONMENT = import.meta.env.MODE.toLowerCase(); // development, staging,
 const [DEVELOPMENT, STAGING, PRODUCTION] = ["development", "staging", "production"];
 
 export const Feature = {
-    BETA: "beta",
+  BETA: "beta",
 };
-  
