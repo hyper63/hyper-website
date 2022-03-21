@@ -23,7 +23,6 @@
   let error = false;
   // destructuring event
   async function handleSubmit({ detail }) {
-    // put /api/faqs/:id detail
     console.log(detail);
     const res = await fetch(`/api/faqs/${faq.id}.json`, {
       method: "PUT",

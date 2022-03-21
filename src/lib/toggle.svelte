@@ -14,8 +14,6 @@
     const editedToggleData = { ...data, active: toggleEnabled };
     dispatch("toggleSave", editedToggleData);
   }
-
-  //console.log({toggleEnabled})
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->

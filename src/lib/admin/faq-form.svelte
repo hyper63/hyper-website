@@ -13,15 +13,12 @@
   }
 
   function submit() {
-    //  active: faq.active === 'false' || faq.active === false ? false : true,
     const data = {
       question: faq.question,
       answer: faq.answer,
       active: faq.active,
       tags: compose(map(trim), split(","))(tagString),
     };
-
-    console.log({ data });
 
     dispatch("submit", data);
   }

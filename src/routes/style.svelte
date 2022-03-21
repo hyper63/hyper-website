@@ -9,7 +9,6 @@
   import FAQ from "$lib/faq.svelte";
   import Input from "$lib/input.svelte";
   import Search from "$lib/search.svelte";
-  //import Select from "svelte-select";
   import Toggle from "$lib/toggle.svelte";
 
   let show = false;
