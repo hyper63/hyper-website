@@ -1,10 +1,8 @@
 module.exports = {
   mode: "jit",
-  purge: {
-    content: [
-      "./src/**/*.{html,js,svelte,ts}",
-    ],
-  },
+  content: [
+    "./src/**/*.{html,js,svelte,ts}",
+  ],
   theme: {
     extend: {
       borderWidth: {

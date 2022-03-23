@@ -1,5 +1,5 @@
 import fetch from "node-fetch";
-import { contains } from "ramda";
+import { includes } from "ramda";
 
 const clientId = import.meta.env.VITE_CLIENT_ID;
 const secret = import.meta.env.VITE_CLIENT_SECRET;
@@ -28,7 +28,7 @@ export async function get(req) {
     },
   }).then((r) => r.json());
 
-  if (contains(user.login, ["twilson63", "tripott"])) {
+  if (includes(user.login, ["twilson63", "tripott"])) {
     req.locals.token = result.access_token;
     req.locals.username = user.login;
   }

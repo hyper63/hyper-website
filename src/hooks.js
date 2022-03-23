@@ -1,14 +1,14 @@
 import cookie from "cookie";
 import { compose, head, last, split } from "ramda";
 
-export const handle = async ({ request, render }) => {
+export const handle = async ({ request, resolve }) => {
   const cookies = cookie.parse(request.headers.cookie || "{}");
   request.locals.token =
     cookies.data && cookies.data !== "deleted" ? compose(last, split("|"))(cookies.data) : "";
   request.locals.username =
     cookies.data && cookies.data !== "deleted" ? compose(head, split("|"))(cookies.data) : "";
 
-  const response = await render(request);
+  const response = await resolve(request);
 
   if (request.locals.token !== "") {
     response.headers[
