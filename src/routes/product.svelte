@@ -8,6 +8,7 @@
   <title>hyper services</title>
 </svelte:head>
 <Header />
+
 <main class="md:ml-24 md:mr-44">
   <section id="summary" class="md:flex md:relative">
     <div class="md:w-1/2 md:h-96">
@@ -18,8 +19,8 @@
         Build any application by taking advantage of hyper's single API entry point and composable
         application services.
       </p>
-      <ul class="font-mono md:mt-8 bg-black text-white text-mono rounded-lg p-8" role="list">
-        <li role="listitem" class="mt-2 md:mt-0">
+      <ul class="font-mono md:mt-8 bg-black text-white text-mono rounded-lg p-8">
+        <li class="mt-2 md:mt-0">
           <span class="text-green">// connect to Hyper using Hyper-Connect </span>
           <br />
           <span>{"import {connect} from 'hyper-connect'"}</span>
@@ -28,12 +29,12 @@
         </li>
       </ul>
 
-      <!-- <ul class="ml-4 md:ml-8 md:mt-8" role="list">
-          <li role="listitem"><a class="text-blue" href="#data">Data</a></li>
-          <li role="listitem"><a class="text-blue" href="#search">Search</a></li>
-          <li role="listitem"><a class="text-blue" href="#storage">Storage</a></li>
-          <li role="listitem"><a class="text-blue" href="#cache">Cache</a></li>
-          <li role="listitem"><a class="text-blue" href="#queue">Queue</a></li>
+      <!-- <ul class="ml-4 md:ml-8 md:mt-8">
+          <li><a class="text-blue" href="#data">Data</a></li>
+          <li><a class="text-blue" href="#search">Search</a></li>
+          <li><a class="text-blue" href="#storage">Storage</a></li>
+          <li><a class="text-blue" href="#cache">Cache</a></li>
+          <li><a class="text-blue" href="#queue">Queue</a></li>
         </ul>
         <Button styles="mx-4 mt-8 md:hidden">Get Started</Button> -->
     </div>
@@ -42,68 +43,155 @@
       style="z-index: -100;right: 0; top: -200px;"
       src="/services.svg"
       alt="hyper services"
-      role="img"
     />
   </section>
 </main>
-<Section id="data" styles="md:mt-96" image="right">
+
+<!-- Data -->
+<Section id="data" styles="md:mt-80" image="right">
   <span slot="text">
     <div class="flex flex-col items-center">
       <h2 class="text-2xl md:text-5xl md:hidden">Data Service</h2>
-      <ul class="font-mono md:mt-8 md:ml-24 bg-black text-white rounded-lg p-8" role="list">
-        <li role="listitem">
-          <span class="text-green">// Add Document</span><br
+      <ul class="font-mono md:mt-8 md:ml-24 mx-4 bg-black text-white rounded-lg p-8">
+        <li>
+          <span class="text-green">// Add a Document</span><br
           />{"await hyper.data.add({ _id: 'game-1', type: 'game', name: 'Super Mario Bros 3', rating: 5})"}
         </li>
-        <li role="listitem">
-          <span class="text-green">// Read Document</span><br />
+        <li>
+          <span class="text-green">// Read a Document</span><br />
           {"await hyper.data.get('game-1')"}
         </li>
-        <li role="listitem">
+        <li>
           <span class="text-green">// Query</span><br />{"await hyper.data.query({type: 'game'})"}
         </li>
-        <li role="listitem">
+        <li>
           <span class="text-green">// Update</span><br
           />{"await hyper.data.update('game-1', { _id: 'game-1', type: 'game', name: 'Super Mario Bros 3', rating: 4})"}
         </li>
-        <li role="listitem">
+        <li>
           <span class="text-green">// Remove</span><br />{"await hyper.data.remove('game-1')"}
         </li>
       </ul>
     </div>
   </span>
   <span slot="image">
-    <div class="relative h-screen flex justify-center items-center">
+    <div class="relative flex justify-center items-center">
       <div class="z-10 md:ml-8">
         <h2 class="text-2xl mx-8 md:text-5xl">Data Service</h2>
-        <p class="text-base mx-8 mt-8 text-darkgray">API powered data access:</p>
-        <p class="text-base mx-8 mt-8">
-          The hyper data service is a document data store model that encourages the single table
-          design pattern.
+        <p class="text-base mx-8 mt-4 text-darkgray">API powered data access:</p>
+        <p class="text-base mx-8 mt-4">
+          A hyper data service is a document data store for storing JSON documents.
         </p>
-        <p class="text-base mx-8">
-          Leveraging attributes like `type` or `doc_type` to differentiate document schemas you can
-          store multiple documents of different `types` or `tables` in a single data store. This
-          pattern provides efficient horizontal scalability.
+        <p class="text-base mx-8 mt-4">
+          Query, add, update, and delete these documents using the hyper REST API. You can also
+          create indexes to improve query performance.
         </p>
       </div>
-      <img src="data-lg.svg" alt="data" role="img" class="z-0 w-full" />
+      <img src="data-lg.svg" alt="data" class="z-0 w-full" />
     </div>
   </span>
 </Section>
+
+<!-- Cache -->
+<Section id="cache" image="left">
+  <span slot="text">
+    <div class="flex flex-col items-center">
+      <h2 class="text-2xl md:text-5xl md:hidden">Cache Service</h2>
+      <ul class="font-mono md:mt-8 md:mr-4 bg-black text-white text-mono rounded-lg p-8">
+        <li>
+          <span class="text-purple">// Add a value</span><br
+          />{"await hyper.cache.add('game-1', { _id: 'game-1', type: 'game', name: 'Super Mario Bros 3' })"}
+        </li>
+        <li>
+          <span class="text-purple">// Read a value</span><br />
+          {"await hyper.cache.get('game-1')"}
+        </li>
+        <li>
+          <span class="text-purple">// Query the cache</span><br
+          />{"await hyper.cache.query('game-*')"}
+        </li>
+        <li>
+          <span class="text-purple">// Update a value</span><br
+          />{"await hyper.data.set('game-1', { _id: 'game-1', type: 'game', name: 'Super Mario Bros 3' })"}
+        </li>
+        <li>
+          <span class="text-purple">// Remove a value</span><br
+          />{"await hyper.cache.remove('game-1')"}
+        </li>
+      </ul>
+    </div>
+  </span>
+  <span slot="image">
+    <div class="relative flex justify-center items-center">
+      <img src="cache-lg.svg" alt="cache" class="z-0 w-full" />
+      <div class="z-10">
+        <h2 class="text-2xl px-4 md:text-5xl">Cache Service</h2>
+        <p class="text-base mx-4 mt-4 text-darkgray">API powered cache:</p>
+        <p class="text-sm mx-4 mt-4">
+          A hyper cache service is a powerful, in-memory key-value store.
+        </p>
+        <p class="text-sm mx-4 mt-4">
+          Add values to the cache. Then retrieve by key, or query values across keys
+        </p>
+      </div>
+    </div>
+  </span>
+</Section>
+
+<!-- Storage -->
+<Section id="storage" image="right">
+  <span slot="text">
+    <div class="flex flex-col items-center">
+      <h2 class="text-2xl md:text-5xl md:hidden">Storage Service</h2>
+      <ul class="font-mono md:mt-4 bg-black text-white text-mono rounded-lg p-8">
+        <li>
+          <span class="text-blue">// Upload a file</span>
+          <br />
+          {"await hyper.storage.upload('foo.jpg', Buffer.from(...))"}
+        </li>
+        <li>
+          <span class="text-blue">// Retrieve a file</span>
+          <br />
+          {"await hyper.storage.download('foo.jpg')"}
+        </li>
+        <li>
+          <span class="text-blue">// Or via url</span>
+          <br />
+          {"GET /storage/mybucket/foo.jpg"}
+        </li>
+        <li>
+          <span class="text-blue">// Delete a file</span>
+          <br />
+          {"await hyper.storage.remove('foo.jpg')"}
+        </li>
+      </ul>
+    </div>
+  </span>
+  <span slot="image">
+    <div class="relative flex justify-center items-center">
+      <div class="z-10 mr-4">
+        <h2 class="text-2xl px-4 md:text-5xl">Storage Service</h2>
+        <p class="text-base mx-4 mt-4 text-darkgray">API powered buckets:</p>
+        <p class="text-sm mx-4 mt-4">A hyper storage service is an object storage bucket.</p>
+        <p class="text-sm mx-4 mt-4">Upload, download and remove files.</p>
+      </div>
+      <img src="storage-lg.svg" alt="storage" class="z-0 w-full" />
+    </div>
+  </span>
+</Section>
+
+<!-- Search -->
 <Section id="search" image="left">
   <span slot="image">
-    <div class="relative h-screen flex justify-center items-center">
-      <img src="search-lg.svg" alt="search" role="img" class="z-0 w-full" />
+    <div class="relative flex justify-center items-center mr-4">
+      <img src="search-lg.svg" alt="search" class="z-0 w-full" />
       <div class="z-10">
         <h2 class="text-2xl md:text-5xl">Search Service</h2>
         <p class="text-base mt-4 text-darkgray">API powered search:</p>
-        <p class="text-sm mt-8">
-          high powered search API that is easy to use, with a single API call, your app can load
-          multiple documents.
-        </p>
-        <p class="text-sm mt-8">
-          To query, simply provide a text string and any match will be returned in milliseconds.
+        <p class="text-sm mt-4">A hyper search service is a powerful search index.</p>
+        <p class="text-sm mt-4">
+          Index JSON documents by adding them to your search service. Then query to perform a full
+          text search.
         </p>
       </div>
     </div>
@@ -111,25 +199,25 @@
   <span slot="text">
     <div class="flex flex-col items-center">
       <h2 class="text-2xl md:text-5xl md:hidden">Search Service</h2>
-      <ul class="md:mt-8 bg-black text-white text-mono rounded-lg p-8" role="list">
-        <li role="listitem">
-          <span class="text-orange">// add document to search index</span><br
+      <ul class="font-mono md:mt-8 md:mr-24 bg-black text-white text-mono rounded-lg p-8">
+        <li>
+          <span class="text-orange">// Index a document</span><br
           />{"await hyper.search.add({ id: 'game-1', type: 'game', name: 'Super Mario Bros 3' })"}
         </li>
-        <li role="listitem">
+        <li>
           <span class="text-orange">// search for games that contain 'Super'</span><br
           />{"await hyper.search.query('Super')"}
         </li>
-        <li role="listitem">
-          <span class="text-orange">// load multiple search documents</span><br />
+        <li>
+          <span class="text-orange">// or index multiple documents</span><br />
           {"await hyper.search.load(games)"}
         </li>
-        <li role="listitem">
-          <span class="text-orange">// remove search document</span><br
+        <li>
+          <span class="text-orange">// remove a search document</span><br
           />{"await hyper.search.remove('game-1')"}
         </li>
         <!--
-        <li role="listitem">
+        <li>
           <span class="text-orange"># Delete</span><br
           />{"DELETE /search/{app}/:id"}
         </li>
@@ -138,88 +226,48 @@
     </div>
   </span>
 </Section>
-<Section id="storage" image="right">
-  <span slot="text">
-    <div class="flex flex-col items-center">
-      <h2 class="text-2xl px-4 md:text-5xl">Storage Service</h2>
-      <p class="text-base mx-4 mt-4 text-darkgray md:w-1/2 md:text-center">
-        Store files using a REST API
-      </p>
-      <ul class="md:mt-8 bg-black text-white text-mono rounded-lg p-8" role="list">
-        <li role="listitem">
-          <span class="text-blue"># Store</span><br />{"POST /storage/{app} -d {...}"}
-        </li>
-        <li role="listitem">
-          <span class="text-blue"># Retrieve</span><br />{"GET /storage/{app}/:id"}
-        </li>
-        <li role="listitem">
-          <span class="text-blue"># Update</span><br />{"PUT /storage/{app}/:id -d {...}"}
-        </li>
-        <li role="listitem">
-          <span class="text-blue"># Delete</span><br />{"DELETE /storage/{app}/:id"}
-        </li>
-      </ul>
-    </div>
-  </span>
-  <span slot="image">
-    <img src="storage-lg.svg" alt="storage" role="img" />
-  </span>
-</Section>
-<Section id="cache" image="left">
-  <span slot="image">
-    <img src="cache-lg.svg" alt="cache" role="img" />
-  </span>
-  <span slot="text">
-    <div class="flex flex-col items-center">
-      <h2 class="text-2xl px-4 md:text-5xl md:text-center">Cache Service</h2>
-      <p class="z-10 text-base mx-4 mt-4 text-darkgray md:w-1/2 md:text-center">
-        JSON Key Value Store:
-      </p>
-      <ul class="md:mt-8 bg-black text-white text-mono rounded-lg p-8" role="list">
-        <li role="listitem">
-          <span class="text-purple"># Store</span><br />{"POST /cache/{app} -d {key, value, ttl}"}
-        </li>
-        <li role="listitem">
-          <span class="text-purple"># Retrieve</span><br />{"GET /cache/{app}/:key"}
-        </li>
-        <li role="listitem">
-          <span class="text-purple"># Update</span><br />{"PUT /cache/{app}/:key -d {...}"}
-        </li>
-        <li role="listitem">
-          <span class="text-purple"># Delete</span><br />{"DELETE /cache/{app}/:key"}
-        </li>
-        <li role="listitem">
-          <span class="text-purple"># Query</span><br />{'POST /cache/{app}/_query?pattern="ABC*"'}
-        </li>
-      </ul>
-    </div>
-  </span>
-</Section>
+
+<!-- Queue -->
 <Section id="queue" image="right">
   <span slot="text">
     <div class="flex flex-col items-center">
-      <h2 class="text-2xl px-4 md:text-5xl md:text-center">Queue Service</h2>
-      <p class="z-10 text-base mx-4 mt-4 text-darkgray md:w-1/2 md:text-center">
-        A RESTful web hook queue service:
-      </p>
-      <ul class="md:mt-8 bg-black text-white text-mono rounded-lg p-8" role="listitem">
-        <li role="listitem">
-          <span class="text-red"># Create Queue</span><br />{"PUT /queue/{app}/:name -d {target}"}
+      <h2 class="text-2xl md:text-5xl md:hidden">Queue Service</h2>
+      <ul class="font-mono md:mt-4 bg-black text-white text-mono rounded-lg p-8">
+        <li>
+          <span class="text-red">// Enqueue a job</span>
+          <br />
+          {"await hyper.queue.enqueue({ type: 'SEND_EMAIL', id: '123' })"}
         </li>
-        <li role="listitem">
-          <span class="text-red"># Post Task</span><br />{"POST /queue/{app}/:name -d {job}"}
+        <li>
+          <span class="text-red">// Retrieve queued jobs</span>
+          <br />
+          {"await hyper.queue.queued()"}
         </li>
-        <li role="listitem">
-          <span class="text-red"># Get Tasks</span><br />{"GET /queue/{app}/:name?status=READY"}
-        </li>
-        <li role="listitem">
-          <span class="text-red"># Delete Queue</span><br />{"DELETE /queue/{app}/:name"}
+        <li>
+          <span class="text-red">// Retrieve failed jobs</span>
+          <br />
+          {"await hyper.queue.errors()"}
         </li>
       </ul>
     </div>
   </span>
   <span slot="image">
-    <img src="queue-lg.svg" alt="queue" role="img" />
+    <div class="relative flex justify-center items-center">
+      <div class="z-10 mr-4">
+        <h2 class="text-2xl px-4 md:text-5xl">Queue Service</h2>
+        <p class="text-base mx-4 mt-4 text-darkgray">API powered persistent queues:</p>
+        <p class="text-sm mx-4 mt-4">
+          A hyper queue service is a powerful persistent queue, great for event driven, serverless,
+          or asynchronous workloads
+        </p>
+        <p class="text-sm mx-4 mt-4">
+          Create a queue and provide a worker url to send your jobs to, for processing, and then
+          start enqueuing jobs. hyper queue then sends these jobs to your worker url
+        </p>
+      </div>
+      <img src="queue-lg.svg" alt="queue" class="z-0 w-full" />
+    </div>
   </span>
 </Section>
+
 <Footer />
