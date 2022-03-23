@@ -9,12 +9,10 @@
       <div class="mb-8 text-blue"><a href="/product">PRODUCT</a></div>
       <ul role="list">
         <li role="listitem"><a href="/product#data">DATA</a></li>
-        <!--
         <li role="listitem"><a href="/product#search">SEARCH</a></li>
-        <li role="listitem"><a href="/product#cache">CACHE</a></li>
         <li role="listitem"><a href="/product#storage">STORAGE</a></li>
+        <li role="listitem"><a href="/product#cache">CACHE</a></li>
         <li role="listitem"><a href="/product#queue">QUEUE</a></li>
-        -->
       </ul>
     </div>
     <div class="p-16">
@@ -50,6 +48,6 @@
     </div>
   </section>
   <section class="flex justify-center items-center mt-16 mb-16 ml-4 w-full">
-    <p class="font-mono text-sm">&copy; 2021 HYPER63, LLC ALL RIGHTS RESERVED.</p>
+    <p class="font-mono text-sm">&copy; 2022 HYPER63, LLC ALL RIGHTS RESERVED.</p>
   </section>
 </footer>
