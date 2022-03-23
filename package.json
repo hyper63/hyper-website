@@ -2,6 +2,9 @@
   "name": "hyper-website",
   "version": "0.0.1",
   "type": "module",
+  "engines": {
+    "node": ">= 16.0.0"
+  },
   "scripts": {
     "build": "svelte-kit build",
     "dev": "svelte-kit dev",
