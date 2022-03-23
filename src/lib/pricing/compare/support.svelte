@@ -209,27 +209,4 @@
       </div>
     </td>
   </tr>
-  <tr>
-    <td class="border w-1/5 px-4">Payload limits</td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
-      </div>
-    </td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck color="#138BF7" />
-      </div>
-    </td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck color="#3AC43F" />
-      </div>
-    </td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck color="#54056A" />
-      </div>
-    </td>
-  </tr>
 </table>

@@ -25,7 +25,7 @@
     <th>Enterprise</th>
   </tr>
   <tr>
-    <td class="border px-4">HTTPS/SSL by default</td>
+    <td class="border px-4">HTTPS</td>
     <td class="border w-1/5">
       <div class="px-16 py-4 flex items-center justify-center">
         <CircleCheck />
@@ -71,7 +71,7 @@
     </td>
   </tr>
   <tr>
-    <td class="border w-1/5 px-4">App key protection</td>
+    <td class="border w-1/5 px-4">Application KeyPair Protection</td>
     <td class="border w-1/5">
       <div class="px-16 py-4 flex items-center justify-center">
         <CircleCheck />
@@ -94,30 +94,7 @@
     </td>
   </tr>
   <tr>
-    <td class="border w-1/5 px-4">Automated VPC</td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
-      </div>
-    </td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck color="#138BF7" />
-      </div>
-    </td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck color="#3AC43F" />
-      </div>
-    </td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck color="#54056A" />
-      </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="border w-1/5 px-4">Payload limits</td>
+    <td class="border w-1/5 px-4">Application Private Cloud</td>
     <td class="border w-1/5">
       <div class="px-16 py-4 flex items-center justify-center">
         <CircleCheck />
