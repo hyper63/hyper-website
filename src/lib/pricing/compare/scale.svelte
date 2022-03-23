@@ -51,9 +51,9 @@
       </div>
       {#if autoScaleTip}
         <div class="absolute z-40 bg-blue text-white p-4 rounded">
-          Ensures instances available to handle
+          hyper services automatically scale in or out
           <br />
-          the load of your application
+          based on your applications load
         </div>
       {/if}
     </td>

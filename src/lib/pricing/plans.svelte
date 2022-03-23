@@ -14,12 +14,9 @@
   </section>
 </div>
 <p class="my-8 text-center text-blue">
-  All plans must adhere to our <a
-    class="underline"
-    href="https://docs.hyper.io/cloud/terms-of-service">Terms of Service</a
+  All plans must adhere to our <a class="underline" href="https://docs.hyper.io/terms-of-service"
+    >Terms of Service</a
   >
   and
-  <a class="underline" href="https://docs.hyper.io/cloud/acceptable-use-policy"
-    >Acceptable Use Policy</a
-  >.
+  <a class="underline" href="https://docs.hyper.io/acceptable-use-policy">Acceptable Use Policy</a>.
 </p>

@@ -59,7 +59,7 @@
       <a class="font-space uppercase text-sm" href="/get-started">get started</a>
       -->
     <!-- api docs button -->
-    <a class="font-space uppercase text-sm" href="https://docs.hyper.io/cloud">Docs</a>
+    <a class="font-space uppercase text-sm" href="https://docs.hyper.io">Docs</a>
     <a class="font-space uppercase text-sm" href="https://dashboard.hyper.io"
       ><NavButton>Dashboard</NavButton></a
     >

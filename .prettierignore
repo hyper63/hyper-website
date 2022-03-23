@@ -2,3 +2,4 @@ node_modules
 .begin
 .svelte-kit
 sam.json
+build
