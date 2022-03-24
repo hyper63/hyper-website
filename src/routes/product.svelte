@@ -112,7 +112,7 @@
         </li>
         <li>
           <span class="text-purple">// Update a value</span><br
-          />{"await hyper.data.set('game-1', { _id: 'game-1', type: 'game', name: 'Super Mario Bros 3' })"}
+          />{"await hyper.cache.set('game-1', { _id: 'game-1', type: 'game', name: 'Super Mario Bros 3' })"}
         </li>
         <li>
           <span class="text-purple">// Remove a value</span><br
