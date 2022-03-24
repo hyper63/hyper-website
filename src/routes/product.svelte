@@ -2,6 +2,8 @@
   import Header from "$lib/header.svelte";
   import Footer from "$lib/footer.svelte";
   import Section from "$lib/section.svelte";
+  import Button from "$lib/button.svelte";
+  import { HelpURLs } from "$lib/constants.js";
 </script>
 
 <svelte:head>
@@ -15,7 +17,7 @@
       <h1 class="text-3xl pl-4 mt-8 mb-4 md:pl-0 md:mt-24 md:text-6xl ">
         hyper <br /><b>services</b>
       </h1>
-      <p class="text-base mx-4 text-darkgray md:mx-0">
+      <p class="text-base mx-4 text-darkgray md:mx-0 ">
         Build any application by taking advantage of hyper's single API entry point and composable
         application services.
       </p>
@@ -28,6 +30,11 @@
           <span>{"const hyper = connect(process.env.HYPER)"}</span>
         </li>
       </ul>
+      <div class="mt-4">
+        <a href={HelpURLs.HYPER_CONNECT}
+          ><Button hyperBolt={true} styles="mt-4">LEARN MORE</Button></a
+        >
+      </div>
 
       <!-- <ul class="ml-4 md:ml-8 md:mt-8">
           <li><a class="text-blue" href="#data">Data</a></li>
@@ -39,7 +46,7 @@
         <Button styles="mx-4 mt-8 md:hidden">Get Started</Button> -->
     </div>
     <img
-      class="w-full md:w-2/3 md:absolute"
+      class="w-full md:w-2/3 "
       style="z-index: -100;right: 0; top: -200px;"
       src="/services.svg"
       alt="hyper services"
@@ -82,10 +89,32 @@
         <p class="text-base mx-8 mt-4">
           A hyper data service is a document data store for storing JSON documents.
         </p>
-        <p class="text-base mx-8 mt-4">
+        <p class="text-base mt-4 mx-8">
           Query, add, update, and delete these documents using the hyper REST API. You can also
           create indexes to improve query performance.
         </p>
+        <div class="mt-4 mx-8">
+          <a href={HelpURLs.DATA_API}
+            ><Button hyperBolt={false} styles="mt-4">
+              <div class="flex flex-row items-center">
+                DATA API
+                <div class="pl-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="19"
+                    viewBox="0 0 19 19"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </Button></a
+          >
+        </div>
       </div>
       <img src="data-lg.svg" alt="data" class="z-0 w-full" />
     </div>
@@ -133,6 +162,28 @@
         <p class="text-sm mx-4 mt-4">
           Add values to the cache. Then retrieve by key, or query values across keys
         </p>
+        <div class="mt-4 mx-4">
+          <a href={HelpURLs.CACHE_API}
+            ><Button hyperBolt={false} styles="mt-4">
+              <div class="flex flex-row items-center">
+                CACHE API
+                <div class="pl-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="19"
+                    viewBox="0 0 19 19"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </Button></a
+          >
+        </div>
       </div>
     </div>
   </span>
@@ -174,6 +225,29 @@
         <p class="text-base mx-4 mt-4 text-darkgray">API powered buckets:</p>
         <p class="text-sm mx-4 mt-4">A hyper storage service is an object storage bucket.</p>
         <p class="text-sm mx-4 mt-4">Upload, download and remove files.</p>
+        <div class="mt-2 mx-4">
+          <a href={HelpURLs.STORAGE_API}
+            ><Button hyperBolt={false} styles="mt-4">
+              <div class="flex flex-row items-center ">
+                STORAGE API
+
+                <div class="pl-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="19"
+                    viewBox="0 0 19 19"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </Button></a
+          >
+        </div>
       </div>
       <img src="storage-lg.svg" alt="storage" class="z-0 w-full" />
     </div>
@@ -193,6 +267,28 @@
           Index JSON documents by adding them to your search service. Then query to perform a full
           text search.
         </p>
+        <div class="mt-4">
+          <a href={HelpURLs.SEARCH_API}
+            ><Button hyperBolt={false} styles="mt-4">
+              <div class="flex flex-row items-center">
+                SEARCH API
+                <div class="pl-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="19"
+                    viewBox="0 0 19 19"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </Button></a
+          >
+        </div>
       </div>
     </div>
   </span>
@@ -264,6 +360,29 @@
           Create a queue and provide a worker url to send your jobs to, for processing, and then
           start enqueuing jobs. hyper queue then sends these jobs to your worker url
         </p>
+        <div class="mt-2 mx-4">
+          <a href={HelpURLs.QUEUE}
+            ><Button hyperBolt={false} styles="mt-4">
+              <div class="flex flex-row items-center ">
+                QUEUE API
+
+                <div class="pl-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="19"
+                    viewBox="0 0 19 19"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </Button></a
+          >
+        </div>
       </div>
       <img src="queue-lg.svg" alt="queue" class="z-0 w-full" />
     </div>

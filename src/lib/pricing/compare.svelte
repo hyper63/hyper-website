@@ -7,7 +7,7 @@
 
 <section class="pl-24 pr-24">
   <Plans />
-  <hr class="border-black mt-8 mb-8" />
+  <!-- <hr class="border-black mt-8 mb-8" /> -->
   <Scale />
   <Security />
   <Support />
