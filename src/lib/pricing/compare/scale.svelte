@@ -22,7 +22,7 @@
   <div class="table table-fixed border-t-[1px] border-lightgray" style="width: 100%;">
     <div class="table-header-group ">
       <div class="table-row">
-        <div class="table-cell border-b-[1px] border-lightgray hover:border-b-3">
+        <div class="table-cell align-middle border-b-[1px] border-lightgray hover:border-b-3 h-14">
           <div class="flex">
             <div class="text-left px-4 text-darkgray text-sm">Auto-Scaling</div>
             <span
@@ -55,22 +55,30 @@
           {/if}
         </div>
 
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck />
           </div>
         </div>
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#138BF7" />
           </div>
         </div>
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#3AC43F" />
           </div>
         </div>
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#54056A" />
           </div>
@@ -79,18 +87,18 @@
 
       <div class="table-row ">
         <div
-          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           # of hyper apps
         </div>
 
         <div
-          class="table-cell align-middle text-center text-darkgray text-sm px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center text-darkgray text-sm px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           3
         </div>
         <div
-          class="table-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="flex flex-col items-center justify-center text-darkgray text-sm">
             <div>10</div>
@@ -98,7 +106,7 @@
           </div>
         </div>
         <div
-          class="table-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="flex flex-col items-center justify-center text-darkgray text-sm">
             <div>20</div>
@@ -106,7 +114,7 @@
           </div>
         </div>
         <div
-          class="table-cell align-middle text-center text-darkgray px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center text-darkgray px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="flex flex-col items-center justify-center text-darkgray text-sm">
             <div>50</div>
@@ -116,12 +124,12 @@
 
       <div class="table-row">
         <div
-          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           API Requests
         </div>
         <div
-          class="table-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="flex flex-col items-center justify-center text-darkgray text-sm">
             <div>100k</div>
@@ -129,7 +137,7 @@
           </div>
         </div>
         <div
-          class="table-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="flex flex-col items-center justify-center text-darkgray text-sm">
             <div>500k</div>
@@ -137,7 +145,7 @@
           </div>
         </div>
         <div
-          class="table-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="flex flex-col items-center justify-center text-darkgray text-sm">
             <div>2M</div>
@@ -145,7 +153,7 @@
           </div>
         </div>
         <div
-          class="table-cell align-middle text-center text-darkgray text-sm px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center text-darkgray text-sm px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           Custom
         </div>
@@ -153,12 +161,12 @@
 
       <div class="table-row">
         <div
-          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           Bandwidth
         </div>
         <div
-          class="table-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="flex flex-col items-center justify-center text-darkgray text-sm">
             <div>10GB</div>
@@ -166,7 +174,7 @@
           </div>
         </div>
         <div
-          class="table-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="flex flex-col items-center justify-center text-darkgray text-sm">
             <div>500GB</div>
@@ -174,7 +182,7 @@
           </div>
         </div>
         <div
-          class="table-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="flex flex-col items-center justify-center text-darkgray text-sm">
             <div>1TB</div>
@@ -182,7 +190,7 @@
           </div>
         </div>
         <div
-          class="table-cell align-middle text-center text-darkgray text-sm px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center text-darkgray text-sm px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           Custom
         </div>
@@ -190,12 +198,12 @@
 
       <div class="table-row">
         <div
-          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           Database Space
         </div>
         <div
-          class="ttable-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="ttable-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="flex flex-col items-center justify-center text-darkgray text-sm">
             <div>500MB</div>
@@ -203,7 +211,7 @@
           </div>
         </div>
         <div
-          class="table-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="flex flex-col items-center justify-center text-darkgray text-sm">
             <div>15GB</div>
@@ -211,7 +219,7 @@
           </div>
         </div>
         <div
-          class="table-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="flex flex-col items-center justify-center text-darkgray text-sm">
             <div>32GB</div>
@@ -219,7 +227,7 @@
           </div>
         </div>
         <div
-          class="table-cell align-middle text-center text-darkgray text-sm px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center text-darkgray text-sm px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           Custom
         </div>
@@ -227,12 +235,12 @@
 
       <div class="table-row">
         <div
-          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           Storage
         </div>
         <div
-          class="table-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="flex flex-col items-center justify-center text-darkgray text-sm">
             <div>500GB</div>
@@ -240,7 +248,7 @@
           </div>
         </div>
         <div
-          class="table-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="flex flex-col items-center justify-center text-darkgray text-sm">
             <div>1.5TB</div>
@@ -248,7 +256,7 @@
           </div>
         </div>
         <div
-          class="table-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="flex flex-col items-center justify-center text-darkgray text-sm">
             <div>5TB</div>
@@ -256,14 +264,14 @@
           </div>
         </div>
         <div
-          class="table-cell align-middle text-center text-darkgray text-sm px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center text-darkgray text-sm px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           Custom
         </div>
       </div>
 
       <div class="table-row">
-        <div class="table-cell border-b-[1px] border-lightgray hover:border-b-3">
+        <div class="table-cell align-middle border-b-[1px] border-lightgray hover:border-b-3 h-14">
           <div class="flex">
             <div class="text-left px-4 text-darkgray text-sm">Logging</div>
             <span
@@ -293,28 +301,28 @@
         </div>
 
         <div
-          class="table-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             Limited
           </div>
         </div>
         <div
-          class="table-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#138BF7" />
           </div>
         </div>
         <div
-          class="table-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#3AC43F" />
           </div>
         </div>
         <div
-          class="table-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#54056A" />
@@ -324,17 +332,17 @@
 
       <div class="table-row">
         <div
-          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           Users
         </div>
         <div
-          class="table-cell align-middle text-center text-darkgray text-sm px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center text-darkgray text-sm px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           1
         </div>
         <div
-          class="table-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="flex flex-col items-center justify-center text-darkgray text-sm">
             <div>5</div>
@@ -342,7 +350,7 @@
           </div>
         </div>
         <div
-          class="table-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="flex flex-col items-center justify-center text-darkgray text-sm">
             <div>15</div>
@@ -350,7 +358,7 @@
           </div>
         </div>
         <div
-          class="table-cell align-middle text-center text-darkgray text-sm px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center text-darkgray text-sm px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           Custom
         </div>
@@ -358,32 +366,32 @@
 
       <div class="table-row">
         <div
-          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           Teams
         </div>
 
         <div
-          class="table-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm" />
         </div>
         <div
-          class="table-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#138BF7" />
           </div>
         </div>
         <div
-          class="table-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#3AC43F" />
           </div>
         </div>
         <div
-          class="table-cell text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#54056A" />
