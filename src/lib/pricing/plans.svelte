@@ -6,7 +6,7 @@
 </script>
 
 <div class="md:mt-16 md:pl-24 md:pr-24">
-  <section class="flex">
+  <section class="flex place-content-center">
     <Free />
     <Pro />
     <Business />
