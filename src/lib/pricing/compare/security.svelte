@@ -22,27 +22,35 @@
     <div class="table-header-group ">
       <div class="table-row">
         <div
-          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           HTTPS
         </div>
 
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck />
           </div>
         </div>
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#138BF7" />
           </div>
         </div>
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#3AC43F" />
           </div>
         </div>
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#54056A" />
           </div>
@@ -51,27 +59,35 @@
 
       <div class="table-row">
         <div
-          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           DDoS Mitigation
         </div>
 
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck />
           </div>
         </div>
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#138BF7" />
           </div>
         </div>
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#3AC43F" />
           </div>
         </div>
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#54056A" />
           </div>
@@ -80,27 +96,35 @@
 
       <div class="table-row">
         <div
-          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           Application KeyPair Protection
         </div>
 
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck />
           </div>
         </div>
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#138BF7" />
           </div>
         </div>
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#3AC43F" />
           </div>
         </div>
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#54056A" />
           </div>
@@ -109,27 +133,35 @@
 
       <div class="table-row">
         <div
-          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           Application Private Cloud
         </div>
 
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck />
           </div>
         </div>
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#138BF7" />
           </div>
         </div>
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#3AC43F" />
           </div>
         </div>
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#54056A" />
           </div>

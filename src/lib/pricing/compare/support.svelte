@@ -25,7 +25,7 @@
   <div class="table table-fixed border-t-[1px] border-lightgray" style="width: 100%;">
     <div class="table-header-group ">
       <div class="table-row">
-        <div class="table-cell border-b-[1px] border-lightgray hover:border-b-3">
+        <div class="table-cell align-middle border-b-[1px] border-lightgray hover:border-b-3 h-14">
           <div class="flex">
             <div class="text-left px-4 text-darkgray text-sm">Basic Support</div>
             <span
@@ -57,18 +57,26 @@
           {/if}
         </div>
 
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3" />
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        />
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#138BF7" />
           </div>
         </div>
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#3AC43F" />
           </div>
         </div>
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#54056A" />
           </div>
@@ -77,19 +85,27 @@
 
       <div class="table-row">
         <div
-          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           SLA for 99.9% uptime
         </div>
 
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3" />
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3" />
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        />
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        />
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#3AC43F" />
           </div>
         </div>
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
             <CircleCheck color="#54056A" />
           </div>
@@ -97,7 +113,7 @@
       </div>
 
       <div class="table-row">
-        <div class="table-cell border-b-[1px] border-lightgray hover:border-b-3">
+        <div class="table-cell align-middle border-b-[1px] border-lightgray hover:border-b-3 h-14">
           <div class="flex">
             <div class="text-left px-4 text-darkgray text-sm">Extended Support</div>
             <span
@@ -132,32 +148,39 @@
           {/if}
         </div>
 
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm" />
         </div>
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm" />
         </div>
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="flex flex-col items-center justify-center">
             <CircleCheck color="#3AC43F" />
             <div class="text-xs pb-2">($500)</div>
           </div>
         </div>
         <div
-          class="table-cell align-middle text-center text-darkgray text-sm px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3"
+          class="table-cell align-middle text-center text-darkgray text-sm px-4 border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           Custom
         </div>
       </div>
 
       <div class="table-row">
-        <div class="table-cell border-b-[1px] border-lightgray hover:border-b-3">
+        <div class="table-cell align-middle border-b-[1px] border-lightgray hover:border-b-3 h-14">
           <div class="flex">
             <div class="text-left px-4 text-darkgray text-sm">Fractional CTO Service</div>
             <span
               on:mouseenter={() => (showCTOTip = true)}
               on:mouseleave={() => (showCTOTip = false)}
+              class="-ml-3"
             >
               <svg
                 width="13"
@@ -191,22 +214,30 @@
           {/if}
         </div>
 
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm" />
         </div>
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="flex flex-col items-center justify-center">
             <CircleCheck color="#138BF7" />
             <div class="text-xs pb-1">($4000)</div>
           </div>
         </div>
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="flex flex-col items-center justify-center">
             <CircleCheck color="#3AC43F" />
             <div class="text-xs pb-1">($6000)</div>
           </div>
         </div>
-        <div class="table-cell border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3">
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
           <div class="flex flex-col items-center justify-center">
             <CircleCheck color="#54056A" />
             <div class="text-xs pb-1">($8000)</div>
