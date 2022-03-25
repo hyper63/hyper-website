@@ -46,22 +46,42 @@
   </section>
   <nav class="hidden md:w-1/2 md:block flex items-center space-x-4">
     <!-- product -->
-    <a class="font-space uppercase text-sm" href="/product">product</a>
+    <a
+      class="font-space uppercase text-sm hover:text-active-blue active:text-active-purple"
+      href="/product">product</a
+    >
     <!-- pricing -->
-    <a class="font-space uppercase text-sm" href="/pricing">pricing</a>
+    <a
+      class="font-space uppercase text-sm hover:text-active-blue active:text-active-purple"
+      href="/pricing">pricing</a
+    >
     <!-- faq -->
-    <a class="font-space uppercase text-sm" href="/faq">faq</a>
+    <a
+      class="font-space uppercase text-sm hover:text-active-blue active:text-active-purple"
+      href="/faq">faq</a
+    >
     <!-- company -->
-    <a class="font-space uppercase text-sm" href="/company">company</a>
+    <a
+      class="font-space uppercase text-sm hover:text-active-blue active:text-active-purple"
+      href="/company">company</a
+    >
     <!-- blog -->
-    <a class="font-space uppercase text-sm" href="https://blog.hyper.io">blog</a>
+    <a
+      class="font-space uppercase text-sm hover:text-active-blue active:text-active-purple"
+      href="https://blog.hyper.io">blog</a
+    >
     <!-- get started
       <a class="font-space uppercase text-sm" href="/get-started">get started</a>
       -->
     <!-- api docs button -->
-    <a class="font-space uppercase text-sm" href="https://docs.hyper.io">Docs</a>
+    <a
+      class="font-space uppercase text-sm hover:text-active-blue active:text-active-purple"
+      href="https://docs.hyper.io">Docs</a
+    >
+
     <a class="font-space uppercase text-sm" href="https://dashboard.hyper.io"
-      ><NavButton>Dashboard</NavButton></a
+      ><NavButton txtColor="white" bgColor="blue" hoverBackgroundColor="purple">DASHBOARD</NavButton
+      ></a
     >
   </nav>
 </header>

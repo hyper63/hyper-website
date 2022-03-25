@@ -6,9 +6,9 @@
 </script>
 
 <a {href}>
-  <button class="m-0 p-0 flex space-x-2 focus:outline-none">
+  <button class="m-0 p-0 flex space-x-2 focus:ring-0">
     <div
-      class="p-6 bg-whitesmoke text-{iconColor} hover:bg-{bgColor} rounded-full flex items-center justify-center"
+      class="p-6 bg-lightgray text-{iconColor} hover:bg-{bgColor} rounded-lg flex items-center justify-center"
     >
       <svg
         class="ml-2"
@@ -21,7 +21,7 @@
         <path d="M0 22.813V0.812988L19 11.313L0 22.813Z" fill="inherit" />
       </svg>
     </div>
-    <span class="font-mono font-bold text-xl text-black hover:text-{txtColor}">
+    <span class="font-mono font-bold text-xl text-{txtColor} ">
       <slot />
     </span>
   </button>
