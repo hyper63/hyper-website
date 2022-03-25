@@ -16,104 +16,157 @@
 
   <div class="font-bold text-2xl" style="margin-left: 16px;">SECURITY</div>
 </div>
-<table class="table table-fixed border-3 border-black" style="width: 100%;">
-  <tr>
-    <th>Plans</th>
-    <th>Starter</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-  </tr>
-  <tr>
-    <td class="border px-4">HTTPS</td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
+
+<div class="pt-4">
+  <div class="table table-fixed border-t-[1px] border-lightgray" style="width: 100%;">
+    <div class="table-header-group ">
+      <div class="table-row">
+        <div
+          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
+          HTTPS
+        </div>
+
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
+          <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
+            <CircleCheck />
+          </div>
+        </div>
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
+          <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
+            <CircleCheck color="#138BF7" />
+          </div>
+        </div>
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
+          <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
+            <CircleCheck color="#3AC43F" />
+          </div>
+        </div>
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
+          <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
+            <CircleCheck color="#54056A" />
+          </div>
+        </div>
       </div>
-    </td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck color="#138BF7" />
+
+      <div class="table-row">
+        <div
+          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
+          DDoS Mitigation
+        </div>
+
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
+          <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
+            <CircleCheck />
+          </div>
+        </div>
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
+          <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
+            <CircleCheck color="#138BF7" />
+          </div>
+        </div>
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
+          <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
+            <CircleCheck color="#3AC43F" />
+          </div>
+        </div>
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
+          <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
+            <CircleCheck color="#54056A" />
+          </div>
+        </div>
       </div>
-    </td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck color="#3AC43F" />
+
+      <div class="table-row">
+        <div
+          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
+          Application KeyPair Protection
+        </div>
+
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
+          <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
+            <CircleCheck />
+          </div>
+        </div>
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
+          <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
+            <CircleCheck color="#138BF7" />
+          </div>
+        </div>
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
+          <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
+            <CircleCheck color="#3AC43F" />
+          </div>
+        </div>
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
+          <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
+            <CircleCheck color="#54056A" />
+          </div>
+        </div>
       </div>
-    </td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck color="#54056A" />
+
+      <div class="table-row">
+        <div
+          class="table-cell align-middle text-left px-4 text-darkgray text-sm border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
+          Application Private Cloud
+        </div>
+
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
+          <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
+            <CircleCheck />
+          </div>
+        </div>
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
+          <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
+            <CircleCheck color="#138BF7" />
+          </div>
+        </div>
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
+          <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
+            <CircleCheck color="#3AC43F" />
+          </div>
+        </div>
+        <div
+          class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
+        >
+          <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
+            <CircleCheck color="#54056A" />
+          </div>
+        </div>
       </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="border w-1/5 px-4">DDoS mitigation</td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
-      </div>
-    </td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck color="#138BF7" />
-      </div>
-    </td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck color="#3AC43F" />
-      </div>
-    </td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck color="#54056A" />
-      </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="border w-1/5 px-4">Application KeyPair Protection</td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
-      </div>
-    </td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck color="#138BF7" />
-      </div>
-    </td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck color="#3AC43F" />
-      </div>
-    </td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck color="#54056A" />
-      </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="border w-1/5 px-4">Application Private Cloud</td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck />
-      </div>
-    </td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck color="#138BF7" />
-      </div>
-    </td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck color="#3AC43F" />
-      </div>
-    </td>
-    <td class="border w-1/5">
-      <div class="px-16 py-4 flex items-center justify-center">
-        <CircleCheck color="#54056A" />
-      </div>
-    </td>
-  </tr>
-</table>
+    </div>
+  </div>
+</div>

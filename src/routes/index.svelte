@@ -17,11 +17,16 @@
   import Header from "$lib/header.svelte";
   import Button from "$lib/button.svelte";
   import Ports from "$lib/ports.svelte";
-  import FAQ from "$lib/faq.svelte";
-  import All from "$lib/all-n-one.svelte";
-  import Testimonials from "$lib/testimonials.svelte";
+
+  import FeaturesAreKing from "$lib/features-king.svelte";
   import Flow from "$lib/flow.svelte";
+  import All from "$lib/all-n-one.svelte";
+  import FAQs from "$lib/faqs.svelte";
+  import Testimonials from "$lib/testimonials.svelte";
+
   import Footer from "$lib/footer.svelte";
+  import { HelpURLs } from "$lib/constants.js";
+
   export let faqs;
 </script>
 
@@ -33,10 +38,10 @@
   <section class="splash bg-no-repeat pl-4 md:pl-24 md:pr-24">
     <div class="flex">
       <div class="mt-8 md:mt-20 md:w-1/2">
-        <h1 class="text-base font-semibold md:text-2xl width-full height-full text-gray">
+        <h1 class="text-base font-semibold md:text-xl width-full height-full text-gray">
           hyper - service for building hyperscale applications
         </h1>
-        <h2 class="text-4xl font-semibold md:text-6xl width-full height-full">
+        <h2 class="text-3xl font-semibold md:text-5xl pt-4 width-full height-full">
           One <b>API</b>... many services...
         </h2>
         <p class="text-md mt-4 mr-8 md:mt-12 md:w-3/4">
@@ -45,7 +50,7 @@
           application development.
         </p>
         <div class="mt-16 flex flex-col md:flex-row space-y-4 space-x-4 md:space-y-0 md:space-x-20">
-          <a href="https://docs.hyper.io"><Button>Get Started</Button></a>
+          <a href={HelpURLs.GETTING_STARTED}><Button>Get Started</Button></a>
 
           <!--
         <Play href="https://blog.hyper.io/tour-of-hyper63-api/" >
@@ -60,17 +65,21 @@
     </div>
   </section>
   <img class="md:hidden" src="/homepage-splash.svg" alt="homepage splash" role="img" />
+  <!--  -->
+  <!-- <section class="pl-4 md:pl-24 md:pr-24"> -->
+
   <section class="flex w-full md:pt-44 pl-4 md:pl-24 md:pr-24 md:relative">
     <Flow />
     <div class="md:w-1/2 2xl:w-1/3">
       <h5 class="">THE PROBLEM</h5>
-      <h2 class="text-3xl font-semibold md:text-5xl md:mt-16">Technical Debt</h2>
+      <h2 class="text-2xl font-semibold md:text-5xl md:mt-8">Technical Debt</h2>
       <p class="mt-4 md:mt-16">
         What do developers hate the most about software development? Many will say technical debt,
         having to work through so much noise to implement a simple change request.
       </p>
     </div>
   </section>
+
   <img class="md:hidden" src="/flow1.svg" alt="flow" role="img" />
   <section class="flex w-full pl-4 md:pt-44 md:pl-24 md:pr-24 md:mb-96">
     <div class="md:w-1/2 2xl:w-1/3">
@@ -81,7 +90,7 @@
         to create scalable performant services. Create features quickly into apps that scale, all
         while keeping <b>technical debt</b> at bay.
       </p>
-      <p class="mt-16">
+      <p class="mt-8">
         hyper provides APIs to core application services: data, cache, storage, queues, and search.
       </p>
     </div>
@@ -90,26 +99,11 @@
     <img class="" src="/hyper-box.svg" alt="hyper box" role="img" />
   </div>
   <Ports styles="pl-24 pr-24" />
+  <FeaturesAreKing />
   <All styles="md:pl-24 md:pr-24" />
-  <section
-    class="flex flex-col bg-whitesmoke items-center mt-4 pt-8 md:mt-16 md:pt-8 md:pl-24 md:pr-24"
-  >
-    <h1 class="text-3xl md:text-6xl">FAQs</h1>
-    <p class="px-4 my-4 text-base md:mt-16 md:mb-8">
-      Can't find the answer you're looking for? Reach out to our <a
-        href="/contact"
-        class="text-red underline">customer support team</a
-      >.
-    </p>
-    <div class="flex flex-col space-y-4 w-3/4 md:w-2/3 md:mb-32 mb-8">
-      {#each faqs as { question, answer }}
-        <FAQ>
-          <span slot="question">{question}</span>
-          <span slot="answer">{@html answer}</span>
-        </FAQ>
-      {/each}
-    </div>
-  </section>
+
+  <FAQs {faqs} />
+
   <Testimonials styles="pl-4 pr-4 md:pl-24 md:pr-24" />
 </main>
 <Footer />
