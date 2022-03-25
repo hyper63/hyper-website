@@ -23,6 +23,7 @@
   import All from "$lib/all-n-one.svelte";
   import FAQs from "$lib/faqs.svelte";
   import Testimonials from "$lib/testimonials.svelte";
+  import YouTubePromo from "$lib/hyper-promo-video-hero.svelte";
 
   import Footer from "$lib/footer.svelte";
   import { HelpURLs } from "$lib/constants.js";
@@ -59,12 +60,15 @@
         -->
         </div>
       </div>
-      <div class="md:w-1/2 hidden md:block">
+
+      <YouTubePromo />
+
+      <!-- <div class="md:w-1/2 hidden md:block">
         <img class="md:w-100%" src="/hyper-connect-screenshot.png" alt="hyper-connect screenshot" />
-      </div>
+      </div> -->
     </div>
   </section>
-  <img class="md:hidden" src="/homepage-splash.svg" alt="homepage splash" role="img" />
+  <img class="md:hidden" src="/homepage-splash.svg" alt="homepage splash" />
   <!--  -->
   <!-- <section class="pl-4 md:pl-24 md:pr-24"> -->
 
@@ -80,7 +84,7 @@
     </div>
   </section>
 
-  <img class="md:hidden" src="/flow1.svg" alt="flow" role="img" />
+  <img class="md:hidden" src="/flow1.svg" alt="flow" />
   <section class="flex w-full pl-4 md:pt-44 md:pl-24 md:pr-24 md:mb-96">
     <div class="md:w-1/2 2xl:w-1/3">
       <h5>OUR SOLUTION</h5>
@@ -96,7 +100,7 @@
     </div>
   </section>
   <div class="mt-16 md:hidden flex items-center justify-center">
-    <img class="" src="/hyper-box.svg" alt="hyper box" role="img" />
+    <img class="" src="/hyper-box.svg" alt="hyper box" />
   </div>
   <Ports styles="pl-24 pr-24" />
   <FeaturesAreKing />
