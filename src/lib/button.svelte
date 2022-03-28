@@ -5,12 +5,16 @@
   export let styles = "";
   export let hyperBolt = true;
   export let hoverBgColor = "purple";
+  export let disabled = false;
 </script>
 
 <button
   on:click
   {type}
-  class="space-x-4 text-{txtColor} bg-{bgColor} hover:bg-{hoverBgColor} focus:ring-{bgColor} {styles}"
+  {disabled}
+  class="space-x-4 text-{txtColor} bg-{bgColor} hover:bg-{hoverBgColor} focus:ring-{bgColor} {disabled
+    ? 'bg-gray'
+    : ''} {styles}"
 >
   <div>
     <slot />
