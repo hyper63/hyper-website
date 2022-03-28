@@ -1,6 +1,8 @@
 import { connect } from 'hyper-connect'
 import { PublicKey } from "@solana/web3.js";
+import * as R from 'ramda';
 
+const { trim } = R
 const hyper = connect(import.meta.env.VITE_HYPER_TOKEN)
 
 // test to see if wallet address is valid
@@ -15,15 +17,16 @@ function validateSolAddress(address) {
 }
 
 export async function post({ body }) {
+  const address = trim(body.address)
   // check and make sure wallet is valid
-  if (validateSolAddress(body.address)) {
+  if (validateSolAddress(address)) {
     // set default response
     let result = { ok: true }
     // if valid, make sure it has not already been added.
-    const doc = await hyper.data.get(body.address)
+    const doc = await hyper.data.get(address)
     // if doc does not exist then add wallet doc
     if (doc.ok === false) {
-      result = await hyper.data.add({ _id: body.address, type: 'token', address: body.address, dropped: false })
+      result = await hyper.data.add({ _id: address, type: 'token', address, dropped: false, createdAt: new Date().toISOString() })
     }
     return {
       body: result
