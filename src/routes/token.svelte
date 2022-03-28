@@ -20,6 +20,22 @@
     disabled = true;
     if (validateSolAddress(e.target.address.value)) {
       // store wallet address for sending H63 Coin
+      fetch("/api/token", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ address: e.target.address.value }),
+      })
+        .then((res) => res.json())
+        .then((res) => {
+          if (res.ok) {
+            alert("Successfully registered wallet!");
+            e.target.address.value = "";
+          } else {
+            alert("Could not register wallet, please reach out on https://hyper.io/slack");
+          }
+        });
     } else {
       alert("The address you entered is not a valid solana address, please try again.");
       e.target.address.value = "";
@@ -58,6 +74,9 @@
     <div class="form-control">
       <label for="address" class="label">Address</label>
       <Input name="address" styles="w-full" />
+      <div>
+        Only one token will be issued by address and the token drop will occur on March 31, 2022.
+      </div>
     </div>
     <div class="mt-8">
       <Button type="submit" {disabled}>Submit</Button>

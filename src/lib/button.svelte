@@ -12,7 +12,9 @@
   on:click
   {type}
   {disabled}
-  class="space-x-4 text-{txtColor} bg-{bgColor} hover:bg-{hoverBgColor} focus:ring-{bgColor} {styles}"
+  class="space-x-4 text-{txtColor} bg-{bgColor} hover:bg-{hoverBgColor} focus:ring-{bgColor} {disabled
+    ? 'bg-gray'
+    : ''} {styles}"
 >
   <div>
     <slot />
