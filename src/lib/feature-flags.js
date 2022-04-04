@@ -12,10 +12,10 @@ const [DEVELOPMENT, STAGING, PRODUCTION] = ["development", "staging", "productio
 export const featureFlags = [
   {
     flag: Feature.BETA,
-    default: false,
+    default: true,
     [DEVELOPMENT]: true,
     [STAGING]: true,
-    [PRODUCTION]: false,
+    [PRODUCTION]: true,
   },
 ];
 
