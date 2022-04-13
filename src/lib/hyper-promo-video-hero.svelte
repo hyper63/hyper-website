@@ -7,7 +7,7 @@
   <div class="container ">
     <img
       class="rounded shadow-lg hover:shadow-xl hover:shadow-active-yellow"
-      src="youtube-thumbnail-lady.png"
+      src="getting-started-w-hyper.png"
       alt="youtube thumbnail"
     />
     <div class="btn">
