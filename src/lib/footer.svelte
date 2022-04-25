@@ -1,11 +1,13 @@
-<script></script>
+<script>
+  import { HelpURLs } from "./constants";
+</script>
 
 <footer class="">
   <section class="hidden md:flex md:pl-24 md:pr-24">
     <div class="w-1/4 p-24 flex items-center justify-center">
       <img src="/logo.svg" alt="logo" />
     </div>
-    <div class="p-16">
+    <div class="p-14">
       <div class="mb-8 text-blue"><a href="/product">PRODUCT</a></div>
       <ul>
         <li><a href="/product#data">DATA</a></li>
@@ -15,19 +17,11 @@
         <li><a href="/product#queue">QUEUE</a></li>
       </ul>
     </div>
-    <div class="p-16">
-      <div class="mb-8 text-blue"><a href="https://docs.hyper.io">API DOCS</a></div>
-      <!--
+    <div class="p-14">
+      <div class="mb-8 text-blue">RESOURCES</div>
       <ul>
-        <li><a class="uppercase" href="https://docs.hyper.io/introduction">Introduction</a></li>
-        <li><a class="uppercase" href="https://docs.hyper.io/authentication">Authentication</a></li>
-        <li><a class="uppercase" href="https://docs.hyper.io/configuration">CONFIGURATION</a></li>
-      </ul>
-      -->
-    </div>
-    <div class="p-16">
-      <div class="mb-8 text-blue"><a href="https://blog.hyper.io">BLOG</a></div>
-      <ul>
+        <li><a href="https://docs.hyper.io">API DOCS</a></li>
+        <li><a href="https://blog.hyper.io">BLOG</a></li>
         <li><a href="/company">COMPANY</a></li>
         <li>
           <a
@@ -38,9 +32,11 @@
         <li><a href="/faq">FAQS</a></li>
       </ul>
     </div>
-    <div class="p-16">
+    <div class="p-14">
       <div class="mb-8 text-blue">CONTACT</div>
       <ul>
+        <li><a href={HelpURLs.REQUEST_A_DEMO}>REQUEST A DEMO</a></li>
+        <li><a href={HelpURLs.REQUEST_A_CONSULTATION}>REQUEST A CONSULTATION</a></li>
         <li><a href="mailto:info@hyper.io">INFO@HYPER.IO</a></li>
         <li><a href="https://twitter.com/_hyper_io">TWITTER</a></li>
         <li><a href="https://github.com/hyper63/hyper">GITHUB</a></li>

@@ -5,6 +5,8 @@ export const Feature = {
 export const HelpURLs = {
   DOCS: "https://docs.hyper.io",
   GETTING_STARTED: "https://docs.hyper.io/getting-started",
+  REQUEST_A_DEMO: "https://calendly.com/hyper-cloud/hyper-cloud-technical-tour",
+  REQUEST_A_CONSULTATION: "https://calendly.com/hyper-cloud/chat-with-an-architect",
   PRICING: "https://hyper.io/pricing",
   DATA_API: "https://docs.hyper.io/data-api",
   CACHE_API: "https://docs.hyper.io/cache-api",
