@@ -15,11 +15,11 @@
 
 <script>
   import Header from "$lib/header.svelte";
-  import Button from "$lib/button.svelte";
+  import Button from "$lib/buttons/button.svelte";
   import Ports from "$lib/ports.svelte";
 
   import FeaturesAreKing from "$lib/features-king.svelte";
-  import Flow from "$lib/flow.svelte";
+  import Flow from "$lib/svgs/flow.svelte";
   import All from "$lib/all-n-one.svelte";
   import FAQs from "$lib/faqs.svelte";
   import Testimonials from "$lib/testimonials.svelte";

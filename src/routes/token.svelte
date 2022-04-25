@@ -1,6 +1,6 @@
 <script>
   import Input from "$lib/input.svelte";
-  import Button from "$lib/button.svelte";
+  import Button from "$lib/buttons/button.svelte";
 
   import { PublicKey } from "@solana/web3.js";
 

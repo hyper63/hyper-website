@@ -22,8 +22,8 @@
   import { reject } from "ramda";
   import Header from "$lib/admin/header.svelte";
   import ActiveToggle from "$lib/toggle.svelte";
-  import Button from "$lib/button.svelte";
-  import LinkBtn from "$lib/link-button.svelte";
+  import Button from "$lib/buttons/button.svelte";
+  import LinkBtn from "$lib/buttons/link-button.svelte";
   import Modal from "$lib/admin/modal.svelte";
 
   let deleteModelOpen = false;

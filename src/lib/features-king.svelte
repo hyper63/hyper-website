@@ -1,5 +1,5 @@
 <script>
-  import Button from "$lib/button.svelte";
+  import Button from "$lib/buttons/button.svelte";
   import Services from "$lib/services.svelte";
   import { HelpURLs } from "$lib/constants.js";
 </script>

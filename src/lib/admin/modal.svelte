@@ -1,7 +1,7 @@
 <script>
   import { createEventDispatcher } from "svelte";
   import { scale } from "svelte/transition";
-  import Button from "$lib/button.svelte";
+  import Button from "$lib/buttons/button.svelte";
   export let deleteModelOpen = false;
 
   const dispatch = createEventDispatcher();

@@ -1,5 +1,5 @@
 <script>
-  import PlayButton from "$lib/play-button.svelte";
+  import PlayButton from "$lib/buttons/play-button.svelte";
   import { HelpURLs } from "$lib/constants.js";
 </script>
 

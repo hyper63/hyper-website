@@ -1,6 +1,6 @@
 <script>
-  import Button from "$lib/button.svelte";
-  import NavButton from "$lib/nav-button.svelte";
+  import Button from "$lib/buttons/button.svelte";
+  import NavButton from "$lib/buttons/nav-button.svelte";
   import BetaBadge from "$lib/badge-beta.svelte";
   import { isBetaEnabled } from "$lib/feature-flags";
   let mobileMenu = false;

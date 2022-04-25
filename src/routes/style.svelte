@@ -1,9 +1,9 @@
 <script>
   import Color from "$lib/color.svelte";
-  import Button from "$lib/button.svelte";
-  import Play from "$lib/play-button.svelte";
-  import NavButton from "$lib/nav-button.svelte";
-  import LinkBtn from "$lib/link-button.svelte";
+  import Button from "$lib/buttons/button.svelte";
+  import Play from "$lib/buttons/play-button.svelte";
+  import NavButton from "$lib/buttons/nav-button.svelte";
+  import LinkBtn from "$lib/buttons/link-button.svelte";
   import Link from "$lib/link.svelte";
   import Pagination from "$lib/pagination.svelte";
   import FAQ from "$lib/faq.svelte";

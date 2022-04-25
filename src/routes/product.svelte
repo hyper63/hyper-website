@@ -2,7 +2,7 @@
   import Header from "$lib/header.svelte";
   import Footer from "$lib/footer.svelte";
   import Section from "$lib/section.svelte";
-  import Button from "$lib/button.svelte";
+  import Button from "$lib/buttons/button.svelte";
   import { HelpURLs } from "$lib/constants.js";
 </script>
 

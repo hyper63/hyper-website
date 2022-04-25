@@ -10,7 +10,7 @@
 
 <script>
   import Header from "$lib/admin/header.svelte";
-  import LinkButton from "$lib/link-button.svelte";
+  import LinkButton from "$lib/buttons/link-button.svelte";
   export let session;
 </script>
 
