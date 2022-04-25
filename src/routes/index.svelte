@@ -37,31 +37,43 @@
 <Header />
 <main class="ml-0 pl-0 pr-0 mr-0">
   <section class="splash bg-no-repeat pl-4 md:pl-24 md:pr-24">
-    <div class="flex">
+    <div class="flex space-x-2">
       <div class="mt-8 md:mt-20 md:w-1/2">
-        <h1 class="text-base font-semibold md:text-xl width-full height-full text-gray">
+        <h1 class="text-base font-semibold md:text-xl text-gray">
           hyper - service for building hyperscale applications
         </h1>
-        <h2 class="text-3xl font-semibold md:text-5xl pt-4 width-full height-full">
+        <h2 class="text-3xl font-semibold md:text-5xl pt-4">
           One <b>API</b>... many services...
         </h2>
-        <p class="text-md mt-4 mr-8 md:mt-12 md:w-3/4">
-          hyper is a dev-ops team wrapped in a single API. One consistent, frictionless API to
-          manage data, cache, storage, search, and queue services. hyper promotes clean architecture
-          application development.
-        </p>
-        <div class="mt-16 flex flex-col md:flex-row space-y-4 space-x-4 md:space-y-0 md:space-x-20">
-          <a href={HelpURLs.GETTING_STARTED}><Button>Get Started</Button></a>
-
-          <!--
-        <Play href="https://blog.hyper.io/tour-of-hyper63-api/" >
-          Watch
-        </Play>
-        -->
+        <div class="mt-4 mr-8 md:mt-12 md:w-5/6">
+          <p class="text-md">
+            hyper is a dev-ops team wrapped in a single API. One consistent, frictionless API to
+            manage data, cache, storage, search, and queue services. hyper promotes clean
+            architecture application development.
+          </p>
+          <div class="mt-16 flex flex-col space-y-2 w-full">
+            <div>
+              <a href={HelpURLs.GETTING_STARTED}><Button>Get Started</Button></a>
+            </div>
+            <div>
+              <a href={HelpURLs.REQUEST_A_DEMO}><Button bgColor="yellow">Request A Demo</Button></a>
+            </div>
+            <div>
+              <a href={HelpURLs.REQUEST_A_CONSULTATION}>
+                <Button bgColor="green">Consult An Architect</Button>
+              </a>
+            </div>
+            <!--
+              <Play href="https://blog.hyper.io/tour-of-hyper63-api/" >
+                Watch
+              </Play>
+            -->
+          </div>
         </div>
       </div>
-
-      <YouTubePromo />
+      <div class="md:w-1/2 md:mt-40">
+        <YouTubePromo />
+      </div>
 
       <!-- <div class="md:w-1/2 hidden md:block">
         <img class="md:w-100%" src="/hyper-connect-screenshot.png" alt="hyper-connect screenshot" />
@@ -69,10 +81,8 @@
     </div>
   </section>
   <img class="md:hidden" src="/homepage-splash.svg" alt="homepage splash" />
-  <!--  -->
-  <!-- <section class="pl-4 md:pl-24 md:pr-24"> -->
 
-  <section class="flex w-full md:pt-44 pl-4 md:pl-24 md:pr-24 md:relative">
+  <section class="flex w-full md:pt-10 pl-4 md:pl-24 md:pr-24 md:relative">
     <Flow />
     <div class="md:w-1/2 2xl:w-1/3">
       <h5 class="">THE PROBLEM</h5>

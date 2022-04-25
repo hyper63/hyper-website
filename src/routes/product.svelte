@@ -30,10 +30,16 @@
           <span>{"const hyper = connect(process.env.HYPER)"}</span>
         </li>
       </ul>
-      <div class="mt-4">
-        <a href={HelpURLs.HYPER_CONNECT}
-          ><Button hyperBolt={true} styles="mt-4">LEARN MORE</Button></a
-        >
+      <div class="mt-8">
+        <a href={HelpURLs.HYPER_CONNECT}><Button>Learn More</Button></a>
+      </div>
+      <div class="mt-2">
+        <a href={HelpURLs.REQUEST_A_DEMO}><Button bgColor="yellow">Request A Demo</Button></a>
+      </div>
+      <div class="mt-2">
+        <a href={HelpURLs.REQUEST_A_CONSULTATION}>
+          <Button bgColor="green">Consult An Architect</Button>
+        </a>
       </div>
 
       <!-- <ul class="ml-4 md:ml-8 md:mt-8">
