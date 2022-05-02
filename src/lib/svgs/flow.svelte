@@ -318,7 +318,7 @@
     svg {
       @apply absolute;
       left: 230px;
-      top: 250px;
+      top: 75px;
       z-index: -200;
       width: 1040px;
       height: 1985px;
@@ -329,7 +329,7 @@
     svg {
       @apply absolute;
       left: 22%;
-      top: 250px;
+      top: 75px;
       z-index: -200;
       height: 1985px;
       width: 1040px;
@@ -340,7 +340,7 @@
     svg {
       @apply absolute;
       left: 20%;
-      top: 250px;
+      top: 75px;
       height: 1985px;
       width: 1040px;
       z-index: -200;
