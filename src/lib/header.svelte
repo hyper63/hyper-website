@@ -14,7 +14,9 @@
   }
 </script>
 
-<header class="w-full flex justify-between mt-4 ml-4 md:mt-20 md:ml-24 md:mr-4">
+<header
+  class="w-full flex items-center px-4 justify-between md:justify-around mt-4 md:mt-20 md:px-0"
+>
   <a href="/">
     <section class="flex items-center width-full">
       <!-- logo -->
@@ -30,7 +32,7 @@
     <button
       aria-expanded={mobileMenu ? "true" : "false"}
       aria-label="mobile-menu"
-      class="border-0 mr-4 focus:outline-none"
+      class="border-0 p-0 focus:outline-none"
       on:click={() => mobile()}
     >
       <svg
@@ -44,49 +46,52 @@
       </svg>
     </button>
   </section>
-  <nav class="hidden md:w-1/2 md:block flex items-center space-x-4">
-    <!-- product -->
-    <a
-      class="font-space uppercase text-sm hover:text-active-blue active:text-active-purple"
-      href="/product">product</a
-    >
-    <!-- pricing -->
-    <a
-      class="font-space uppercase text-sm hover:text-active-blue active:text-active-purple"
-      href="/pricing">pricing</a
-    >
-    <!-- faq -->
-    <a
-      class="font-space uppercase text-sm hover:text-active-blue active:text-active-purple"
-      href="/faq">faq</a
-    >
-    <!-- company -->
-    <a
-      class="font-space uppercase text-sm hover:text-active-blue active:text-active-purple"
-      href="/company">company</a
-    >
-    <!-- blog -->
-    <a
-      class="font-space uppercase text-sm hover:text-active-blue active:text-active-purple"
-      href="https://blog.hyper.io">blog</a
-    >
-    <!-- get started
-      <a class="font-space uppercase text-sm" href="/get-started">get started</a>
-      -->
-    <!-- api docs button -->
-    <a
-      class="font-space uppercase text-sm hover:text-active-blue active:text-active-purple"
-      href="https://docs.hyper.io">Docs</a
-    >
+  <nav class="hidden my-auto md:block w-1/2">
+    <div class="flex items-center justify-around">
+      <!-- product -->
+      <a
+        class="font-space uppercase text-sm hover:text-active-blue active:text-active-purple"
+        href="/product">product</a
+      >
+      <!-- pricing -->
+      <a
+        class="font-space uppercase text-sm hover:text-active-blue active:text-active-purple"
+        href="/pricing">pricing</a
+      >
+      <!-- faq -->
+      <a
+        class="font-space uppercase text-sm hover:text-active-blue active:text-active-purple"
+        href="/faq">faq</a
+      >
+      <!-- company -->
+      <a
+        class="font-space uppercase text-sm hover:text-active-blue active:text-active-purple"
+        href="/company">company</a
+      >
+      <!-- blog -->
+      <a
+        class="font-space uppercase text-sm hover:text-active-blue active:text-active-purple"
+        href="https://blog.hyper.io">blog</a
+      >
+      <!-- get started
+        <a class="font-space uppercase text-sm" href="/get-started">get started</a>
+        -->
+      <!-- api docs button -->
+      <a
+        class="font-space uppercase text-sm hover:text-active-blue active:text-active-purple"
+        href="https://docs.hyper.io">Docs</a
+      >
 
-    <a class="font-space uppercase text-sm" href="https://dashboard.hyper.io"
-      ><NavButton txtColor="white" bgColor="blue" hoverBackgroundColor="purple">DASHBOARD</NavButton
-      ></a
-    >
+      <a class="font-space uppercase text-sm" href="https://dashboard.hyper.io"
+        ><NavButton txtColor="white" bgColor="blue" hoverBackgroundColor="purple"
+          >DASHBOARD</NavButton
+        ></a
+      >
+    </div>
   </nav>
 </header>
 {#if mobileMenu}
-  <div class="sm:hidden mx-4" id="mobile-menu">
+  <div class="mx-4" id="mobile-menu">
     <div class="pt-2 pb-3 space-y-1">
       <a href="/" class={isCurrentPage("/")} aria-current="page">Home</a>
       <a href="/product" class={isCurrentPage("/product")}>Product</a>
@@ -96,7 +101,6 @@
       <a href="https://blog.hyper.io" class="link">Blog</a>
       <!-- <a href="/get-started" class="{isCurrentPage('/get-started')}">Get Started</a> -->
       <hr />
-      <Button href="https://docs.hyper.io">API DOCS</Button>
       <NavButton><a href="https://docs.hyper.io">API DOCS</a></NavButton>
     </div>
   </div>
