@@ -10,7 +10,7 @@
       src="getting-started-w-hyper.png"
       alt="youtube thumbnail"
     />
-    <div class="btn">
+    <div class="play">
       <PlayButton href={HelpURLs.VIDEO_PROMO} bgColor="yellow" />
     </div>
   </div>
@@ -18,7 +18,7 @@
 
 <style>
   /* Style the button and place it in the middle of the container/image */
-  .btn {
+  .play {
     position: absolute;
     top: 50%;
     left: 50%;
