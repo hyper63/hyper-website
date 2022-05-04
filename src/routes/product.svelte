@@ -1,9 +1,43 @@
+<script context="module">
+  export async function load({ fetch }) {
+    async function readExample(name) {
+      return fetch(`/examples/${name}`).then((res) => res.text());
+    }
+
+    const examples = await Promise.all([
+      readExample("connect.js"),
+      readExample("data.js"),
+      readExample("cache.js"),
+      readExample("storage.js"),
+      readExample("search.js"),
+      readExample("queue.js"),
+    ]).then(([connect, data, cache, storage, search, queue]) => ({
+      connect,
+      data,
+      cache,
+      storage,
+      search,
+      queue,
+    }));
+
+    return {
+      props: {
+        examples,
+      },
+    };
+  }
+</script>
+
 <script>
   import Header from "$lib/header.svelte";
   import Footer from "$lib/footer.svelte";
   import Section from "$lib/section.svelte";
   import Button from "$lib/buttons/button.svelte";
+  import Code from "$lib/code.svelte";
+
   import { HelpURLs } from "$lib/constants.js";
+
+  export let examples = {};
 </script>
 
 <svelte:head>
@@ -11,83 +45,58 @@
 </svelte:head>
 <Header />
 
-<main class="md:ml-24 md:mr-44">
-  <section id="summary" class="md:flex md:relative">
-    <div class="md:w-1/2 md:h-96">
-      <h1 class="text-3xl pl-4 mt-8 mb-4 md:pl-0 md:mt-24 md:text-6xl ">
-        hyper <br /><b>services</b>
-      </h1>
-      <p class="text-base mx-4 text-darkgray md:mx-0 ">
-        Build any application by taking advantage of hyper's single API entry point and composable
-        application services.
-      </p>
-      <ul class="font-mono md:mt-8 bg-black text-white text-mono rounded-lg p-8">
-        <li class="mt-2 md:mt-0">
-          <span class="text-green">// connect to Hyper using Hyper-Connect </span>
-          <br />
-          <span>{"import {connect} from 'hyper-connect'"}</span>
-          <br />
-          <span>{"const hyper = connect(process.env.HYPER)"}</span>
-        </li>
-      </ul>
-      <div class="mt-8">
-        <a href={HelpURLs.HYPER_CONNECT}><Button>Learn More</Button></a>
+<main class="md:ml-24 md:mr-44 md:mb-40">
+  <div>
+    <section id="summary" class="md:flex md:relative">
+      <div class="w-full md:w-1/2">
+        <h1 class="text-3xl pl-4 mt-8 mb-4 md:pl-0 md:mt-24 md:text-6xl ">
+          hyper <br /><b>services</b>
+        </h1>
+        <p class="text-base mx-4 text-darkgray md:mx-0 mb-4">
+          Build any application by taking advantage of hyper's single API entry point and composable
+          application services.
+        </p>
+        <div class="mx-2">
+          <Code styles="h-[150px]" code={examples.connect} />
+        </div>
+        <div class="w-full flex flex-col items-center md:items-start mt-4">
+          <div class="mt-2">
+            <a href={HelpURLs.HYPER_CONNECT}><Button>Learn More</Button></a>
+          </div>
+          <div class="mt-2">
+            <a href={HelpURLs.REQUEST_A_DEMO}><Button bgColor="yellow">Request A Demo</Button></a>
+          </div>
+          <div class="mt-2">
+            <a href={HelpURLs.REQUEST_A_CONSULTATION}>
+              <Button bgColor="green">Consult An Architect</Button>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="mt-2">
-        <a href={HelpURLs.REQUEST_A_DEMO}><Button bgColor="yellow">Request A Demo</Button></a>
-      </div>
-      <div class="mt-2">
-        <a href={HelpURLs.REQUEST_A_CONSULTATION}>
-          <Button bgColor="green">Consult An Architect</Button>
-        </a>
-      </div>
-
-      <!-- <ul class="ml-4 md:ml-8 md:mt-8">
-          <li><a class="text-blue" href="#data">Data</a></li>
-          <li><a class="text-blue" href="#search">Search</a></li>
-          <li><a class="text-blue" href="#storage">Storage</a></li>
-          <li><a class="text-blue" href="#cache">Cache</a></li>
-          <li><a class="text-blue" href="#queue">Queue</a></li>
-        </ul>
-        <Button styles="mx-4 mt-8 md:hidden">Get Started</Button> -->
-    </div>
-    <img
-      class="w-full md:w-2/3 "
-      style="z-index: -100;right: 0; top: -200px;"
-      src="/services.svg"
-      alt="hyper services"
-    />
-  </section>
+      <img
+        class="w-full md:w-2/3 "
+        style="z-index: -100;right: 0; top: -200px;"
+        src="/services.svg"
+        alt="hyper services"
+      />
+    </section>
+  </div>
 </main>
 
 <!-- Data -->
-<Section id="data" styles="md:mt-80" image="right">
-  <span slot="text">
+<Section id="data" image="right">
+  <div class="max-w-full" slot="text">
     <div class="flex flex-col items-center">
-      <h2 class="text-2xl md:text-5xl md:hidden">Data Service</h2>
-      <ul class="font-mono md:mt-8 md:ml-24 mx-4 bg-black text-white rounded-lg p-8">
-        <li>
-          <span class="text-green">// Add a Document</span><br
-          />{"await hyper.data.add({ _id: 'game-1', type: 'game', name: 'Super Mario Bros 3', rating: 5})"}
-        </li>
-        <li>
-          <span class="text-green">// Read a Document</span><br />
-          {"await hyper.data.get('game-1')"}
-        </li>
-        <li>
-          <span class="text-green">// Query</span><br />{"await hyper.data.query({type: 'game'})"}
-        </li>
-        <li>
-          <span class="text-green">// Update</span><br
-          />{"await hyper.data.update('game-1', { _id: 'game-1', type: 'game', name: 'Super Mario Bros 3', rating: 4})"}
-        </li>
-        <li>
-          <span class="text-green">// Remove</span><br />{"await hyper.data.remove('game-1')"}
-        </li>
-      </ul>
+      <div class="md:hidden m-auto text-center">
+        <h2 class="text-2xl md:text-5xl text-green">Data Service</h2>
+        <p class="text-base text-darkgray">API powered data access</p>
+      </div>
+      <div class="w-full mt-2 px-2">
+        <Code code={examples.data} />
+      </div>
     </div>
-  </span>
-  <span slot="image">
+  </div>
+  <div slot="image">
     <div class="relative flex justify-center items-center">
       <div class="z-10 md:ml-8">
         <h2 class="text-2xl mx-8 md:text-5xl">Data Service</h2>
@@ -124,39 +133,23 @@
       </div>
       <img src="data-lg.svg" alt="data" class="z-0 w-full" />
     </div>
-  </span>
+  </div>
 </Section>
 
 <!-- Cache -->
 <Section id="cache" image="left">
-  <span slot="text">
+  <div slot="text">
     <div class="flex flex-col items-center">
-      <h2 class="text-2xl md:text-5xl md:hidden">Cache Service</h2>
-      <ul class="font-mono md:mt-8 md:mr-4 bg-black text-white text-mono rounded-lg p-8">
-        <li>
-          <span class="text-purple">// Add a value</span><br
-          />{"await hyper.cache.add('game-1', { _id: 'game-1', type: 'game', name: 'Super Mario Bros 3' })"}
-        </li>
-        <li>
-          <span class="text-purple">// Read a value</span><br />
-          {"await hyper.cache.get('game-1')"}
-        </li>
-        <li>
-          <span class="text-purple">// Query the cache</span><br
-          />{"await hyper.cache.query('game-*')"}
-        </li>
-        <li>
-          <span class="text-purple">// Update a value</span><br
-          />{"await hyper.cache.set('game-1', { _id: 'game-1', type: 'game', name: 'Super Mario Bros 3' })"}
-        </li>
-        <li>
-          <span class="text-purple">// Remove a value</span><br
-          />{"await hyper.cache.remove('game-1')"}
-        </li>
-      </ul>
+      <div class="md:hidden m-auto text-center">
+        <h2 class="text-2xl md:text-5xl text-purple">Cache Service</h2>
+        <p class="text-base text-darkgray">API powered cache</p>
+      </div>
+      <div class="w-full mt-2 px-2">
+        <Code code={examples.data} />
+      </div>
     </div>
-  </span>
-  <span slot="image">
+  </div>
+  <div slot="image">
     <div class="relative flex justify-center items-center">
       <img src="cache-lg.svg" alt="cache" class="z-0 w-full" />
       <div class="z-10">
@@ -192,39 +185,23 @@
         </div>
       </div>
     </div>
-  </span>
+  </div>
 </Section>
 
 <!-- Storage -->
 <Section id="storage" image="right">
-  <span slot="text">
+  <div slot="text">
     <div class="flex flex-col items-center">
-      <h2 class="text-2xl md:text-5xl md:hidden">Storage Service</h2>
-      <ul class="font-mono md:mt-4 bg-black text-white text-mono rounded-lg p-8">
-        <li>
-          <span class="text-blue">// Upload a file</span>
-          <br />
-          {"await hyper.storage.upload('foo.jpg', Buffer.from(...))"}
-        </li>
-        <li>
-          <span class="text-blue">// Retrieve a file</span>
-          <br />
-          {"await hyper.storage.download('foo.jpg')"}
-        </li>
-        <li>
-          <span class="text-blue">// Or via url</span>
-          <br />
-          {"GET /storage/mybucket/foo.jpg"}
-        </li>
-        <li>
-          <span class="text-blue">// Delete a file</span>
-          <br />
-          {"await hyper.storage.remove('foo.jpg')"}
-        </li>
-      </ul>
+      <div class="md:hidden m-auto text-center">
+        <h2 class="text-2xl md:text-5xl text-blue">Storage Service</h2>
+        <p class="text-base text-darkgray">API powered buckets</p>
+      </div>
+      <div class="w-full mt-2 px-2">
+        <Code code={examples.storage} />
+      </div>
     </div>
-  </span>
-  <span slot="image">
+  </div>
+  <div slot="image">
     <div class="relative flex justify-center items-center">
       <div class="z-10 mr-4">
         <h2 class="text-2xl px-4 md:text-5xl">Storage Service</h2>
@@ -257,12 +234,12 @@
       </div>
       <img src="storage-lg.svg" alt="storage" class="z-0 w-full" />
     </div>
-  </span>
+  </div>
 </Section>
 
 <!-- Search -->
 <Section id="search" image="left">
-  <span slot="image">
+  <div slot="image">
     <div class="relative flex justify-center items-center mr-4">
       <img src="search-lg.svg" alt="search" class="z-0 w-full" />
       <div class="z-10">
@@ -297,63 +274,34 @@
         </div>
       </div>
     </div>
-  </span>
-  <span slot="text">
+  </div>
+  <div slot="text">
     <div class="flex flex-col items-center">
-      <h2 class="text-2xl md:text-5xl md:hidden">Search Service</h2>
-      <ul class="font-mono md:mt-8 md:mr-24 bg-black text-white text-mono rounded-lg p-8">
-        <li>
-          <span class="text-orange">// Index a document</span><br
-          />{"await hyper.search.add({ id: 'game-1', type: 'game', name: 'Super Mario Bros 3' })"}
-        </li>
-        <li>
-          <span class="text-orange">// search for games that contain 'Super'</span><br
-          />{"await hyper.search.query('Super')"}
-        </li>
-        <li>
-          <span class="text-orange">// or index multiple documents</span><br />
-          {"await hyper.search.load(games)"}
-        </li>
-        <li>
-          <span class="text-orange">// remove a search document</span><br
-          />{"await hyper.search.remove('game-1')"}
-        </li>
-        <!--
-        <li>
-          <span class="text-orange"># Delete</span><br
-          />{"DELETE /search/{app}/:id"}
-        </li>
-      -->
-      </ul>
+      <div class="md:hidden m-auto text-center">
+        <h2 class="text-2xl md:text-5xl text-orange">Search Service</h2>
+        <p class="text-base text-darkgray">API powered search indexes</p>
+      </div>
+      <div class="w-full mt-2 px-2">
+        <Code code={examples.search} />
+      </div>
     </div>
-  </span>
+  </div>
 </Section>
 
 <!-- Queue -->
 <Section id="queue" image="right">
-  <span slot="text">
+  <div slot="text">
     <div class="flex flex-col items-center">
-      <h2 class="text-2xl md:text-5xl md:hidden">Queue Service</h2>
-      <ul class="font-mono md:mt-4 bg-black text-white text-mono rounded-lg p-8">
-        <li>
-          <span class="text-red">// Enqueue a job</span>
-          <br />
-          {"await hyper.queue.enqueue({ type: 'SEND_EMAIL', id: '123' })"}
-        </li>
-        <li>
-          <span class="text-red">// Retrieve queued jobs</span>
-          <br />
-          {"await hyper.queue.queued()"}
-        </li>
-        <li>
-          <span class="text-red">// Retrieve failed jobs</span>
-          <br />
-          {"await hyper.queue.errors()"}
-        </li>
-      </ul>
+      <div class="md:hidden m-auto text-center">
+        <h2 class="text-2xl md:text-5xl text-red">Queue Service</h2>
+        <p class="text-base text-darkgray">API powered persistent queues</p>
+      </div>
+      <div class="w-full mt-2 px-2">
+        <Code code={examples.queue} />
+      </div>
     </div>
-  </span>
-  <span slot="image">
+  </div>
+  <div slot="image">
     <div class="relative flex justify-center items-center">
       <div class="z-10 mr-4">
         <h2 class="text-2xl px-4 md:text-5xl">Queue Service</h2>
@@ -392,7 +340,7 @@
       </div>
       <img src="queue-lg.svg" alt="queue" class="z-0 w-full" />
     </div>
-  </span>
+  </div>
 </Section>
 
 <Footer />
