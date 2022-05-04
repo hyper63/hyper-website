@@ -54,24 +54,24 @@
 </script>
 
 <svelte:head>
-  <title>hyper - service for building hyperscale applications</title>
+  <title>hyper - build hyperscale applications</title>
 </svelte:head>
 <Header />
 <main class="ml-0 pl-0 pr-0 mr-0">
   <section class="splash bg-no-repeat pl-4 md:pl-24 md:pr-24">
     <div class="flex space-x-2">
       <div class="mt-8 md:mt-20 md:w-1/2">
-        <h1 class="text-base font-semibold md:text-xl text-gray">
-          hyper - service for building hyperscale applications
+        <h1 class="text-base font-semibold md:text-xl text-gray text-center md:text-left">
+          hyper - a service for building hyperscale applications
         </h1>
-        <h2 class="text-3xl font-semibold md:text-5xl pt-4">
-          One <b>API</b>... many services...
+        <h2 class="text-5xl font-semibold pt-4 text-center text-gray md:text-left">
+          <span class="text-blue">Create</span>. <span class="text-yellow">Connect</span>.
+          <span class="text-green">Build</span>.
         </h2>
-        <div class="mt-4 mr-8 md:mt-12 md:w-5/6">
-          <p class="text-md">
-            hyper is a dev-ops team wrapped in a single API. One consistent, frictionless API to
-            manage data, cache, storage, search, and queue services. hyper promotes clean
-            architecture application development.
+        <div class="mt-4 mr-8 md:mt-8 md:w-5/6">
+          <p class="text-md text-center md:text-left">
+            Create your services. Connect using an consistent, clean API. Build and focus on your
+            application's features, not its cloud plumbing.
           </p>
           <div class="mt-16 flex flex-col space-y-2 w-full">
             <div class="flex items-center">
