@@ -117,10 +117,10 @@
       <section class="flex w-full md:pt-10 px-4 md:pl-24 md:pr-24 md:relative">
         <div>
           <h5 class="">THE PROBLEM</h5>
-          <h2 class="text-2xl font-semibold md:text-5xl md:mt-8">Technical Debt</h2>
+          <h2 class="text-2xl font-semibold md:text-5xl md:mt-8">Cloud services are complex.</h2>
           <p class="mt-4 md:mt-16">
-            What do developers hate the most about software development? Many will say technical
-            debt, having to work through so much noise to implement a simple change request.
+            Choosing the correct cloud service and provider while ensuring scalability, security, and minimizing downtime is 
+            a huge challenge that distracts from your overall goal: building features that solves your customer's problems.
           </p>
         </div>
       </section>
@@ -131,9 +131,8 @@
           <h5>OUR SOLUTION</h5>
           <h2 class="text-3xl font-semibold md:text-5xl md:mt-8">hyper. A service framework.</h2>
           <p class="mt-12">
-            hyper is a cloud-native service solution delivering a straightforward way to leverage
-            APIs to create scalable performant services. Create features quickly into apps that
-            scale, all while keeping <b>technical debt</b> at bay.
+            Hyper delivers straightforward and secure access to reliable and scalable services using clear and easy-to-use APIs. 
+            Create features quickly into apps that scale while keeping <b>cloud complexity and frustrations</b> at bay.
           </p>
           <p class="mt-8">
             hyper provides APIs to core application services: data, cache, storage, queues, and
