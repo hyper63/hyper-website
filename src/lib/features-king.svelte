@@ -1,6 +1,7 @@
 <script>
-  import Button from "$lib/buttons/button.svelte";
   import Services from "$lib/services.svelte";
+  import Bolt from "./svgs/bolt.svelte";
+
   import { HelpURLs } from "$lib/constants.js";
 </script>
 
@@ -28,9 +29,12 @@
       with your GitHub account and create backend services in seconds. When you're ready to step it
       up, we have plans starting at $99 a month.
     </p>
-    <div class="mt-4 flex md:items-center">
+    <div class="mt-4 flex justify-center md:justify-start">
       <div class="m-auto md:m-0">
-        <a href={HelpURLs.PRICING}><Button styles="mt-4">View Pricing</Button></a>
+        <a class="btn btn-primary gap-2 mt-4" href={HelpURLs.PRICING}>
+          View Pricing
+          <Bolt color="white" />
+        </a>
       </div>
     </div>
   </div>

@@ -59,7 +59,7 @@
           class="table-cell align-middle border-l-[1px] border-b-[1px] border-lightgray hover:border-b-3 h-14"
         >
           <div class="px-16 py-4 flex items-center justify-center text-darkgray text-sm">
-            <CircleCheck />
+            <CircleCheck color="#5F82AB" />
           </div>
         </div>
         <div

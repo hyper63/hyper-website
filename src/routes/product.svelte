@@ -32,10 +32,11 @@
   import Header from "$lib/header.svelte";
   import Footer from "$lib/footer.svelte";
   import Section from "$lib/section.svelte";
-  import Button from "$lib/buttons/button.svelte";
   import Code from "$lib/code.svelte";
+  import Bolt from "$lib/svgs/bolt.svelte";
 
   import { HelpURLs } from "$lib/constants.js";
+  import Share from "$lib/svgs/share.svelte";
 
   export let examples = {};
 </script>
@@ -59,18 +60,19 @@
         <div class="mx-2">
           <Code styles="h-[150px]" code={examples.connect} />
         </div>
-        <div class="w-full flex flex-col items-center md:items-start mt-4">
-          <div class="mt-2">
-            <a href={HelpURLs.HYPER_CONNECT}><Button>Learn More</Button></a>
-          </div>
-          <div class="mt-2">
-            <a href={HelpURLs.REQUEST_A_DEMO}><Button bgColor="yellow">Request A Demo</Button></a>
-          </div>
-          <div class="mt-2">
-            <a href={HelpURLs.REQUEST_A_CONSULTATION}>
-              <Button bgColor="green">Consult An Architect</Button>
-            </a>
-          </div>
+        <div class="mt-4 w-full flex flex-col items-center gap-6 md:items-start">
+          <a class="btn btn-primary gap-2" href={HelpURLs.GETTING_STARTED}>
+            Get Started
+            <Bolt />
+          </a>
+          <a class="btn btn-secondary gap-2" href={HelpURLs.REQUEST_A_CONSULTATION}>
+            Consult an Architect
+            <Bolt />
+          </a>
+          <a class="btn btn-accent gap-2" href={HelpURLs.REQUEST_A_DEMO}>
+            Request A Demo
+            <Bolt />
+          </a>
         </div>
       </div>
       <img
@@ -100,7 +102,7 @@
     <div class="relative flex justify-center items-center">
       <div class="z-10 md:ml-8">
         <h2 class="text-2xl mx-8 md:text-5xl">Data Service</h2>
-        <p class="text-base mx-8 mt-4 text-darkgray">API powered data access:</p>
+        <p class="text-base mx-8 mt-4 text-green">API powered data access:</p>
         <p class="text-base mx-8 mt-4">
           A hyper data service is a document data store for storing JSON documents.
         </p>
@@ -109,26 +111,10 @@
           create indexes to improve query performance.
         </p>
         <div class="mt-4 mx-8">
-          <a href={HelpURLs.DATA_API}
-            ><Button hyperBolt={false} styles="mt-4">
-              <div class="flex flex-row items-center">
-                DATA API
-                <div class="pl-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="19"
-                    height="19"
-                    viewBox="0 0 19 19"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </Button></a
-          >
+          <a class="btn btn-primary gap-2" href={HelpURLs.DATA_API}>
+            Data Api
+            <Share />
+          </a>
         </div>
       </div>
       <img src="data-lg.svg" alt="data" class="z-0 w-full" />
@@ -154,34 +140,18 @@
       <img src="cache-lg.svg" alt="cache" class="z-0 w-full" />
       <div class="z-10">
         <h2 class="text-2xl px-4 md:text-5xl">Cache Service</h2>
-        <p class="text-base mx-4 mt-4 text-darkgray">API powered cache:</p>
-        <p class="text-sm mx-4 mt-4">
+        <p class="text-base mx-4 mt-4 text-purple">API powered cache:</p>
+        <p class="text-base mx-4 mt-4">
           A hyper cache service is a powerful, in-memory key-value store.
         </p>
-        <p class="text-sm mx-4 mt-4">
+        <p class="text-base mx-4 mt-4">
           Add values to the cache. Then retrieve by key, or query values across keys
         </p>
         <div class="mt-4 mx-4">
-          <a href={HelpURLs.CACHE_API}
-            ><Button hyperBolt={false} styles="mt-4">
-              <div class="flex flex-row items-center">
-                CACHE API
-                <div class="pl-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="19"
-                    height="19"
-                    viewBox="0 0 19 19"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </Button></a
-          >
+          <a class="btn btn-primary gap-2" href={HelpURLs.CACHE_API}>
+            Cache Api
+            <Share />
+          </a>
         </div>
       </div>
     </div>
@@ -203,33 +173,16 @@
   </div>
   <div slot="image">
     <div class="relative flex justify-center items-center">
-      <div class="z-10 mr-4">
-        <h2 class="text-2xl px-4 md:text-5xl">Storage Service</h2>
-        <p class="text-base mx-4 mt-4 text-darkgray">API powered buckets:</p>
-        <p class="text-sm mx-4 mt-4">A hyper storage service is an object storage bucket.</p>
-        <p class="text-sm mx-4 mt-4">Upload, download and remove files.</p>
-        <div class="mt-2 mx-4">
-          <a href={HelpURLs.STORAGE_API}
-            ><Button hyperBolt={false} styles="mt-4">
-              <div class="flex flex-row items-center ">
-                STORAGE API
-
-                <div class="pl-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="19"
-                    height="19"
-                    viewBox="0 0 19 19"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </Button></a
-          >
+      <div class="z-10 mx-4">
+        <h2 class="text-2xl md:text-5xl">Storage Service</h2>
+        <p class="text-base mt-4 text-blue">API powered buckets:</p>
+        <p class="text-base mt-4">A hyper storage service is an object storage bucket.</p>
+        <p class="text-base mt-4">Upload, download and remove files.</p>
+        <div class="mt-2">
+          <a class="btn btn-primary gap-2" href={HelpURLs.STORAGE_API}>
+            Storage Api
+            <Share />
+          </a>
         </div>
       </div>
       <img src="storage-lg.svg" alt="storage" class="z-0 w-full" />
@@ -244,33 +197,17 @@
       <img src="search-lg.svg" alt="search" class="z-0 w-full" />
       <div class="z-10">
         <h2 class="text-2xl md:text-5xl">Search Service</h2>
-        <p class="text-base mt-4 text-darkgray">API powered search:</p>
-        <p class="text-sm mt-4">A hyper search service is a powerful search index.</p>
-        <p class="text-sm mt-4">
+        <p class="text-base mt-4 text-orange">API powered search:</p>
+        <p class="text-base mt-4">A hyper search service is a powerful search index.</p>
+        <p class="text-base mt-4">
           Index JSON documents by adding them to your search service. Then query to perform a full
           text search.
         </p>
         <div class="mt-4">
-          <a href={HelpURLs.SEARCH_API}
-            ><Button hyperBolt={false} styles="mt-4">
-              <div class="flex flex-row items-center">
-                SEARCH API
-                <div class="pl-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="19"
-                    height="19"
-                    viewBox="0 0 19 19"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </Button></a
-          >
+          <a class="btn btn-primary gap-2" href={HelpURLs.SEARCH_API}>
+            Search Api
+            <Share />
+          </a>
         </div>
       </div>
     </div>
@@ -303,39 +240,22 @@
   </div>
   <div slot="image">
     <div class="relative flex justify-center items-center">
-      <div class="z-10 mr-4">
-        <h2 class="text-2xl px-4 md:text-5xl">Queue Service</h2>
-        <p class="text-base mx-4 mt-4 text-darkgray">API powered persistent queues:</p>
-        <p class="text-sm mx-4 mt-4">
+      <div class="z-10 mx-4">
+        <h2 class="text-2xl md:text-5xl">Queue Service</h2>
+        <p class="text-base mt-4 text-red">API powered persistent queues:</p>
+        <p class="text-base mt-4">
           A hyper queue service is a powerful persistent queue, great for event driven, serverless,
           or asynchronous workloads
         </p>
-        <p class="text-sm mx-4 mt-4">
+        <p class="text-base mt-4">
           Create a queue and provide a worker url to send your jobs to, for processing, and then
           start enqueuing jobs. hyper queue then sends these jobs to your worker url
         </p>
-        <div class="mt-2 mx-4">
-          <a href={HelpURLs.QUEUE}
-            ><Button hyperBolt={false} styles="mt-4">
-              <div class="flex flex-row items-center ">
-                QUEUE API
-
-                <div class="pl-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="19"
-                    height="19"
-                    viewBox="0 0 19 19"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </Button></a
-          >
+        <div class="mt-4">
+          <a class="btn btn-primary gap-2" href={HelpURLs.QUEUE_API}>
+            Queue Api
+            <Share />
+          </a>
         </div>
       </div>
       <img src="queue-lg.svg" alt="queue" class="z-0 w-full" />

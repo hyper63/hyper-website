@@ -71,7 +71,7 @@
   {#each ports as port, index}
     <button
       on:click={showPort(index)}
-      class="w-full flex flex-col border border-{active === index
+      class="w-full flex flex-col rounded-md px-6 py-3 border border-{active === index
         ? port.color
         : 'gray'} bg-{active === index ? port.color : 'white'} text-{active === index
         ? 'white'
@@ -101,10 +101,11 @@
     {#each ports as port, index}
       <button
         on:click={showPort(index)}
-        class="flex flex-col border border-{active === index ? port.color : 'gray'} bg-{active ===
-        index
+        class="flex flex-col rounded-md px-6 py-3 border border-{active === index
           ? port.color
-          : 'white'} text-{active === index ? 'white' : 'black'}"
+          : 'gray'} bg-{active === index ? port.color : 'white'} text-{active === index
+          ? 'white'
+          : 'black'}"
       >
         <div>{port.ordinate}</div>
         <div>{port.text}</div>

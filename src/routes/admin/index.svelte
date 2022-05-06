@@ -10,7 +10,7 @@
 
 <script>
   import Header from "$lib/admin/header.svelte";
-  import LinkButton from "$lib/buttons/link-button.svelte";
+
   export let session;
 </script>
 
@@ -21,7 +21,7 @@
 
 {#if session.username}
   Logged in as: {session.username}
-  <LinkButton href="/logout">Logout</LinkButton>
+  <a class="btn btn-link btn-primary" href="/logout">Logout</a>
 {:else}
-  <LinkButton href="/login">Login to Admin</LinkButton>
+  <a class="btn btn-link btn-primary" href="/login">Login to Admin</a>
 {/if}

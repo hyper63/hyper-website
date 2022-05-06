@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <svg viewBox="0 0 1040 1985" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path
     d="M803 1087V1250C803 1272.09 785.091 1290 763 1290H42C19.9086 1290 2 1307.91 2 1330L2 1982.5"

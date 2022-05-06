@@ -1,5 +1,4 @@
 <script>
-  import PlayButton from "$lib/buttons/play-button.svelte";
   import { HelpURLs } from "$lib/constants.js";
 </script>
 
@@ -11,7 +10,18 @@
       alt="youtube thumbnail"
     />
     <div class="play">
-      <PlayButton href={HelpURLs.VIDEO_PROMO} bgColor="yellow" />
+      <a class="btn btn-square btn-lg bg-lightgray hover:bg-accent" href={HelpURLs.VIDEO_PROMO}>
+        <svg
+          class="ml-2"
+          width="25"
+          height="25"
+          viewBox="0 0 19 23"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 22.813V0.812988L19 11.313L0 22.813Z" fill="white" />
+        </svg>
+      </a>
     </div>
   </div>
 </div>

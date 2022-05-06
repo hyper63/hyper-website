@@ -1,4 +1,6 @@
 <script>
+  import { HelpURLs } from "$lib/constants";
+
   import CircleCheck from "$lib/svgs/circle-check.svelte";
 </script>
 
@@ -44,29 +46,30 @@
         </li>
       </ul>
     </div>
-    <div class="bg-white flex items-center justify-center">
-      <a
-        href="https://dashboard.hyper.io/upgrade"
-        class="mx-8 my-16 bg-purple rounded flex items-center justify-center text-white"
-        style="padding-top: 0.75rem; padding-bottom: 0.75rem; padding-left: 1.5rem; padding-right: 1.5rem;"
-      >
-        <span class="pr-4">Contact Sales</span>
-        <svg
-          width="14"
-          height="12"
-          viewBox="0 0 14 12"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M8 1L13 6M13 6L8 11M13 6H1"
-            stroke="white"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </a>
+    <div
+      class="bg-white border-t border-lightgray rounded-b flex items-center justify-center"
+      style="padding-top: 0.75rem; padding-bottom: 0.75rem; padding-left: 1.5rem; padding-right: 1.5rem;"
+    >
+      <div class="my-12">
+        <a href={HelpURLs.UPGRADE} class="btn bg-purple gap-2">
+          Upgrade
+          <svg
+            width="14"
+            height="12"
+            viewBox="0 0 14 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 1L13 6M13 6L8 11M13 6H1"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
 </div>

@@ -1,8 +1,8 @@
 <script>
   import Input from "$lib/input.svelte";
-  import Button from "$lib/buttons/button.svelte";
 
   import { PublicKey } from "@solana/web3.js";
+  import Bolt from "$lib/svgs/bolt.svelte";
 
   let disabled = false;
 
@@ -79,7 +79,10 @@
       </div>
     </div>
     <div class="mt-8">
-      <Button type="submit" {disabled}>Submit</Button>
+      <button class="btn btn-primary gap-2" type="submit" {disabled}>
+        Submit
+        <Bolt />
+      </button>
     </div>
   </form>
   <div class="mt-8">
