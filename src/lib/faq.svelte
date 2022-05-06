@@ -1,62 +1,11 @@
-<script>
-  export let styles = "";
-  let toggle = false;
-</script>
-
-<div class="faq-container rounded-large {styles}" on:click={() => (toggle = !toggle)}>
-  <div class="flex">
-    <span class="w-full">
-      <slot name="question" />
-    </span>
-    <div class="toggle">
-      {#if toggle}
-        <button>
-          <svg
-            width="26"
-            height="15"
-            viewBox="0 0 26 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M1 13.813L12.9667 1.81299L24.9334 13.813" stroke="#1286F6" stroke-width="2" />
-          </svg>
-        </button>
-      {:else}
-        <button>
-          <svg
-            width="26"
-            height="15"
-            viewBox="0 0 26 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1 0.812988L12.9667 12.813L24.9334 0.812988"
-              stroke="#7C7F86"
-              stroke-width="2"
-            />
-          </svg>
-        </button>
-      {/if}
-    </div>
+<div
+  tabindex="0"
+  class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box font-space"
+>
+  <div class="collapse-title text-xl font-medium">
+    <slot name="question" />
   </div>
-  {#if toggle}
-    <div class="mt-8 text-gray">
-      <slot name="answer" />
-    </div>
-  {/if}
+  <div class="collapse-content">
+    <slot name="answer" />
+  </div>
 </div>
-
-<style lang="postcss">
-  button {
-    margin: 0;
-    padding: 0;
-  }
-  .faq-container {
-    @apply text-sm md:text-2xl border-3 p-2 md:p-5 border-lightgray font-space;
-  }
-  .toggle {
-    @apply flex p-3 items-center justify-center;
-    height: 100%;
-  }
-</style>
