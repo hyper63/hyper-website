@@ -22,8 +22,6 @@
   import { reject } from "ramda";
   import Header from "$lib/admin/header.svelte";
   import ActiveToggle from "$lib/toggle.svelte";
-  import Button from "$lib/buttons/button.svelte";
-  import LinkBtn from "$lib/buttons/link-button.svelte";
   import Modal from "$lib/admin/modal.svelte";
 
   let deleteModelOpen = false;
@@ -149,15 +147,14 @@
                   </td>
                   <td class="">
                     <!-- <a href="/admin/cms/faqs/{faq.id}/del" class="delete-button">Delete</a> -->
-                    <Button
-                      on:click={handleDeleteModalOpenClick(faq)}
-                      txtColor="white"
-                      bgColor="red">Delete</Button
-                    >
+                    <button class="btn btn-error" on:click={handleDeleteModalOpenClick(faq)}>
+                      Delete
+                    </button>
                   </td>
 
                   <td class="">
-                    <LinkBtn href="/admin/cms/faqs/{faq.id}/edit">Edit</LinkBtn>
+                    <a class="btn btn-link btn-primary" href="/admin/cms/faqs/{faq.id}/edit">Edit</a
+                    >
                   </td>
                 </tr>
               </tbody>

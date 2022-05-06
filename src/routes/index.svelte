@@ -37,16 +37,15 @@
 
 <script>
   import Header from "$lib/header.svelte";
-  import Button from "$lib/buttons/button.svelte";
   import Ports from "$lib/ports.svelte";
-
   import All from "$lib/all-n-one.svelte";
   import FAQs from "$lib/faqs.svelte";
   import Testimonials from "$lib/testimonials.svelte";
   import YouTubePromo from "$lib/hyper-promo-video-hero.svelte";
-
   import Footer from "$lib/footer.svelte";
   import Composition from "$lib/composition.svelte";
+  import Bolt from "$lib/svgs/bolt.svelte";
+
   import { HelpURLs } from "$lib/constants.js";
 
   export let faqs;
@@ -74,34 +73,16 @@
             application's features, not its cloud plumbing.
           </p>
           <div class="mt-16 flex flex-col space-y-2 w-full">
-            <div class="flex items-center">
-              <div class="m-auto md:m-0">
-                <a href={HelpURLs.GETTING_STARTED}><Button>Get Started</Button></a>
-              </div>
+            <div class="flex justify-center md:justify-start">
+              <a class="btn btn-primary gap-2" href={HelpURLs.GETTING_STARTED}>
+                Get Started
+                <Bolt color="white" />
+              </a>
             </div>
-            <div class="flex items-center">
-              <div class="m-auto md:m-0">
-                <a href={HelpURLs.REQUEST_A_DEMO}
-                  ><Button bgColor="yellow">Request A Demo</Button></a
-                >
-              </div>
-            </div>
-            <div class="flex items-center">
-              <div class="m-auto md:m-0">
-                <a href={HelpURLs.REQUEST_A_CONSULTATION}>
-                  <Button bgColor="green">Consult An Architect</Button>
-                </a>
-              </div>
-            </div>
-            <!--
-              <Play href="https://blog.hyper.io/tour-of-hyper63-api/" >
-                Watch
-              </Play>
-            -->
           </div>
         </div>
       </div>
-      <div class="md:w-1/2 md:mt-40">
+      <div class="md:w-1/2 md:mt-32 m-auto">
         <YouTubePromo />
       </div>
 
@@ -119,8 +100,9 @@
           <h5 class="">THE PROBLEM</h5>
           <h2 class="text-2xl font-semibold md:text-5xl md:mt-8">Cloud services are complex.</h2>
           <p class="mt-4 md:mt-16">
-            Choosing the correct cloud service and provider while ensuring scalability, security, and minimizing downtime is 
-            a huge challenge that distracts from your overall goal: building features that solves your customer's problems.
+            Choosing the correct cloud service and provider while ensuring scalability, security,
+            and minimizing downtime is a huge challenge that distracts from your overall goal:
+            building features that solves your customer's problems.
           </p>
         </div>
       </section>
@@ -131,8 +113,10 @@
           <h5>OUR SOLUTION</h5>
           <h2 class="text-3xl font-semibold md:text-5xl md:mt-8">hyper. A service framework.</h2>
           <p class="mt-12">
-            Hyper delivers straightforward and secure access to reliable and scalable services using clear and easy-to-use APIs. 
-            Create features quickly into apps that scale while keeping <b>cloud complexity and frustrations</b> at bay.
+            Hyper delivers straightforward and secure access to reliable and scalable services using
+            clear and easy-to-use APIs. Create features quickly into apps that scale while keeping <b
+              >cloud complexity and frustrations</b
+            > at bay.
           </p>
           <p class="mt-8">
             hyper provides APIs to core application services: data, cache, storage, queues, and

@@ -1,8 +1,9 @@
 <script>
-  import Button from "$lib/buttons/button.svelte";
-  import NavButton from "$lib/buttons/nav-button.svelte";
   import BetaBadge from "$lib/badge-beta.svelte";
-  import { isBetaEnabled } from "$lib/feature-flags";
+
+  import { isBetaEnabled } from "$lib/feature-flags.js";
+  import { HelpURLs } from "./constants.js";
+
   let mobileMenu = false;
 
   function mobile() {
@@ -79,14 +80,10 @@
       <!-- api docs button -->
       <a
         class="font-space uppercase text-sm hover:text-active-blue active:text-active-purple"
-        href="https://docs.hyper.io">Docs</a
+        href={HelpURLs.DOCS}>Docs</a
       >
 
-      <a class="font-space uppercase text-sm" href="https://dashboard.hyper.io"
-        ><NavButton txtColor="white" bgColor="blue" hoverBackgroundColor="purple"
-          >DASHBOARD</NavButton
-        ></a
-      >
+      <a class="btn btn-primary btn-sm" href={HelpURLs.DASHBOARD}> Dashboard </a>
     </div>
   </nav>
 </header>
@@ -101,7 +98,7 @@
       <a href="https://blog.hyper.io" class="link">Blog</a>
       <!-- <a href="/get-started" class="{isCurrentPage('/get-started')}">Get Started</a> -->
       <hr />
-      <NavButton><a href="https://docs.hyper.io">API DOCS</a></NavButton>
+      <a class="btn btn-link btn-primary" href={HelpURLs.DOCS}>API DOCS</a>
     </div>
   </div>
 {/if}

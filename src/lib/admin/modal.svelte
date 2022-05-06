@@ -1,7 +1,7 @@
 <script>
   import { createEventDispatcher } from "svelte";
   import { scale } from "svelte/transition";
-  import Button from "$lib/buttons/button.svelte";
+
   export let deleteModelOpen = false;
 
   const dispatch = createEventDispatcher();
@@ -36,16 +36,10 @@
         <slot />
         <br />
 
-        <Button
-          class="border-darkgray px-4"
-          txtColor="black"
-          bgColor="lightgray"
-          hyperBolt={false}
-          on:click={handleCancelClick}>Cancel</Button
-        >
-        <Button txtColor="white" bgColor="red" on:click={handleDeleteClick}>Delete</Button>
-
-        <!-- <button on:click|preventDefault={handleDeleteClick}>Delete</button> -->
+        <div class="px-4">
+          <button class="btn btn-neutral" on:click={handleCancelClick}> Cancel </button>
+        </div>
+        <button class="btn btn-error" on:click={handleDeleteClick}>Delete</button>
       </aside>
     </section>
   </div>

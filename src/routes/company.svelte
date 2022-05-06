@@ -1,8 +1,10 @@
 <script>
   import Header from "$lib/header.svelte";
   import Footer from "$lib/footer.svelte";
-  import Button from "$lib/buttons/button.svelte";
   import FeaturesKing from "$lib/features-king.svelte";
+  import Bolt from "$lib/svgs/bolt.svelte";
+
+  import { HelpURLs } from "$lib/constants.js";
 </script>
 
 <svelte:head>
@@ -18,12 +20,11 @@
         the development experience. As a result, development teams are able to grow into high
         performing teams and create incredible products.
       </p>
-      <div class="flex items-center md:items-start">
-        <div class="m-auto md:m-0">
-          <a href="https://docs.hyper.io/getting-started"
-            ><Button styles="mx-4 mt-8">Get Started</Button></a
-          >
-        </div>
+      <div class="flex justify-center md:justify-start">
+        <a class="btn btn-primary gap-2 mt-8" href={HelpURLs.GETTING_STARTED}>
+          Get Started
+          <Bolt color="white" />
+        </a>
       </div>
     </div>
     <div class="w-full md:w-1/2 flex items-center justify-center">
@@ -68,11 +69,12 @@
         and coupling. At hyper, we build tools that require a different mindset; tools that provide
         a hyper focus on your problem domain.
       </p>
-      <div class="flex items-center">
-        <div class="m-auto md:m-0">
-          <a href="https://docs.hyper.io/getting-started"
-            ><Button styles="mx-4 mt-8">Get Started</Button></a
-          >
+      <div class="flex justify-center md:justify-start">
+        <div class="mt-8">
+          <a class="btn btn-primary gap-2" href={HelpURLs.GETTING_STARTED}>
+            Get Started
+            <Bolt color="white" />
+          </a>
         </div>
       </div>
     </div>

@@ -1,10 +1,11 @@
+<script>
+  import { HelpURLs } from "$lib/constants";
+</script>
+
 <section class="space-y-4">
   <article class="mx-4 border-3 border-lightgray px-4 py-4 rounded-lg">
     <header>
-      <a
-        class="px-4 py-2 rounded bg-darkgray text-white float-right"
-        href="https://dashboard.hyper.io">Sign up</a
-      >
+      <a class="btn btn-neutral float-right" href={HelpURLs.DASHBOARD}>Sign up</a>
       <h3 class="text-xl">Starter</h3>
       <h5 class="text-lg text-black font-bold">Free</h5>
     </header>
@@ -14,10 +15,7 @@
   </article>
   <article class="mx-4 border-3 border-lightgray px-4 py-4 rounded-lg">
     <header>
-      <a
-        class="px-4 py-2 rounded bg-blue text-white float-right"
-        href="https://dashboard.hyper.io/upgrade">Upgrade</a
-      >
+      <a class="btn btn-primary float-right" href={HelpURLs.UPGRADE}>Upgrade</a>
       <h3 class="text-xl">Pro</h3>
       <h5 class="text-lg text-black font-bold">$99/mo</h5>
     </header>
@@ -27,10 +25,7 @@
   </article>
   <article class="mx-4 border-3 border-lightgray px-4 py-4 rounded-lg">
     <header>
-      <a
-        class="px-4 py-2 rounded bg-green text-white float-right"
-        href="https://dashboard.hyper.io/upgrade">Upgrade</a
-      >
+      <a class="btn btn-secondary float-right" href={HelpURLs.UPGRADE}>Upgrade</a>
       <h3 class="text-xl">Business</h3>
       <h5 class="text-lg text-black font-bold">$949/mo</h5>
     </header>
@@ -40,7 +35,7 @@
   </article>
   <article class="mx-4 border-3 border-lightgray px-4 py-4 rounded-lg">
     <header>
-      <a class="px-4 py-2 rounded bg-purple text-white float-right" href="#">Contact</a>
+      <a class="btn bg-purple float-right" href="#">Contact</a>
       <h3 class="text-xl">Enterprise</h3>
       <h5 class="text-lg text-black font-bold">Custom</h5>
     </header>

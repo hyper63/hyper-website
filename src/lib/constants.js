@@ -16,4 +16,6 @@ export const HelpURLs = {
   HYPER_CONNECT: "https://docs.hyper.io/hyper-connect",
   SLACK_SUPPORT: "https://hyper-chat.slack.com/archives/C023YLD15NZ",
   VIDEO_PROMO: "https://youtu.be/E_-MhLPSOXU",
+  DASHBOARD: "https://dashboard.hyper.io",
+  UPGRADE: "https://dashboard.hyper.io/upgrade",
 };

@@ -1,9 +1,6 @@
 <script>
   import Color from "$lib/color.svelte";
-  import Button from "$lib/buttons/button.svelte";
-  import Play from "$lib/buttons/play-button.svelte";
-  import NavButton from "$lib/buttons/nav-button.svelte";
-  import LinkBtn from "$lib/buttons/link-button.svelte";
+
   import Link from "$lib/link.svelte";
   import Pagination from "$lib/pagination.svelte";
   import FAQ from "$lib/faq.svelte";
@@ -72,96 +69,36 @@
     </div>
     <h2 class="mt-8">Buttons</h2>
     <div class="mt-3 flex justify-between">
-      <Button>Get Started</Button>
-      <Button bgColor="yellow">Get Started</Button>
-      <Button bgColor="orange">Get Started</Button>
-      <Button bgColor="red">Get Started</Button>
-      <Button bgColor="purple">Get Started</Button>
-      <Button bgColor="green">Get Started</Button>
+      <button class="btn">Get Started</button>
+      <button class="btn bg-yellow text-white">Get Started</button>
+      <button class="btn bg-orange text-white">Get Started</button>
+      <button class="btn bg-red text-white">Get Started</button>
+      <button class="btn bg-purple text-white">Get Started</button>
+      <button class="btn bg-green text-white">Get Started</button>
     </div>
     <div class="mt-3 flex justify-between">
-      <Button bgColor="gradient-blue">Get Started</Button>
-      <Button bgColor="gradient-yellow">Get Started</Button>
-      <Button bgColor="gradient-orange">Get Started</Button>
-      <Button bgColor="gradient-red">Get Started</Button>
-      <Button bgColor="gradient-purple">Get Started</Button>
-      <Button bgColor="gradient-green">Get Started</Button>
+      <button class="btn bg-gradient-blue text-white">Get Started</button>
+      <button class="btn bg-gradient-yellow text-white">Get Started</button>
+      <button class="btn bg-gradient-orange text-white">Get Started</button>
+      <button class="btn bg-gradient-red text-white">Get Started</button>
+      <button class="btn bg-gradient-purple text-white">Get Started</button>
+      <button class="btn bg-gradient-green text-white">Get Started</button>
     </div>
     <div class="mt-3 flex justify-between">
-      <Button bgColor="active-blue">Get Started</Button>
-      <Button bgColor="active-yellow">Get Started</Button>
-      <Button bgColor="active-orange">Get Started</Button>
-      <Button bgColor="active-red">Get Started</Button>
-      <Button bgColor="active-purple">Get Started</Button>
-      <Button bgColor="active-green">Get Started</Button>
+      <button class="btn bg-active-blue text-white">Get Started</button>
+      <button class="btn bg-active-yellow text-white">Get Started</button>
+      <button class="btn bg-active-orange text-white">Get Started</button>
+      <button class="btn bg-active-red text-white">Get Started</button>
+      <button class="btn bg-active-purple text-white">Get Started</button>
+      <button class="btn bg-active-green text-white">Get Started</button>
     </div>
     <div class="mt-3">
       <h5>code</h5>
       <pre>
         <code>
-{'<Button txtColor="white" bgColor="black">Get Started</Button>'}
+          {'<button class="btn bg-black text-white">Get Started</button>'}
         </code>
       </pre>
-    </div>
-
-    <h4 class="mt-8">Link Buttons</h4>
-    <div class="mt-8 flex">
-      <LinkBtn href="/">Learn More About Us</LinkBtn>
-      <LinkBtn href="/" styles="ml-3" bgColor="active-yellow">Learn More About Us</LinkBtn>
-      <LinkBtn href="/" styles="ml-3" bgColor="active-orange">Learn More About Us</LinkBtn>
-      <LinkBtn href="/" styles="ml-3" bgColor="active-red">Learn More About Us</LinkBtn>
-      <LinkBtn href="/" styles="ml-3" bgColor="active-purple">Learn More About Us</LinkBtn>
-      <LinkBtn href="/" styles="ml-3" bgColor="active-green">Learn More About Us</LinkBtn>
-    </div>
-    <div class="mt-3">
-      <h5>code</h5>
-      <pre>
-        <code>
-{'<LinkBtn href="/" bgColor="active-blue">Learn More About Us</LinkBtn>'}
-        </code>
-      </pre>
-    </div>
-    <h4 class="mt-8">Play Buttons</h4>
-    <div class="mt-3 flex justify-between">
-      <Play>Watch</Play>
-      <Play bgColor="lightblue" iconColor="blue">Watch</Play>
-      <Play bgColor="lightorange" iconColor="orange">Watch</Play>
-      <Play bgColor="lightred" iconColor="red">Watch</Play>
-      <Play bgColor="lightpurple" iconColor="purple">Watch</Play>
-    </div>
-    <div class="mt-3">
-      <h5>code</h5>
-      <pre>
-        <code>
-{'<Play bgColor="lightblue" iconColor="blue">Get Started</Play>'}
-        </code>
-      </pre>
-    </div>
-    <h4 class="mt-8">Nav Buttons</h4>
-    <div class="mt-3 flex justify-between">
-      <NavButton>API DOCS</NavButton>
-      <NavButton txtColor="yellow" bgColor="lightyellow">API DOCS</NavButton>
-      <NavButton txtColor="orange" bgColor="lightorange">API DOCS</NavButton>
-      <NavButton txtColor="red" bgColor="lightred">API DOCS</NavButton>
-      <NavButton txtColor="purple" bgColor="lightpurple">API DOCS</NavButton>
-      <NavButton txtColor="green" bgColor="lightgreen">API DOCS</NavButton>
-    </div>
-    <div class="mt-3">
-      <h5>code</h5>
-      <pre>
-        <code>
-{'<NavButton bgColor="lightgreen">API DOCS</NavButton>'}
-        </code>
-      </pre>
-    </div>
-    <h4 class="mt-8">Links</h4>
-    <div class="mt-3 flex">
-      <Link href="/" txtColor="blue">Button/Text Link</Link>
-      <Link styles="ml-3" href="/" txtColor="yellow">Button/Text Link</Link>
-      <Link styles="ml-3" href="/" txtColor="orange">Button/Text Link</Link>
-      <Link styles="ml-3" href="/" txtColor="red">Button/Text Link</Link>
-      <Link styles="ml-3" href="/" txtColor="purple">Button/Text Link</Link>
-      <Link styles="ml-3" href="/" txtColor="green">Button/Text Link</Link>
     </div>
     <h4 class="mt-8">Button Colors</h4>
     <div class="mt-3 flex">

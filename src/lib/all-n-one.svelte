@@ -1,5 +1,7 @@
 <script>
-  import Button from "./buttons/button.svelte";
+  import Bolt from "./svgs/bolt.svelte";
+
+  import { HelpURLs } from "./constants.js";
 
   export let styles = "";
 </script>
@@ -11,8 +13,19 @@
     hyper contains all of the services primitives to build applications without having to deal with
     servers, services or clouds.
   </p>
-  <a href="https://docs.hyper.io/getting-started"
-    ><Button styles="mt-8 mb-16">Get Started</Button></a
-  >
+  <div class="flex flex-wrap justify-center gap-8 w-full mt-8 mb-16 md:flex-row">
+    <a class="btn btn-primary gap-2" href={HelpURLs.GETTING_STARTED}>
+      Get Started
+      <Bolt color="white" />
+    </a>
+    <a class="btn btn-secondary gap-2" href={HelpURLs.REQUEST_A_CONSULTATION}>
+      Consult an Architect
+      <Bolt color="white" />
+    </a>
+    <a class="btn btn-accent gap-2" href={HelpURLs.REQUEST_A_DEMO}>
+      Request A Demo
+      <Bolt color="white" />
+    </a>
+  </div>
   <img src="/all.svg" alt="hyper framework" />
 </section>

@@ -1,4 +1,6 @@
 <script>
+  import { HelpURLs } from "$lib/constants";
+
   import Arrow from "$lib/svgs/arrow.svelte";
 </script>
 
@@ -25,13 +27,9 @@
     <td class="">
       <div class="px-2 py-2 flex items-center justify-center">
         <div class="">
-          <div class="font-semibold text-2xl">Starter</div>
-          <a
-            href="https://dashboard.hyper.io"
-            class="bg-black text-white flex items-center rounded"
-            style="padding-left: 1rem; padding-right: 1rem; padding-top: 0.5rem; padding-bottom: 0.5rem;"
-          >
-            <span class="font-light" style="margin-right: 32px;">It's Free</span>
+          <div class="font-semibold text-2xl mb-2">Starter</div>
+          <a href={HelpURLs.DASHBOARD} class="btn btn-neutral gap-2">
+            It's Free
             <Arrow color="white" />
           </a>
         </div>
@@ -40,13 +38,9 @@
     <td class="">
       <div class="px-2 py-2  flex items-center justify-center">
         <div class="">
-          <div class="font-semibold text-2xl">Pro</div>
-          <a
-            href="https://dashboard.hyper.io/upgrade"
-            class="bg-blue text-white flex items-center rounded"
-            style="padding-left: 1rem; padding-right: 1rem; padding-top: 0.5rem; padding-bottom: 0.5rem;"
-          >
-            <span class="font-light" style="margin-right: 32px;">Upgrade</span>
+          <div class="font-semibold text-2xl mb-2">Pro</div>
+          <a href={HelpURLs.UPGRADE} class="btn btn-primary gap-2">
+            Upgrade
             <Arrow color="white" />
           </a>
         </div>
@@ -56,13 +50,9 @@
     <td class="">
       <div class="px-2 py-2  flex items-center justify-center">
         <div class="">
-          <div class="font-semibold text-2xl">Business</div>
-          <a
-            href="https://dashboard.hyper.io/upgrade"
-            class="bg-green text-white flex items-center rounded"
-            style="padding-left: 1rem; padding-right: 1rem; padding-top: 0.5rem; padding-bottom: 0.5rem;"
-          >
-            <span class="font-light" style="margin-right: 32px;">Upgrade</span>
+          <div class="font-semibold text-2xl mb-2">Business</div>
+          <a href={HelpURLs.UPGRADE} class="btn btn-secondary gap-2">
+            Upgrade
             <Arrow color="white" />
           </a>
         </div>
@@ -71,13 +61,9 @@
     <td class="">
       <div class="px-2 py-2  flex items-center justify-center">
         <div class="">
-          <div class="font-semibold text-2xl">Enterprise</div>
-          <a
-            href="https://dashboard.hyper.io/upgrade"
-            class="bg-purple text-white flex items-center rounded"
-            style="padding-left: 1rem; padding-right: 1rem; padding-top: 0.5rem; padding-bottom: 0.5rem;"
-          >
-            <span class="font-light" style="margin-right: 32px;">Contact Sales</span>
+          <div class="font-semibold text-2xl mb-2">Enterprise</div>
+          <a href={HelpURLs.UPGRADE} class="btn bg-purple gap-2">
+            Upgrade
             <Arrow color="white" />
           </a>
         </div>
