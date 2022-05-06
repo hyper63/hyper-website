@@ -1,7 +1,6 @@
 <script>
   import Color from "$lib/color.svelte";
 
-  import Link from "$lib/link.svelte";
   import Pagination from "$lib/pagination.svelte";
   import FAQ from "$lib/faq.svelte";
   import Input from "$lib/input.svelte";
