@@ -130,7 +130,7 @@
       <img class="w-4/5 m-auto" src="/flow1.svg" alt="flow" />
     </div>
   </div>
-  <Ports {examples} styles="pl-12 pr-12" />
+  <Ports {examples} styles="pl-12 pr-12 bg-white py-12" />
   <Composition example={examples.composition} styles="pl-12 pr-12" />
   <WhereHyperFits styles="px-4 md:pl-24 md:pr-24" />
   <All styles="px-4 md:pl-24 md:pr-24" />
