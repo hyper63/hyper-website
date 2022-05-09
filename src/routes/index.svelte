@@ -39,6 +39,7 @@
   import Header from "$lib/header.svelte";
   import Ports from "$lib/ports.svelte";
   import All from "$lib/all-n-one.svelte";
+  import WhereHyperFits from "$lib/where-hyper-fits.svelte";
   import FAQs from "$lib/faqs.svelte";
   import Testimonials from "$lib/testimonials.svelte";
   import YouTubePromo from "$lib/hyper-promo-video-hero.svelte";
@@ -131,6 +132,7 @@
   </div>
   <Ports {examples} styles="pl-12 pr-12" />
   <Composition example={examples.composition} styles="pl-12 pr-12" />
+  <WhereHyperFits styles="px-4 md:pl-24 md:pr-24" />
   <All styles="px-4 md:pl-24 md:pr-24" />
   <FAQs {faqs} />
   <Testimonials styles="px-4 md:pl-24 md:pr-24" />
