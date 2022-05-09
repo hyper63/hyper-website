@@ -48,6 +48,7 @@
   import Bolt from "$lib/svgs/bolt.svelte";
 
   import { HelpURLs } from "$lib/constants.js";
+  import LearnMore from "$lib/learn-more.svelte";
 
   export let faqs;
   export let examples;
@@ -134,6 +135,7 @@
   <Composition example={examples.composition} styles="pl-12 pr-12" />
   <WhereHyperFits styles="px-4 md:pl-24 md:pr-24" />
   <All styles="px-4 md:pl-24 md:pr-24" />
+  <LearnMore styles="px-4 md:pl-24 md:pr-24 bg-white" />
   <FAQs {faqs} />
   <Testimonials styles="px-4 md:pl-24 md:pr-24" />
 </main>
