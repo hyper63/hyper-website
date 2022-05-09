@@ -5,7 +5,7 @@
   export let example = "";
 </script>
 
-<section class="w-full h-[1150px] md:h-[1210px] hyper-5 bg-whitesmoke pt-8 mt-8 {styles}">
+<section class="w-full h-[1210px] hyper-5 bg-whitesmoke pt-8 mt-8 {styles}">
   <div class="mt-16 w-full m-auto text-center">
     <h2 class="text-2xl font-semibold md:text-5xl">Compose Hyper Services Seamlessly 🧪</h2>
     <p class="text-base mt-4">Compose your Hyper services to create complex flows</p>

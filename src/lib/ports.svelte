@@ -80,16 +80,11 @@
       <div class={active !== index ? "text-" + port.color : ""}>{port.ordinate}</div>
       <div>{port.text}</div>
     </button>
-    <div
-      class="border-0 border-{port.color} p-4 rounded-lg bg-gradient-to-br from-whitesmoke to-light{port.color} {active ===
-      index
-        ? ''
-        : 'hidden'}"
-    >
+    <div class="p-4 rounded-lg bg-whitesmoke {active === index ? '' : 'hidden'}">
       <h2 class="text-4xl">{port.text}</h2>
       <p class="mt-2 text-base">{port.description}</p>
       <a class="block mt-4 text-base text-{port.color}" href={port.target}>MORE INFO ></a>
-      <Code styles="h-[700px] w-[800px]" code={port.example} />
+      <Code styles="w-[800px]" code={port.example} />
     </div>
   {/each}
 </section>
@@ -115,10 +110,7 @@
   <div class="w-3/4">
     {#each ports as port, index}
       <article
-        class="border rounded-xl border-white p-12 bg-gradient-to-br from-whitesmoke to-blue-100 {active ===
-        index
-          ? ''
-          : 'hidden'}"
+        class="rounded-xl border-white p-12 bg-whitesmoke {active === index ? '' : 'hidden'}"
       >
         <header>
           <h2 class="font-space">{port.text}</h2>
