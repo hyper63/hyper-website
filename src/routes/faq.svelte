@@ -50,7 +50,7 @@
       </div>
     </section>
   {/if}
-  <section class="mx-4 mt-8 py-8 px-4 rounded bg-whitesmoke bg-white md:flex md:justify-center">
+  <section class="mx-4 mt-8 py-8 px-4 rounded bg-whitesmoke md:flex md:justify-center">
     <div class="space-y-4 md:w-2/3">
       {#each faqs as { question, answer }}
         <FAQ>

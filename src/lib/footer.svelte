@@ -43,7 +43,9 @@
       </ul>
     </div>
   </section>
-  <section class="flex justify-center items-center mt-16 mb-16 ml-4 w-full">
-    <p class="font-mono text-sm">&copy; 2022 HYPER63, LLC ALL RIGHTS RESERVED.</p>
+  <section class="flex justify-center items-center mt-16 mb-16 mx-auto w-full">
+    <p class="font-mono text-sm w-full text-center">
+      &copy; 2022 HYPER63, LLC ALL RIGHTS RESERVED.
+    </p>
   </section>
 </footer>

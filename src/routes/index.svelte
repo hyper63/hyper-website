@@ -69,7 +69,7 @@
           <span class="text-blue">Create</span>. <span class="text-yellow">Connect</span>.
           <span class="text-green">Build</span>.
         </h2>
-        <div class="mt-4 mr-8 md:mt-8 md:w-5/6">
+        <div class="mt-4 md:mt-8 md:w-5/6">
           <p class="text-md text-center md:text-left">
             Create your services. Connect using an consistent, clean API. Build and focus on your
             application's features, not its cloud plumbing.

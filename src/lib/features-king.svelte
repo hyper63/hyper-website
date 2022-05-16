@@ -5,7 +5,7 @@
   import { HelpURLs } from "$lib/constants.js";
 </script>
 
-<section class="flex flex-col-reverse md:flex-row items-center pl-4 md:pl-24 md:pr-24 w-full">
+<section class="flex flex-col-reverse md:flex-row items-center px-4 md:pl-24 md:pr-24 w-full">
   <div class="mt-8 md:mt-32 md:w-1/2">
     <h5 class="">Hyperfocus on features</h5>
     <h2 class="text-2xl font-semibold md:text-5xl md:mt-16">Features are King 👑</h2>

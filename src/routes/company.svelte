@@ -49,7 +49,7 @@
     <h3 class="text-2xl text-center">
       hyper ensures your backend services support the right 'ilities:
     </h3>
-    <div class="w-full max-w-3xl m-auto px-12 flex items-center justify-between">
+    <div class="w-full m-auto md:max-w-3xl md:px-12 flex items-center justify-between">
       <div class="mt-8 flex justify-center">
         <img src="/extensibility.svg" alt="extensibility" />
       </div>
