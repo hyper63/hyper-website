@@ -71,7 +71,7 @@
         </h2>
         <div class="mt-4 md:mt-8 md:w-5/6">
           <p class="text-md text-center md:text-left">
-            Create your services. Connect using an consistent, clean API. Build and focus on your
+            Create your services. Connect using a consistent, clean API. Build and focus on your
             application's features, not its cloud plumbing.
           </p>
           <div class="mt-16 flex flex-col space-y-2 w-full">
